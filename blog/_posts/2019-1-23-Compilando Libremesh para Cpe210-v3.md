@@ -28,6 +28,7 @@ Como meu conhecimento é muito pouco ou quase nenhum esse rascunho vai começar 
 
 9. https://github.com/openwrt/openwrt	
 
+
 Lendo tudo isso, tem algumas coisas importantes a se concluir para prosseguir:
 
 1. Não é possível fazer isso pelo ImageBuilder pois ele só vai funcionar para imagens pré-compiladas
@@ -72,7 +73,7 @@ make menuconfig
 Aqui foi possivel encontrar em target o cpe210-v3. Segui a sugestão do git do libremesh () que sugere destacar o pacote dnsmasq em Base system e selecionar dnsmasq-dhcpv6 na mesma seção. Selecionei também o pacote lime-full na seção [[LiMe]] > collections.
 
 
-![My helpful screenshot](/_assets/images/menuconfig.jpg)
+(/_assets/images/menuconfig.jpg)
 
 Depois de salvar, é importante dar o comando 
 
@@ -98,17 +99,3 @@ Caso você encontre erro na compilação uma sacada é usar a seguinte linha dec
 make V=s 2>&1 | tee build.log | grep -i '[^_-"a-z]error[^_-.a-z]' 
 {% endhighlight %}
 
-The Knowledge Base
-
-You'll find this article in your `kb/_posts` directory - edit this article and re-build (or run with the `-w` switch) to see your changes!
-To add new articles, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('AJ')
-#=> prints 'Hi, AJ' to STDOUT.
-{% endhighlight %}
