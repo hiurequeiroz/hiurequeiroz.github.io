@@ -63,4 +63,4 @@ assets:
   # Disable asset gzip
   gzip: false
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
