@@ -1,22 +1,9 @@
 <nav>
-    <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %} class="btn btn-github"><span class="icon"></span>
-      Home
+    {% for item in site.data.navigation %}
+ 
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %} class="btn btn-github"><span class="icon"></span>
+        {{ item.name }}
     </a>
 
-    <a href="/sobre.html" {% if page.url == "/sobre.html" %}style="color: red;"{% endif %} class="btn btn-github"><span class="icon"></span>
-      Sobre
-    </a>
-
-    <a href="./blog.html" {% if page.url == "/blog.html" %}style="color: red;"{% endif %} class="btn btn-github"><span class="icon"></span>
-        Blog
-    </a>
-
-    <a href="./contato.html" {% if page.url == "/contato.html" %}style="color: red;"{% endif %} class="btn btn-github"><span class="icon"></span>
-        Contato
-    </a>
-
-    <a href="https://github.com/hiureanderson" class="btn btn-github"><span class="icon"></span>
-        Veja no GitHub
-    </a>
-
-  </nav>
+    {% endfor %}
+   </nav>
