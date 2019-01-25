@@ -4,22 +4,23 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=5def8010bacce12ce55ba537a1bd3780e768e40c">
+    <link rel="stylesheet" href="/assets/css/style.css?v=0108befdb66e9e60ea3a2836d67030a92b197ce8">
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Compilando Libremesh para Cpe210-v3 | Hiure Queiroz</title>
+<title>Compilando Libremesh para Cpe210-v3 | Hiure</title>
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="Compilando Libremesh para Cpe210-v3" />
+<meta name="author" content="Hiure" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="o Cpe210-v3 não tem suporte dos desenvolvedores oficiais do OpenWrt/Lede. E no Libremesh todas as maneiras de compilar documentadas são para modelos suportados para o OpenWrt/Lede. Esse documento tem o objetivo de documentar a jornada de descobrir como compilar um firmware para um modelo não suportado pelo OpenWrt/Lede." />
 <meta property="og:description" content="o Cpe210-v3 não tem suporte dos desenvolvedores oficiais do OpenWrt/Lede. E no Libremesh todas as maneiras de compilar documentadas são para modelos suportados para o OpenWrt/Lede. Esse documento tem o objetivo de documentar a jornada de descobrir como compilar um firmware para um modelo não suportado pelo OpenWrt/Lede." />
 <link rel="canonical" href="http://localhost:4000/2019/01/23/Compilando-Libremesh-para-Cpe210-v3.html" />
 <meta property="og:url" content="http://localhost:4000/2019/01/23/Compilando-Libremesh-para-Cpe210-v3.html" />
-<meta property="og:site_name" content="Hiure Queiroz" />
+<meta property="og:site_name" content="Hiure" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-23T22:31:00-02:00" />
 <script type="application/ld+json">
-{"description":"o Cpe210-v3 não tem suporte dos desenvolvedores oficiais do OpenWrt/Lede. E no Libremesh todas as maneiras de compilar documentadas são para modelos suportados para o OpenWrt/Lede. Esse documento tem o objetivo de documentar a jornada de descobrir como compilar um firmware para um modelo não suportado pelo OpenWrt/Lede.","@type":"BlogPosting","url":"http://localhost:4000/2019/01/23/Compilando-Libremesh-para-Cpe210-v3.html","headline":"Compilando Libremesh para Cpe210-v3","dateModified":"2019-01-23T22:31:00-02:00","datePublished":"2019-01-23T22:31:00-02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/23/Compilando-Libremesh-para-Cpe210-v3.html"},"@context":"http://schema.org"}</script>
+{"description":"o Cpe210-v3 não tem suporte dos desenvolvedores oficiais do OpenWrt/Lede. E no Libremesh todas as maneiras de compilar documentadas são para modelos suportados para o OpenWrt/Lede. Esse documento tem o objetivo de documentar a jornada de descobrir como compilar um firmware para um modelo não suportado pelo OpenWrt/Lede.","author":{"@type":"Person","name":"Hiure"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/23/Compilando-Libremesh-para-Cpe210-v3.html","headline":"Compilando Libremesh para Cpe210-v3","dateModified":"2019-01-23T22:31:00-02:00","datePublished":"2019-01-23T22:31:00-02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/23/Compilando-Libremesh-para-Cpe210-v3.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -28,8 +29,8 @@
 
     <header>
       <div class="container">
-        <h1><a href="/"> Hiure Queiroz</a></h1>
-        <h2>For share with the world.</h2>
+        <h1><a href="/"> Hiure</a></h1>
+        <h2>To share with the world.</h2>
 
         <section id="downloads">
           
@@ -82,7 +83,7 @@
         <small>23 January 2019</small>
 <h1>Compilando Libremesh para Cpe210-v3</h1>
 
-<p class="view">by </p>
+<p class="view">by Hiure</p>
 
 <p>o Cpe210-v3 não tem suporte dos desenvolvedores oficiais do OpenWrt/Lede. E no Libremesh todas as maneiras de compilar documentadas são para modelos suportados para o OpenWrt/Lede. Esse documento tem o objetivo de documentar a jornada de descobrir como compilar um firmware para um modelo não suportado pelo OpenWrt/Lede.</p>
 
@@ -138,24 +139,24 @@
 
 <p>Depois de tudo isso comecei fazendo um clone do repositório do openwrt já com as alterações para o cpe210-v3</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="nb">clone</span> <span class="o">-</span><span class="n">b</span> <span class="no">CPE210</span><span class="o">-</span><span class="n">v3</span><span class="o">-</span><span class="no">PR</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">branch</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">robimarko</span><span class="o">/</span><span class="n">openwrt</span><span class="p">.</span><span class="nf">git</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">git clone <span class="nt">-b</span> CPE210-v3-PR <span class="nt">--single-branch</span> https://github.com/robimarko/openwrt.git</code></pre></figure>
 
 <p>Feito isso acresentei os seguintes repositórios para o feed.conf</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cp</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span><span class="p">.</span><span class="nf">default</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span><span class="p">.</span><span class="nf">default</span><span class="p">.</span><span class="nf">local</span>
-<span class="n">cp</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span><span class="p">.</span><span class="nf">default</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span>
-<span class="n">echo</span> <span class="s2">"src-git libremesh https://github.com/libremesh/lime-packages.git"</span> <span class="o">&gt;&gt;</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span>
-<span class="n">echo</span> <span class="s2">"src-git libremap https://github.com/libremap/libremap-agent-openwrt.git"</span> <span class="o">&gt;&gt;</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span>
-<span class="n">echo</span> <span class="s2">"src-git limeui https://github.com/libremesh/lime-packages-ui.git"</span> <span class="o">&gt;&gt;</span> <span class="n">feeds</span><span class="p">.</span><span class="nf">conf</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">cp feeds.conf.default feeds.conf.default.local
+cp feeds.conf.default feeds.conf
+<span class="nb">echo</span> <span class="s2">"src-git libremesh https://github.com/libremesh/lime-packages.git"</span> <span class="o">&gt;&gt;</span> feeds.conf
+<span class="nb">echo</span> <span class="s2">"src-git libremap https://github.com/libremap/libremap-agent-openwrt.git"</span> <span class="o">&gt;&gt;</span> feeds.conf
+<span class="nb">echo</span> <span class="s2">"src-git limeui https://github.com/libremesh/lime-packages-ui.git"</span> <span class="o">&gt;&gt;</span> feeds.conf</code></pre></figure>
 
 <p>Para atualizar os pacotes fiz:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">scripts</span><span class="o">/</span><span class="n">feeds</span> <span class="n">update</span> <span class="o">-</span><span class="n">a</span>
-<span class="n">scripts</span><span class="o">/</span><span class="n">feeds</span> <span class="n">install</span> <span class="o">-</span><span class="n">a</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">scripts/feeds update <span class="nt">-a</span>
+scripts/feeds install <span class="nt">-a</span></code></pre></figure>
 
 <p>E então para adicionar manualmente os pacotes executei:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">make</span> <span class="n">menuconfig</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">make menuconfig</code></pre></figure>
 
 <p>Aqui foi possivel encontrar em target o cpe210-v3. Segui a sugestão do git do libremesh () que sugere destacar o pacote dnsmasq em Base system e selecionar dnsmasq-dhcpv6 na mesma seção. Selecionei também o pacote lime-full na seção [[LiMe]] &gt; collections.</p>
 
@@ -163,20 +164,20 @@
 
 <p>Depois de salvar, é importante dar o comando</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">make</span> <span class="n">download</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">make download</code></pre></figure>
 
 <p>Isso vai fazer com que você baixe todos as fontes antes de compilar, isso é importante caso você use mútlipos cores para compilar. Se não fizer isso provávelmente sua compilação falhe.</p>
 
 <p>E então rodei:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">make</span> <span class="o">-</span><span class="n">j1</span> <span class="no">V</span><span class="o">=</span><span class="n">s</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">make <span class="nt">-j1</span> <span class="nv">V</span><span class="o">=</span>s</code></pre></figure>
 
 <p>E compulou-se uma imagem para testar.</p>
 
 <p>Dicas:
 Caso você encontre erro na compilação uma sacada é usar a seguinte linha decomando para encontrar o erro:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">make</span> <span class="no">V</span><span class="o">=</span><span class="n">s</span> <span class="mi">2</span><span class="o">&gt;&amp;</span><span class="mi">1</span> <span class="o">|</span> <span class="n">tee</span> <span class="n">build</span><span class="p">.</span><span class="nf">log</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">i</span> <span class="s1">'[^_-"a-z]error[^_-.a-z]'</span> </code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">make <span class="nv">V</span><span class="o">=</span>s 2&gt;&amp;1 | tee build.log | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'[^_-"a-z]error[^_-.a-z]'</span> </code></pre></figure>
 
 
 

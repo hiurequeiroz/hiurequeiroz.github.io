@@ -2,6 +2,7 @@
 layout: post
 title:  "Compilando Libremesh para Cpe210-v3"
 date:   2019-01-23 22:31
+author: Hiure
 ---
 
 
@@ -37,14 +38,14 @@ Lendo tudo isso, tem algumas coisas importantes a se concluir para prosseguir:
 
 Depois de tudo isso comecei fazendo um clone do repositório do openwrt já com as alterações para o cpe210-v3
 
-{% highlight ruby %}
+{% highlight sh %}
 git clone -b CPE210-v3-PR --single-branch https://github.com/robimarko/openwrt.git
 {% endhighlight %}
 
 
 Feito isso acresentei os seguintes repositórios para o feed.conf
 
-{% highlight ruby %}
+{% highlight sh %}
 cp feeds.conf.default feeds.conf.default.local
 cp feeds.conf.default feeds.conf
 echo "src-git libremesh https://github.com/libremesh/lime-packages.git" >> feeds.conf
@@ -54,7 +55,7 @@ echo "src-git limeui https://github.com/libremesh/lime-packages-ui.git" >> feeds
 
 Para atualizar os pacotes fiz:
 
-{% highlight ruby %}
+{% highlight sh %}
 scripts/feeds update -a
 scripts/feeds install -a
 {% endhighlight %}
@@ -63,7 +64,7 @@ scripts/feeds install -a
 
 E então para adicionar manualmente os pacotes executei:
 
-{% highlight ruby %}
+{% highlight sh %}
 make menuconfig
 {% endhighlight %}
 
@@ -77,14 +78,14 @@ Aqui foi possivel encontrar em target o cpe210-v3. Segui a sugestão do git do l
 
 Depois de salvar, é importante dar o comando 
 
-{% highlight ruby %}
+{% highlight sh %}
 make download
 {% endhighlight %}
 
 Isso vai fazer com que você baixe todos as fontes antes de compilar, isso é importante caso você use mútlipos cores para compilar. Se não fizer isso provávelmente sua compilação falhe.
 
 E então rodei:
-{% highlight ruby %}
+{% highlight sh %}
 make -j1 V=s
 {% endhighlight %}
 
@@ -95,7 +96,7 @@ E compulou-se uma imagem para testar.
 Dicas:
 Caso você encontre erro na compilação uma sacada é usar a seguinte linha decomando para encontrar o erro:
 
-{% highlight ruby %}
+{% highlight sh %}
 make V=s 2>&1 | tee build.log | grep -i '[^_-"a-z]error[^_-.a-z]' 
 {% endhighlight %}
 
