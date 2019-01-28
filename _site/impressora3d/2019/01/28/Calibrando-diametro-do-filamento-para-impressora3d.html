@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=ff959aa9423be339c2e92df200e1079a635f305f">
+
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Calibrando diâmetro do filamento para impressão 3D | Hiure</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Calibrando diâmetro do filamento para impressão 3D" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1.1.Calibrando diametro do filamento" />
+<meta property="og:description" content="1.1.Calibrando diametro do filamento" />
+<link rel="canonical" href="http://localhost:4000/impressora3d/2019/01/28/Calibrando-diametro-do-filamento-para-impressora3d.html" />
+<meta property="og:url" content="http://localhost:4000/impressora3d/2019/01/28/Calibrando-diametro-do-filamento-para-impressora3d.html" />
+<meta property="og:site_name" content="Hiure" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-28T01:02:00-02:00" />
+<script type="application/ld+json">
+{"description":"1.1.Calibrando diametro do filamento","@type":"BlogPosting","url":"http://localhost:4000/impressora3d/2019/01/28/Calibrando-diametro-do-filamento-para-impressora3d.html","headline":"Calibrando diâmetro do filamento para impressão 3D","dateModified":"2019-01-28T01:02:00-02:00","datePublished":"2019-01-28T01:02:00-02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/impressora3d/2019/01/28/Calibrando-diametro-do-filamento-para-impressora3d.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1><a href="/"> Hiure</a></h1>
+        <h2>To share with the world.</h2>
+
+        <section id="downloads">
+          
+          <nav>
+    
+ 
+    <a href="/"  class="btn btn-github"><span class="icon"></span>
+        Home
+    </a>
+
+    
+ 
+    <a href="/sobre.html"  class="btn btn-github"><span class="icon"></span>
+        Sobre
+    </a>
+
+    
+ 
+    <a href="/blog.html"  class="btn btn-github"><span class="icon"></span>
+        Blog
+    </a>
+
+    
+ 
+    <a href="/contato.html"  class="btn btn-github"><span class="icon"></span>
+        Contato
+    </a>
+
+    
+ 
+    <a href="https://github.com/hiureanderson"  class="btn btn-github"><span class="icon"></span>
+        Veja o GitHub
+    </a>
+
+    
+   </nav>
+
+          
+
+          
+
+        </section>
+      </div>
+   
+   
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>28 January 2019</small>
+<h1>Calibrando diâmetro do filamento para impressão 3D</h1>
+
+<p class="view">by </p>
+
+<h2 id="11calibrando-diametro-do-filamento">1.1.Calibrando diametro do filamento</h2>
+
+<p>Para calibrar o filamento vamos precisar de um paquimetro.
+O paquimetro é uma ferramenta impressindivel para quem quer usar impressora 3D. Não é uma ferramenta muito barata, mas compensa muito se você está pensando em ter uma impressora devidamente calibrada, sobre tudo se quer modelar peças.</p>
+
+<h3 id="111-calculando-o-diametro-médio-do-filamento">1.1.1 Calculando o diametro médio do filamento</h3>
+
+<p>Pegue o rolo de filamento e estique ele por volta de 1m (isso porque ele pode variar muito dentro nesse intervalo)</p>
+
+<p>Faça pelo menos 6 medidas ao londo dessa distância, e para cada medida anote o valor nas duas direções do filamento, <code class="highlighter-rouge">x</code> e <code class="highlighter-rouge">y</code>.</p>
+
+<p><img src="/assets/images/paquimetro.png" alt="image" /></p>
+
+<p>Dica: Use sempre o meio do paquimetro para evitar medidas viciadas.</p>
+
+<p>Faça uma tabela para calcular o diametro médio do filamento.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>n</th>
+      <th>x</th>
+      <th>y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>x1</td>
+      <td>y1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>x2</td>
+      <td>y2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>x3</td>
+      <td>y3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>x4</td>
+      <td>y4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>x5</td>
+      <td>y5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>x6</td>
+      <td>y6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Média</td>
+      <td><script type="math/tex">\frac{\sum_{n=1}^{6}x_{n}}{6}</script></td>
+      <td><script type="math/tex">\frac{\sum_{n=1}^{6}y_{n}}{6}</script></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Não se assuste, essa formula para a média é uma maneira mais elegante do que escrever <code class="highlighter-rouge">soma tudo e divide por 6</code></p>
+
+<p>Assim a média total deve ser:</p>
+
+<script type="math/tex; mode=display">Média total = \frac{\frac{\sum_{n=1}^{6}x_{n}}{6}+\frac{\sum_{n=1}^{6}y_{n}}{6}}{2}</script>
+
+<p>Pronto, depois de toda essa volta (e muita pesquisa e aprendizado aqui para saber como colocar <a href="http://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/">equação com markdown</a> ) achamos o valor médio para o filamento.
+Note que se houver muita diferença de x e y você tem um péssimo filamento em mãos e isso pode prejudicar bastante a qualidade da impressão.</p>
+
+<h3 id="112-calculando-o-multiplicador-de-extrusão">1.1.2 Calculando o multiplicador de extrusão</h3>
+
+<p>O <a href="">multiplicador de extrusão</a> é uma correção extra que devemos calibrar para a espessura impressa seja exatamente aquela que a sua peça tem.</p>
+
+<p>Com o valor médio do filamento vamos fazer uma impressão de teste, um <a href="">cubo padrão</a>. Esse cubo tem a parede de 0,4mm e é utilizada para calcular o multiplicador de extrusão. O que se faz é imprimir esse cubo com as configs pré determinadas para calibragem com o valor medio da espessura do filamento que achamos e depois medimos o valor real, dividimos o valor esperado pelo real e mutiplicamos pelo mutiplicador anterior.</p>
+
+<script type="math/tex; mode=display">E_m=\frac{l}{V_e}*E_m</script>
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>

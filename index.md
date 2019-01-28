@@ -2,5 +2,20 @@
 layout: default
 ---
 
-Esse página se destina a ser o meu rascunho online, tenho feito isso com os cadernos zim ultimamente, mas a partir de agora vou fazer de um jeito mais `arrumadinho`
+Aqui desejo compartilhar alguns aprendizados, fazer um pouco de blog e tutoriais. Esse material deve estar separado em três áreas.
+
+-[Redes Comunitárias]()
+
+-[Aventuras com Impressora 3D]()
+
+-[Subvertendo objetos ou aprendendo Eletrônica]()
+
+Muito provavelmente essas temas devem vir bem misturados, e a ideia é sempre contar as histórias por tráz de cada descoberta.
+
+até
+
+```sh
+$~: exit
+```
+
 

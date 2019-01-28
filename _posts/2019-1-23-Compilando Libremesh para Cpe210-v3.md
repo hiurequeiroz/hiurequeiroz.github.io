@@ -3,6 +3,7 @@ layout: post
 title:  "Compilando Libremesh para Cpe210-v3"
 date:   2019-01-23 22:31
 author: Hiure
+categories: redescomunitarias
 ---
 
 
