@@ -49,7 +49,7 @@ O [multiplicador de extrusão]() é uma correção extra que devemos calibrar pa
 
 Com o valor médio do filamento vamos fazer uma impressão de teste, um [cubo padrão](). Esse cubo tem a parede de 0,4mm e é utilizada para calcular o multiplicador de extrusão. O que se faz é imprimir esse cubo com as configs pré determinadas para calibragem com o valor medio da espessura do filamento que achamos e depois medimos o valor real, dividimos o valor esperado pelo real e mutiplicamos pelo mutiplicador anterior.
 
-$$ E_m=\frac{l}{V_e}*E_m $$
+$$ E_m=(\frac{l}{V_e}*)E_m $$
 
 
 ver https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695
