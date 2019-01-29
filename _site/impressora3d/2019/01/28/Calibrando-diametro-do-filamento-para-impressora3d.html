@@ -165,13 +165,32 @@ Note que se houver muita diferença de x e y você tem um péssimo filamento em 
 
 <p>Com o valor médio do filamento vamos fazer uma impressão de teste, um <a href="">cubo padrão</a>. Esse cubo tem a parede de 0,4mm e é utilizada para calcular o multiplicador de extrusão. O que se faz é imprimir esse cubo com as configs pré determinadas para calibragem com o valor medio da espessura do filamento que achamos e depois medimos o valor real, dividimos o valor esperado pelo real e mutiplicamos pelo mutiplicador anterior.</p>
 
-<script type="math/tex; mode=display">E_m=(\frac{l}{V_e}*)E_m</script>
+<p><script type="math/tex">E_m=\frac{Ø}{Ø_e}*E_a</script> ou</p>
 
-<p>ver https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695</p>
+<p>onde:</p>
 
-<p>http://print.theporto.com/posts/how-to-calibrate-extrusion-thickness/</p>
+<p><script type="math/tex">E_m</script> - Multiplicador de extrusão (ou Extrusion multiplier)</p>
 
-<p>https://boaimpressao3d.com.br/2015/03/18/como-configurar-um-novo-filamento-parte-1/</p>
+<p><script type="math/tex">Ø</script> - é a espessura da parade da caixa</p>
+
+<p><script type="math/tex">Ø_e</script> - foi o valor encontrado para a espessura da caixa</p>
+
+<p><script type="math/tex">E_a</script> - foi o extrusion multiplier utilizando que se obteve a espessura medida</p>
+
+<p>ou seja</p>
+
+<script type="math/tex; mode=display">E_m=\frac{espessura(real)}{espessura(encontrada)}*Extrusion-mutiplier(usado)</script>
+
+<p>Agora repita o procedimento com o novo valor de <script type="math/tex">E_m</script> (extrusion mutiplier) e repita os calculos.</p>
+
+<h3 id="referências">Referências:</h3>
+
+<p><a href="https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695">https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695
+</a></p>
+
+<p><a href="http://print.theporto.com/posts/how-to-calibrate-extrusion-thickness/">http://print.theporto.com/posts/how-to-calibrate-extrusion-thickness/</a></p>
+
+<p><a href="https://boaimpressao3d.com.br/2015/03/18/como-configurar-um-novo-filamento-parte-1/">https://boaimpressao3d.com.br/2015/03/18/como-configurar-um-novo-filamento-parte-1/</a></p>
 
 
 

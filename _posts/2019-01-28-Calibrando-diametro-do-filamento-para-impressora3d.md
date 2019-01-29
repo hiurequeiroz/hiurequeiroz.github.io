@@ -49,11 +49,30 @@ O [multiplicador de extrusão]() é uma correção extra que devemos calibrar pa
 
 Com o valor médio do filamento vamos fazer uma impressão de teste, um [cubo padrão](). Esse cubo tem a parede de 0,4mm e é utilizada para calcular o multiplicador de extrusão. O que se faz é imprimir esse cubo com as configs pré determinadas para calibragem com o valor medio da espessura do filamento que achamos e depois medimos o valor real, dividimos o valor esperado pelo real e mutiplicamos pelo mutiplicador anterior.
 
-$$ E_m=(\frac{l}{V_e}*)E_m $$
+$$ E_m=\frac{Ø}{Ø_e}*E_a $$ ou 
 
+onde:
 
-ver https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695
+$$ E_m $$ - Multiplicador de extrusão (ou Extrusion multiplier)
 
-http://print.theporto.com/posts/how-to-calibrate-extrusion-thickness/
+$$ Ø $$ - é a espessura da parade da caixa
 
-https://boaimpressao3d.com.br/2015/03/18/como-configurar-um-novo-filamento-parte-1/
+$$ Ø_e $$ - foi o valor encontrado para a espessura da caixa
+
+$$ E_a $$ - foi o extrusion multiplier utilizando que se obteve a espessura medida
+
+ou seja
+
+$$ E_m=\frac{espessura(real)}{espessura(encontrada)}*Extrusion-mutiplier(usado) $$
+
+Agora repita o procedimento com o novo valor de $$ E_m $$ (extrusion mutiplier) e repita os calculos.
+
+### Referências:
+
+[https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695
+](https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695
+)
+
+[http://print.theporto.com/posts/how-to-calibrate-extrusion-thickness/](http://print.theporto.com/posts/how-to-calibrate-extrusion-thickness/)
+
+[https://boaimpressao3d.com.br/2015/03/18/como-configurar-um-novo-filamento-parte-1/](https://boaimpressao3d.com.br/2015/03/18/como-configurar-um-novo-filamento-parte-1/)
