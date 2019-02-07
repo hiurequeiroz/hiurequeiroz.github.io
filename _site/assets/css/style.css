@@ -107,3 +107,5 @@ a { color: #b1f563; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
 .cf:after { clear: both; }
 
 .cf { zoom: 1; }
+
+.catbloc:not(:target) { display: none; }

@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: Caloibrando a temperatura do filamento
+title: Calibrando a temperatura do filamento
 date: 2019-01-27 19:32
 categories: impressora3d
 ---
@@ -10,7 +10,7 @@ Para cada marca, cada cor, e cada tipo de filamento pode diferenciar muito a tem
 
 ## 1.1. Calibrando temperatura do filamento
 
-Para calibrar o filamento você imprimir uma dessas peças especificas para [calibrar temperatura](https://www.thingiverse.com/thing:1579403), eu gosto muito [dessa](https://www.thingiverse.com/thing:1807517), ela tem bastante detalhe por temperatura, isso é importante quando você quer fazer uma calibragem muito especifica para algum tipo de peça.
+Para calibrar o filamento você imprimir uma dessas peças especificas para [calibrar temperatura](https://www.thingiverse.com/thing:915435/files), eu gosto muito [dessa](https://www.thingiverse.com/thing:1807517), ela tem bastante detalhe por temperatura, isso é importante quando você quer fazer uma calibragem muito especifica para algum tipo de peça.
 
 Depois de baixar sua peça e fatiar no seu fatiador predileto, é hora de editar o gcode (alguns programas fazem isso ser mais fácil). Mas de maneira geral se for manualmente ou se por algum script que algum abençoado disponibilizar por ai (que funcine!), a ideia é mudar a temperatura de impressão para um conjunto especifico de camadas (uns a cada 10mm) depende da peça de calibrgem que escolheu.
 
@@ -24,8 +24,10 @@ Ao identificar a camada adicine a linha que vai modificar a temperatura `M104 S2
 
 Ai é só ir mudando o alcance da camada na visualização, identificando a camada, procurando no gcode a camada e adicionando a nova temperatura
 
+Você pode repetir todo o processo só que para a velocidade do cooler (fan) que resfria o extrusor.
+
 ### Referências
 
-[https://www.reddit.com/r/m3d/comments/3xrqed/using_gcodes_to_change_extrusion_temperature/]([https://www.reddit.com/r/m3d/comments/3xrqed/using_gcodes_to_change_extrusion_temperature/)
+[https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695]([https://www.3dhubs.com/talk/t/howto-calibrate-tune-and-fine-tune-your-printer-and-filament/5695)
 
 [https://www.youtube.com/watch?v=EATU7grYZ8E](https://www.youtube.com/watch?v=EATU7grYZ8E)

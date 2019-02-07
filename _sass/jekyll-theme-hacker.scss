@@ -261,3 +261,8 @@ a {
 .cf {
   zoom:1;
 }
+
+.catbloc:not(:target){
+  display: none;
+ }
+ 

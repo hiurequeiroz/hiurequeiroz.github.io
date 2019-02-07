@@ -75,7 +75,7 @@ make menuconfig
 Aqui foi possivel encontrar em target o cpe210-v3. Segui a sugestão do git do libremesh () que sugere destacar o pacote dnsmasq em Base system e selecionar dnsmasq-dhcpv6 na mesma seção. Selecionei também o pacote lime-full na seção [[LiMe]] > collections.
 
 
-(/_assets/images/menuconfig.jpg)
+![](/assets/images/menuconfig.jpg)
 
 Depois de salvar, é importante dar o comando 
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=686895cbe237312c69eeb1e6d58c61b014b1257d">
+
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Fita Led Endereçavel | Hiure</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Fita Led Endereçavel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Basicamente existem dois tipos de fita led, as analógica ou digital. A diferença reside em como elas são controladas" />
+<meta property="og:description" content="Basicamente existem dois tipos de fita led, as analógica ou digital. A diferença reside em como elas são controladas" />
+<link rel="canonical" href="http://localhost:4000/42/2019/02/07/Fita-Led-enderecavel.html" />
+<meta property="og:url" content="http://localhost:4000/42/2019/02/07/Fita-Led-enderecavel.html" />
+<meta property="og:site_name" content="Hiure" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-07T09:33:00-02:00" />
+<script type="application/ld+json">
+{"description":"Basicamente existem dois tipos de fita led, as analógica ou digital. A diferença reside em como elas são controladas","@type":"BlogPosting","url":"http://localhost:4000/42/2019/02/07/Fita-Led-enderecavel.html","headline":"Fita Led Endereçavel","dateModified":"2019-02-07T09:33:00-02:00","datePublished":"2019-02-07T09:33:00-02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/42/2019/02/07/Fita-Led-enderecavel.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1><a href="/"> Hiure</a></h1>
+        <h2>To share with the world.</h2>
+
+        <section id="downloads">
+          
+          <nav>
+    
+ 
+    <a href="/"  class="btn btn-github"><span class="icon"></span>
+        Home
+    </a>
+
+    
+ 
+    <a href="/sobre.html"  class="btn btn-github"><span class="icon"></span>
+        Sobre
+    </a>
+
+    
+ 
+    <a href="/blog.html"  class="btn btn-github"><span class="icon"></span>
+        Blog
+    </a>
+
+    
+ 
+    <a href="/contato.html"  class="btn btn-github"><span class="icon"></span>
+        Contato
+    </a>
+
+    
+ 
+    <a href="https://github.com/hiureanderson"  class="btn btn-github"><span class="icon"></span>
+        Veja o GitHub
+    </a>
+
+    
+   </nav>
+
+          
+
+          
+
+        </section>
+      </div>
+   
+   
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>7 February 2019</small>
+<h1>Fita Led Endereçavel</h1>
+
+<p class="view">by </p>
+
+<p>Basicamente existem dois tipos de fita led, as analógica ou digital. A diferença reside em como elas são controladas</p>
+
+<h2 id="fitas-led-analalógica">Fitas led Analalógica</h2>
+
+<p>Elas podem ser de uma única cor ou RGB (combinando graduações de vermelho, verde e azul para obter todo o espectro). Elas são vendidas em rolos e podem ser cortadas em pedaços menores. Cada segmento é marcado por blocos de contato metálico e algumas vezes tem o ícone de uma tesoura onde se deve cortar.</p>
+
+<p><img src="/assets/images//fitaledAnalog.jpg" alt="" />
+Essa fita led por exemplo tem segmentos a cada 5cm e 10 cm, cada segmento contém 3 leds. Normalmente fitas led possuem 30, 32, 60 ou 120 leds por metro, que vai variar com o preço e o consumo de energia.</p>
+
+<p>Cada segmento de led é ligado em série o que aumenta a tensão de trabalho. Todos os segmentos estão ligados em paralelo, de modo que todos estejam submetidos a mesma tensão de trabalho ao longo da fita, mas o consumo de corrente se soma dependendo do comprimento da fita.
+<img src="/assets/images//segmentosSerie.jpg" alt="" /></p>
+
+<p>Nesse tipo de fita os leds vão sempre operar com a mesmo efeito, seja de fade ou de piscar eles vão permanecer sempre juntos se comportando como fosse um só, por isso eles não são endereçáveis. Um jeito de identifica-los é que eles não tem algum chip.</p>
+
+<h2 id="fita-led-digital">Fita led digital</h2>
+
+<p>Fitas leds digitais vem com leds RGB e tem um chip na fita que controla os leds individualmente, eles são chamados de individualmente endereçáveis ou apenas endereçáveis.</p>
+
+<p><img src="/assets/images//fitaledDigital.jpg" alt="" /></p>
+
+<p>Aqui um exemplo de fita led usando um driver LPD8806. Outros populares muito usado são o driver WS2801 e WS2812 os quais o driver está dentro do próprio LED</p>
+
+<p><img src="/assets/images//WS2812.png" alt="" /></p>
+
+<p>Eles também vem em segmentos e podem ser cortados. Essas fitas consomem 5V, então elas podem ser ligadas diretamente no microcontrolador. Elas ligam até mesmo com  3.3V mas sem muito brilho.</p>
+
+<p>Biblioteca <a href="https://github.com/adafruit/Adafruit_NeoPixel">https://github.com/adafruit/Adafruit_NeoPixel</a></p>
+
+<p>Referencias
+<a href="http://labdegaragem.com/profiles/blogs/tutorial-controle-de-fita-de-led-enderecada">http://labdegaragem.com/profiles/blogs/tutorial-controle-de-fita-de-led-enderecada</a>
+<a href="https://www.instructables.com/id/Intro-to-LED-Strips/">https://www.instructables.com/id/Intro-to-LED-Strips/</a>
+<a href="https://www.youtube.com/watch?v=3zuIsZmodFk">https://www.youtube.com/watch?v=3zuIsZmodFk</a></p>
+
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>

@@ -2,7 +2,14 @@
 layout: default
 ---
 
-Aqui desejo compartilhar alguns aprendizados, fazer um pouco de blog e tutoriais. Esse material deve estar separado em três áreas.
+Aqui desejo compartilhar alguns aprendizados, fazer um pouco de blog e tutoriais. Esse material deve estar separado até agora nas seguintes categorias.
+
+ Filed In: 
+ {% unless p.categories == empty %}
+ {% for categories in post.categories %}
+ <a href="http://localhost:4000/category.html#{{categories}}">{{ categories }}</a>
+ {% endfor %}
+ {% endunless %}
 
 -[Redes Comunitárias]()
 
