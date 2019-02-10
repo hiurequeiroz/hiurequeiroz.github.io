@@ -1,5 +1,6 @@
 title: Hiure
 description: To share with the world.
 show_downloads: false
-google_analytics: 
+google_analytics:
 theme: jekyll-theme-hacker
+markdown: kramdown
