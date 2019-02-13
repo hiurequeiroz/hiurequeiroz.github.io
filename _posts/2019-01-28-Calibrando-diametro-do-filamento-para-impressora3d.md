@@ -12,7 +12,7 @@ O paquimetro é uma ferramenta impressindivel para quem quer usar impressora 3D.
 
 Pegue o rolo de filamento e estique ele por volta de 1m (isso porque ele pode variar muito dentro nesse intervalo)
 
-Faça pelo menos 6 medidas ao londo dessa distância, e para cada medida anote o valor nas duas direções do filamento, `x` e `y`. 
+Faça pelo menos 6 medidas ao londo dessa distância, e para cada medida anote o valor nas duas direções do filamento, `x` e `y`.
 
 
 ![image](/assets/images/paquimetro.png)
@@ -40,7 +40,7 @@ Assim a média total deve ser:
 $$Média total = \frac{\frac{\sum_{n=1}^{6}x_{n}}{6}+\frac{\sum_{n=1}^{6}y_{n}}{6}}{2}$$
 
 
-Pronto, depois de toda essa volta (e muita pesquisa e aprendizado aqui para saber como colocar [equação com markdown](http://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/) ) achamos o valor médio para o filamento.
+Pronto, depois de toda essa volta (e muita pesquisa e aprendizado aqui para saber como colocar [equação com markdown](http://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/) achamos o valor médio para o filamento.
 Note que se houver muita diferença de x e y você tem um péssimo filamento em mãos e isso pode prejudicar bastante a qualidade da impressão.
 
 ## 1.2 Calculando o multiplicador de extrusão
@@ -49,7 +49,7 @@ O [multiplicador de extrusão]() é uma correção extra que devemos calibrar pa
 
 Com o valor médio do filamento vamos fazer uma impressão de teste, um [cubo padrão](). Esse cubo tem a parede de 0,4mm e é utilizada para calcular o multiplicador de extrusão. O que se faz é imprimir esse cubo com as configs pré determinadas para calibragem com o valor medio da espessura do filamento que achamos e depois medimos o valor real, dividimos o valor esperado pelo real e mutiplicamos pelo mutiplicador anterior.
 
-$$ E_m=\frac{Ø}{Ø_e}*E_a $$ ou 
+$$ E_m=\frac{Ø}{Ø_e}*E_a $$
 
 onde:
 
