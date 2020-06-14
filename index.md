@@ -4,22 +4,36 @@ layout: default
 
 Aqui desejo compartilhar alguns aprendizados, fazer um pouco de blog e tutoriais. Esse material deve estar separado até agora nas seguintes categorias.
 
- Filed In: 
- {% unless p.categories == empty %}
- {% for categories in post.categories %}
- <a href="http://localhost:4000/category.html#{{categories}}">{{ categories }}</a>
- {% endfor %}
- {% endunless %}
 
--[Redes Comunitárias]()
+## Redes Comunitárias
+{% for post in site.categories['redescomunitarias'] %}
 
--[Aventuras com Impressora 3D]()
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 
--[Subvertendo objetos ou aprendendo Eletrônica]()
+{% endfor %}
 
-Muito provavelmente essas temas devem vir bem misturados, e a ideia é sempre contar as histórias por tráz de cada descoberta.
+---
 
-até
+## Aventuras na Impressora 3d
+{% for post in site.categories['impressora3d'] %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+---
+
+## Subvertendo objetos ou aprendendo Eletrônica
+{% for post in site.categories['42'] %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+---
+
+## Pão
+
+{% for post in site.categories['pão'] %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
 
 ```sh
 $~: exit
