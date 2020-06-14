@@ -74,7 +74,7 @@ Inicialmente vamos misturar a farinha, 700g de água e o levain e vamos reservar
 
 Devemos misturar até obter uma massa homogênea.
 Ai a farinha vai se misturando com a água, e isso leva um tempo. Depende um pouco da farinha mas normalmente eu espero 30min.
-Depois disso eu misturo a água e o sal. Para incorporar o sal depois de já ter misturado a farinha com a água não é um pouco mais difícil, então aperte bem a massa e deixa que ela passe por entre os dedos aperando bem, até que se homogenize o suficiente para não ver água no fundo do pote.
+Depois disso eu misturo a água e o sal. Para incorporar o sal depois de já ter misturado a farinha com a água é um pouco mais difícil, então aperte bem a massa e deixa que ela passe por entre os dedos apertando bem até que se homogenize o suficiente para não ver água no fundo do pote.
 
 ![](/assets/images/autolise-mistura-cobre-sal.png)
 
@@ -87,8 +87,8 @@ Para que ele tenha essa resistência é necessário "orientar" ele por isso vamo
 
 ![](/assets/images/estica-puxa.png)
 
-Repetimos isso umas seis vezes. Na quita vez já vamos perceber que a massa vai incorporando ar dentro e aparecem as primeiras bolhas.
-Depois disso o glutémjá está preparado para crescer e segurar as bolhas de ar internamente, depois de algumas horas, vai depender da farinha e da temperatura (em dias frios isso pode significar muitas horas), a massa vai crescer por volta de 40% do seu volume. Este é o sinal de pular para o próximo passo
+Repetimos isso umas seis vezes. Na quinta vez já vamos perceber que a massa vai incorporando ar dentro e aparecem as primeiras bolhas.
+Depois disso o glutém já está preparado para crescer e segurar as bolhas de ar internamente, depois de algumas horas, vai depender da farinha e da temperatura (em dias frios isso pode significar muitas horas), a massa vai crescer por volta de 40% do seu volume. Este é o sinal de pular para o próximo passo
 
 ![](/assets/images/fermentou-cresceu.png)
 
@@ -98,7 +98,7 @@ Retiramos a massa do contêiner, mas é muito importante notar que nesse momento
 
 Atendo a isso colocamos a massa sobre uma mesa limpa e levemente enfarinhada. Perceba que a parte de cima ficou em baixo agora. Nesse momento é muito mais fácil utilizar aquela espátula de padeiro (ou conhecido como raspador de padeiro e outros nomes), mas se você não tiver pode usar qualquer espátula ou o que preferir, com as mãos é o mais difícil.
 
-Com a massa sobre a mesa separe ela em duas porções iguais, ou o mais parecidas possível (eu nunca consigo deixá-las igualmente divididas). Essa parte que foi cortada ficou exposta e precisa ser "fechada", pegue um pouco da massa da superfície e modele para "fechar". Como ela está de cabeça para baixo precisamos virar ela (não perca esse sentido, isso faz muita diferença para estética final do pão). Esse movimento da um pouco de medo porque parece que vai grudar e desamachar tudo, não se preocupe, tente, não tenha medo de errar com o tempo se pega o traquejo da coisa.
+Com a massa sobre a mesa separe ela em duas porções iguais, ou o mais parecidas possível (eu nunca consigo deixá-las igualmente divididas). Essa parte que foi cortada ficou exposta e precisa ser "fechada", pegue um pouco da massa da superfície e modele para "fechar". Como ela está de cabeça para baixo precisamos virar ela (não perca esse sentido, isso faz muita diferença para estética final do pão). Esse movimento da um pouco de medo porque parece que vai grudar e desmanchar tudo, não se preocupe, tente não tenha medo de errar, com o tempo se pega o traquejo da coisa.
 
 Ao virar a massa vamos precisar fazer um movimento circular com massa para que ela ganhe um aspecto arredondado, e ao mesmo tempo levando ela para frente e trazendo rapidamente para trás. Esse movimento é outra coisa que se pega com o tempo. Eu tive que assistir vídeos das pessoas fazendo isso de maneiras distintas até achar o movimento ideal que funcionasse. 
 
