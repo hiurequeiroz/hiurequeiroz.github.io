@@ -10,7 +10,7 @@ $blockquote-border: $dove-grey !default;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../images/bkg.png") 0 0;
+  background: $body-background url("../images/bkg3.png") 0 0;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -45,7 +45,7 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(231, 201, 201, 0.219);
   width: 100%;
   border-bottom: 1px dashed $conifer; //header;
   padding: 20px 0;
@@ -58,22 +58,22 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
+  color: #242c15;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+               0 0 5px rgba(54, 6, 6, 0.1),
+               0 0 10px rgba(7, 7, 7, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
 
 header h1:before {
-  content: "./ ";
+  content: "> ";
   font-size: 24px;
 }
 
 header h1 a {
   text-decoration: none;
-  color: #b5e853;
+  color: #587e11;
 }
 
 header h2 {
@@ -243,8 +243,8 @@ hr {
 */
 
 a {
-  color: #b1f563;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: #ff0404;
+  text-shadow: 0 0 5px rgba(20, 43, 6, 0.5);
 }
 
 /* Clearfix */

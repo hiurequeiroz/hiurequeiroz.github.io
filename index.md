@@ -12,6 +12,8 @@ Aqui desejo compartilhar alguns aprendizados, fazer um pouco de blog e tutoriais
 
 {% endfor %}
 
+&nbsp;
+
 ---
 
 ## Aventuras na Impressora 3d
@@ -19,12 +21,16 @@ Aqui desejo compartilhar alguns aprendizados, fazer um pouco de blog e tutoriais
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 
+&nbsp;
+
 ---
 
 ## Subvertendo objetos ou aprendendo Eletrônica
 {% for post in site.categories['42'] %}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+
+&nbsp;
 
 ---
 
