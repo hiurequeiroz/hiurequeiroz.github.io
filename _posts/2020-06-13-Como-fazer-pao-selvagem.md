@@ -29,6 +29,8 @@ Mesmo com todas as adaptações possíveis e ao longo do tempo, cheguei em algum
 ![](/assets/images/cacaroladeferro.jpg)
 ![](/assets/images/termometro.jpg)
 
+** Todas essas ferramentas são adaptaveis/substituiveis, porém a mais difícil de substituir é o termometro pois precisamos iniciar o processo de cocção a 220°C. **
+
 Nas primeiras vezes que eu fiz esse pão eu tive que anotar os tempos de cada passo e como são muitos espaçados eu me perdia e sempre dava alguma coisa errada. Depois de fazer algumas vezes anotando e sentindo qual era da receita eu comecei a abandonar a anotação e ir encaixando a receita no dia a dia.
 
 ## Domesticando o invisível selvagem
@@ -119,7 +121,7 @@ Coloque a massa (de cabeça para baixo) numa cesta para descansar na geladeira. 
 
 ## Passo 5 - É hora de assar
 
-No outro dia pela manhã a primeira coisa é ligar o forno e colocar a caçarola para esquentar, precisamos pré aquecer a pelo menos 220°C. Quando a caçarola chegar nessa temperatura eu gosto de colocar um pouco de azeite e farinha de milho triturada para polvilhar a base da caçarola. Ai colocamos a massa de cabeça para cima, ou seja, é só verter a massa na caçarola.
+No outro dia pela manhã a primeira coisa é ligar o forno e colocar a caçarola para esquentar, precisamos pré aquecer a pelo menos 220°C. Quando a caçarola chegar nessa temperatura (por isso como disse anteriormente o termometro é fundamental, a não ser que você teste seu forno árias vezes até achar o ponto ideal) eu gosto de colocar um pouco de azeite e farinha de milho triturada para polvilhar a base da caçarola. Ai colocamos a massa de cabeça para cima, ou seja, é só verter a massa na caçarola.
 
 Com uma lâmina fazemos um corte no pão, esse corte é importante para que ele cresça. Deixe o artista que mora em você brilhar e faça seu corte estiloso e desenhado. Com o tempo você percebe que alguns cortes não ajudam muito.
 
