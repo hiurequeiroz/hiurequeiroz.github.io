@@ -25,7 +25,7 @@ Esse método foi testado utilizando um wdr3500_v1 e um ArcherC5_v1.
 ## - Fixando endereços para o tftp
 
 - Conecte o roteador pelo cabo
-- Entre em modo de recuperação no roteador
+- Entre em modo de recuperação no roteador (procure como fazer isso para o seu roteador, normalmente segurando o reset e ligar ele até a luizinha ficar piscando como louca)
 - Use o tcpdump para identificar o endereço que o roteador procura: 
 
 `sudo tcpdump -nli eth0`
@@ -47,7 +47,8 @@ Agora com o ip devidamente fixado novamente monitore a interface de cabo de rede
 `sudo tcpdump -nli eth0`
 
 Procure pela linha onde o roteador pede pelo arquivo, no caso de um Archer C5 V1 com um firmware baseado em Openwrt o nome é `ArcherC5v1_tp_recovery.bin`.
-Baixe o firmware factory corresponde ao teu roteador e coloque esse nome na pasta `/tmp`.
+Baixe o firmware factory corresponde ao teu roteador e coloque esse nome nele. 
+Copie para na pasta `/tmp`.
 
 Agora com o roteador conectado pelo cabo e com o arquivo devidamente copiado , rode o seguinte comando:
 
