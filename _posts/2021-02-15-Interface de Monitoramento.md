@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Monitorando tráfego via interface de monitoramento"
-date:   2021-02-14 07:40
+date:   2021-02-15 07:40
 author: Hiure
 categories: redescomunitarias
 ---
+
 As vezes é muito difícil debugar uma rede que tem uma conexão de banda muito lenta, quando rodamos um comando fica horas para retornar e nunca da para saber se o comando ta rodando ou a conexão caiu.
 
 Uma maneira de debugar uma rede mesh a distancia e muito leve é criando uma interface de monitoramento e depois capturar um arquivo `.dump` para analisar em outra maquina.
