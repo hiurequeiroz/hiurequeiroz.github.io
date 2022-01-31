@@ -1,9 +1,0 @@
-<nav>
-    {% for item in site.data.navigation %}
- 
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current btn btn-github"{% endif %} class="btn btn-github"><span class="icon"></span>
-        {{ item.name }}
-    </a>
-
-    {% endfor %}
-   </nav>

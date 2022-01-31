@@ -1,0 +1,10 @@
+{
+  "name": "Hiure",
+  "short_name": "Hiure",
+  "description": "Using nuxt framework as a base of the community portal",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
