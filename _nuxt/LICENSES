@@ -1,3 +1,26 @@
+/*! https://mths.be/punycode v1.4.1 by @mathias */
+
+
+/*!
+	    localForage -- Offline Storage, Improved
+	    Version 1.7.3
+	    https://localforage.github.io/localForage
+	    (c) 2013-2017 Mozilla, Apache License 2.0
+	*/
+
+/*!
+ * vue-client-only v0.0.0-semantic-release
+ * (c) 2021-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+
 /*!
   * vue-router v3.5.2
   * (c) 2021 Evan You
@@ -24,26 +47,3 @@
  * Copyright(c) 2015 Douglas Christopher Wilson
  * MIT Licensed
  */
-
-
-/*!
-	    localForage -- Offline Storage, Improved
-	    Version 1.7.3
-	    https://localforage.github.io/localForage
-	    (c) 2013-2017 Mozilla, Apache License 2.0
-	*/
-
-/*!
- * vue-client-only v0.0.0-semantic-release
- * (c) 2021-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-no-ssr v1.1.1
- * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-
-/*! https://mths.be/punycode v1.4.1 by @mathias */
