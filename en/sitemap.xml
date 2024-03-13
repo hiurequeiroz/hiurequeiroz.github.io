@@ -342,18 +342,6 @@
                 href="https://hiurequeiroz.github.io/projects/"
                 />
   </url><url>
-    <loc>https://hiurequeiroz.github.io/projects/researchsocialtech/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="https://hiurequeiroz.github.io/pt/projects/researchsocialtech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://hiurequeiroz.github.io/projects/researchsocialtech/"
-                />
-  </url><url>
     <loc>https://hiurequeiroz.github.io/projects/psp/</loc>
     <xhtml:link
                 rel="alternate"
@@ -364,6 +352,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://hiurequeiroz.github.io/projects/psp/"
+                />
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/projects/researchsocialtech/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="https://hiurequeiroz.github.io/pt/projects/researchsocialtech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://hiurequeiroz.github.io/projects/researchsocialtech/"
                 />
   </url><url>
     <loc>https://hiurequeiroz.github.io/projects/sitiodoastronauta/</loc>
