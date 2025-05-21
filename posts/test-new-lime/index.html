@@ -50,6 +50,8 @@
     
     <script src="/js/bundle.min.8fc23566eb4c2080d022d7fb45da320f7853e9271a8433c0d50967ed0d3b7484.js" integrity="sha256-j8I1ZutMIIDQItf7RdoyD3hT6ScahDPA1Qln7Q07dIQ="></script>
 
+    <link rel="stylesheet" href="/css/seminario.css" type="text/css">
+
     
     
         <!-- KaTeX -->
@@ -113,25 +115,47 @@
 
         <div class="nav-links">
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/doutorado/"><span data-feather='book-open'></span> PhD </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/doutorado/">  </a>
+                </div>
+                
             
 
             <span class="nav-icons-divider"></span>
@@ -152,25 +176,47 @@
             
             <ul class="nav-hamburger-list visibility-hidden">
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/doutorado/"><span data-feather='book-open'></span> Doutorado </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/doutorado/"> PhD </a>
+                    </li>
+                    
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
@@ -183,94 +229,64 @@
         </div>
     </nav>
 </header>
+
+<style>
+.nav-link.has-children {
+    position: relative;
+}
+
+.nav-link.has-children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.submenu a:hover {
+    background: var(--bg-tertiary);
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger-list .has-children .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .nav-hamburger-list .has-children:hover .submenu {
+        display: block;
+    }
+}
+</style>
 <main id="content">
-    <div class="banner">
-    
-    
-    
-        
-        
-            <img src="/images/libremesh_huf4fb851349a1034c9eeddd45b879b0bc_13350_300x700_crop_box_center_3.png" width="150" height="200">
-        
-    
-
-</div>
-<div class="banner-mobile">
-    
-    
-    
-        
-        
-            <img src="/images/libremesh_huf4fb851349a1034c9eeddd45b879b0bc_13350_150x250_crop_box_top_3.png" width="150" height="200">
-        
-    
-
-</div>
-<div class="related-posts">
-    
-    
-        <h3>Related Posts</h3>
-        <ul>
-            
-                
-                
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/posts/libremeshlokal/">How to create a Libremesh network with Lokal Server</a></li>
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/">Acesso Remoto a Roteadores via SSH em redes libremesh</a></li>
-                    
-                
-            
-                
-                
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/posts/libremeshlokal/">How to create a Libremesh network with Lokal Server</a></li>
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/">How to Use Ubus in Libremesh</a></li>
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/">Acesso Remoto a Roteadores via SSH em redes libremesh</a></li>
-                    
-                
-            
-        </ul>
-    
-</div>
-
-<div class="post container">
-    <div class="post-header-section">
-        <h1>Testing New LibreMesh Release</h1>
-        <small role="doc-subtitle">A documentation about the tests of the new version of LibreMesh on New Hardware Reporting.</small>
-        <p class="post-date">February 15, 2024
-        
-        </p>
-
-        <ul class="post-tags">
-        
-            <li class="post-tag"><a href="https://hiurequeiroz.github.io/tags/redescomunitarias">RedesComunitarias</a></li>
-        
-            <li class="post-tag"><a href="https://hiurequeiroz.github.io/tags/libremesh">libremesh</a></li>
-        
-        </ul>
-    </div>
-
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Testing New LibreMesh Release</h1>
+    </header>
     <div class="post-content">
-        <p>
-            <h3 id="motivation">Motivation</h3>
+        <h3 id="motivation">Motivation</h3>
 <p>Testing routers with the latest version of LibreMesh is crucial for community networks that rely on mesh networks as their communication infrastructure. The significance lies in the fact that insufficient testing hinders the development of newer versions. Currently, the official version of LibreMesh is tied to the 2019 release of OpenWRT. This limitation impedes progress, as advancements and improvements are often left unexplored. By conducting thorough tests with the most recent version, we pave the way for enhanced features, increased stability, and better overall performance. It is through these tests that we identify and address potential issues, ensuring a robust and reliable platform for community networks. Moving beyond the 2019 OpenWRT version opens up opportunities for innovation and keeps LibreMesh at the forefront of mesh networking technology. Therefore, a concerted effort in testing is essential to drive the evolution of LibreMesh and contribute to the continued growth of community-driven, mesh-based communication networks.#</p>
 <p><a href="https://downloads.libremesh.org/development/master-ow23.05.0/">https://downloads.libremesh.org/development/master-ow23.05.0/</a></p>
 <h3 id="devices-tested">Devices tested</h3>
 <h4 id="eap225-outdoor-v3">Eap225-outdoor v3</h4>
-<p><img src="https://static.tp-link.com/upload/image-line/EAP225-Outdoor_normal_20230821083554a.png"></p>
+<p><img src="https://static.tp-link.com/upload/image-line/EAP225-Outdoor_normal_20230821083554a.png" alt=""></p>
 <p>Certainly! Here&rsquo;s the corrected text:</p>
 <p>Testing the TP-Link EAP225-Outdoor V3 router is motivated by the increasing demand for robust wireless solutions in community networks, particularly in outdoor settings like parks. The motivation stems from the desire to address the unique challenges posed by external environments and accommodate a high volume of users simultaneously. The EAP225-Outdoor V3 presents itself as a potential solution, designed to provide reliable Wi-Fi connectivity in outdoor spaces with a focus on scalability and performance. Notably, it stands out as the most cost-effective option in its category, making it an attractive choice for community networks with budget constraints. Testing this router in such community network scenarios becomes essential to ensure its compatibility with outdoor conditions and its ability to handle the expected user load effectively. By conducting thorough tests, network administrators can ascertain the EAP225-Outdoor V3&rsquo;s suitability for community-driven outdoor areas, contributing to the creation of accessible and reliable wireless networks in public spaces.</p>
 <p>This equipment had a relatively simple process to install LibreMesh. Following the documentation provided by OpenWrt, the system worked normally.</p>
@@ -294,7 +310,7 @@
 </li>
 </ul>
 <h3 id="cpe510-v3">CPE510 v3</h3>
-<p><img src="https://openwrt.org/_media/media/tplink/cpe210.png"></p>
+<p><img src="https://openwrt.org/_media/media/tplink/cpe210.png" alt=""></p>
 <p>Testing the TP-Link EAP225-Outdoor V3 router is motivated by the increasing demand for robust wireless solutions in community networks, particularly in outdoor settings like parks. The motivation stems from the desire to address the unique challenges posed by external environments and accommodate a high volume of users simultaneously. The EAP225-Outdoor V3 presents itself as a potential solution, designed to provide reliable Wi-Fi connectivity in outdoor spaces with a focus on scalability and performance. Notably, it stands out as the most cost-effective option in its category, making it an attractive choice for community networks with budget constraints. Testing this router in such community network scenarios becomes essential to ensure its compatibility with outdoor conditions and its ability to handle the expected user load effectively. By conducting thorough tests, network administrators can ascertain the EAP225-Outdoor V3&rsquo;s suitability for community-driven outdoor areas, contributing to the creation of accessible and reliable wireless networks in public spaces.</p>
 <p>This equipment had a relatively simple process to install LibreMesh. Following the documentation provided by OpenWrt, the system worked normally.</p>
 <p>Steps</p>
@@ -319,7 +335,7 @@
 </li>
 </ul>
 <h4 id="archer-ax23-v1">Archer AX23 v1</h4>
-<p><img src="https://openwrt.org/_media/media/tplink/archer_ax23.jpeg?w=500&tok=252bd5"></p>
+<p><img src="https://openwrt.org/_media/media/tplink/archer_ax23.jpeg?w=500&amp;tok=252bd5" alt=""></p>
 <p>With the old versions of LibreMesh, a widely used router that is almost no longer on the market is the TP-Link Archer C7, and a good replacement for it could be the Archer AX23. When comparing the Archer C7 with the more recent Archer AX23, it becomes evident that the AX23 represents a significant advancement in networking technology. While the Archer C7 V1 has been a reliable choice for community networks, the AX23 outshines it in various aspects. The Archer AX23 introduces Wi-Fi 6 technology, delivering notably faster speeds and improved overall network performance compared to the older Wi-Fi 5 standard utilized by the Archer C7 V1. With features like increased capacity and improved efficiency in handling multiple devices concurrently, the AX23 addresses the escalating connectivity needs of contemporary community networks. Furthermore, the AX23 incorporates advanced technologies such as MU-MIMO and Beamforming, contributing to a more stable and efficient wireless connection. As community networks evolve, the Archer AX23 emerges as a superior and future-ready solution, offering enhanced capabilities to meet the demands of the ever-changing digital landscape.</p>
 <p>1 - Log into the TP-Link system &gt; upload firmware.
 2 - Choose the firmware.</p>
@@ -335,7 +351,7 @@
 </li>
 </ul>
 <h4 id="nanostation-ac-loco-airos-v879">Nanostation Ac Loco (airOs v8.7.9)</h4>
-<p><img src="https://openwrt.org/_media/media/ubiquiti/nanostation_ac_back.jpg?cache=&w=334&h=600&tok=1c5527"></p>
+<p><img src="https://openwrt.org/_media/media/ubiquiti/nanostation_ac_back.jpg?cache=&amp;w=334&amp;h=600&amp;tok=1c5527" alt=""></p>
 <p>Because it has two 5.8GHz radios, this equipment is very interesting for use in community networks. We can use one radio for mesh and the other to connect to clients, which is crucial for establishing a more stable mesh network, avoiding issues such as the <a href="https://en.wikipedia.org/wiki/Hidden_node_problem">Hidden node problem</a>.</p>
 <p>In this case, the router was initially equipped with Ubiquiti&rsquo;s airOS version 8.7.9. However, I needed to downgrade it to version 8.7.0. Unfortunately, the system was restricted and did not allow the installation of older firmware versions.</p>
 <p>What has made this equipment more challenging is a problem that even the OpenWrt community hasn&rsquo;t been able to solve yet, as described <a href="https://forum.openwrt.org/t/installing-openwrt-on-nanostation-5ac-loco/71035">in this post</a></p>
@@ -376,7 +392,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ln: /lib/libssl.so.1.0.0: Read-only file system
 </code></pre><p>3 - Accessing u-boot and loading firmware into flash</p>
 <p>To access u-boot, I had to connect it via a serial port. To do this, I had to solder a flash-serial adapter to the router&rsquo;s circuitry and make a USB connection to the computer to access the router&rsquo;s u-boot.</p>
-<p><img src="https://md.coolab.org/uploads/upload_1d1e3f638320c6fb7441a1be27dfa3f1.jpg"></p>
+<p><img src="https://md.coolab.org/uploads/upload_1d1e3f638320c6fb7441a1be27dfa3f1.jpg" alt=""></p>
 <p>As soon as the system starts booting, we get a message saying Hit any key to stop autoboot: 0. Pressing Enter at this point stops the system from booting.</p>
 <pre tabindex="0"><code>U-Boot 1.1.4-s1102 (Mar  5 2019 - 17:13:19)
 
@@ -443,107 +459,15 @@ Writing from /tmp/libremesh-master-ow23.05.2-default-ath79-generic-ubnt_nanostat
 The loco ac Loco (and similar) and ax23 should be options soon once we&rsquo;ve found the problems with these errors. It doesn&rsquo;t seem to be that difficult once the firmware has been written to the router&rsquo;s memory and it has completed the boot process.
 The errors found will be reported and some work will still be needed to resolve them.</p>
 
-        </p>
-
-        <div class="post-comments">
-            <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hiurequeiroz-github-io" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-
     </div>
-
-    <div class="prev-next">
-        
-            
-                
-<div class="prev-post">
-    <p>
-        <a href="/posts/libremeshlokal/">
-            &#8592;
-            Previous:
-            How to create a Libremesh network with Lokal Server
-        </a>
-    </p>
-    <p class="prev-post-date">
-        June 14, 2023
-    </p>
-</div>
-
-
-
-
-            
-        
-    </div>
-
-    
-    
-    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
-        
-        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
-    </svg>
-    <script>
-        let backToTopButton = document.getElementById("btt-button");
-
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            smoothScrollToTop();
-        }
-
-        function smoothScrollToTop() {
-            const scrollToTop = () => {
-                const c = document.documentElement.scrollTop || document.body.scrollTop;
-                if (c > 0) {
-                    window.requestAnimationFrame(scrollToTop);
-                    window.scrollTo(0, c - c / 8);
-                }
-            };
-            scrollToTop();
-        }
-    </script>
-    
-    
-</div>
-
-
-
-    
+</article>
 
         </main><footer class="footer">
     
     
 
     
-    <span>&copy; 2024 Hiure</span>
+    <span>&copy; 2025 Hiure</span>
     
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>

@@ -4,7 +4,7 @@
     <title>SitioDoAstronauta on Hiure Queiroz</title>
     <link>https://hiurequeiroz.github.io/tags/sitiodoastronauta/</link>
     <description>Recent content in SitioDoAstronauta on Hiure Queiroz</description>
-    <generator>Hugo 0.125.0</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hiurequeiroz.github.io/tags/sitiodoastronauta/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://hiurequeiroz.github.io/posts/arduino/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://hiurequeiroz.github.io/posts/arduino/</guid>
-      <description>Arduíno Arduíno é uma plataforma de prototipagem, ou seja, ele foi idealizado para servir de base para diferentes projetos que necessitem de circuitos eletrônicos microcontrolados, baseados em linguagem de programação C/C++. O microcontrolador é um pequeno computador que num único circuito integrado, já com núcleo de processador, memória e pinos de entrada e saída de informação. O Arduíno foi desenvolvido na cidade de Ivrea na Itália, o time era composto por Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis, com o objetivo de interagir com projetos escolares de maneira mais fácil e resiliente do que os sistemas de prototipagem dá época (2005).</description>
+      <description>&lt;h2 id=&#34;arduíno&#34;&gt;Arduíno&lt;/h2&gt;&#xA;&lt;p&gt;Arduíno é uma plataforma de prototipagem, ou seja, ele foi idealizado para servir de base para diferentes projetos que necessitem de circuitos eletrônicos microcontrolados, baseados em linguagem de programação C/C++.&#xA;O microcontrolador é um pequeno computador que num único circuito integrado, já com núcleo de processador, memória e pinos de entrada e saída de informação.&#xA;O Arduíno foi desenvolvido na cidade de Ivrea na Itália, o time era composto por Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis, com o objetivo de interagir com projetos escolares de maneira mais fácil e resiliente do que os sistemas de prototipagem dá época (2005).&#xA;O sucesso do Arduíno foi tão grande que logo que foi projetado começou a ser comercializado e venderam mais de 50 mil unidades, e um &lt;a href=&#34;http://vimeo.com/18539129&#34;&gt;documentário&lt;/a&gt; foi feito para sobre a trajetória do desenvolvimento.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting to Know the Esp32</title>
       <link>https://hiurequeiroz.github.io/posts/esp32/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://hiurequeiroz.github.io/posts/esp32/</guid>
-      <description>ESP32 The ESP32 is a prototyping platform with a microcontroller, similar to Arduino, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&#xA;The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&#xA;The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.</description>
+      <description>&lt;h2 id=&#34;esp32&#34;&gt;ESP32&lt;/h2&gt;&#xA;&lt;p&gt;The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href=&#34;https://hiurequeiroz.github.io/posts/arduino/&#34;&gt;Arduino&lt;/a&gt;, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p&gt;&#xA;&lt;p&gt;The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png&#34; alt=&#34;ESP32 Board&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

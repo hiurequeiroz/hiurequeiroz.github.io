@@ -50,6 +50,8 @@
     
     <script src="/js/bundle.min.8fc23566eb4c2080d022d7fb45da320f7853e9271a8433c0d50967ed0d3b7484.js" integrity="sha256-j8I1ZutMIIDQItf7RdoyD3hT6ScahDPA1Qln7Q07dIQ="></script>
 
+    <link rel="stylesheet" href="/css/seminario.css" type="text/css">
+
     
     
         <!-- KaTeX -->
@@ -113,25 +115,41 @@
 
         <div class="nav-links">
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> Sobre </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> Sobre </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projetos </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projetos </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/doutorado/"><span data-feather='book-open'></span> PhD </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                </div>
+                
             
 
             <span class="nav-icons-divider"></span>
@@ -152,25 +170,41 @@
             
             <ul class="nav-hamburger-list visibility-hidden">
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> About </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> About </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projects </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projects </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/doutorado/"><span data-feather='book-open'></span> Doutorado </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                    </li>
+                    
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
@@ -183,6 +217,52 @@
         </div>
     </nav>
 </header>
+
+<style>
+.nav-link.has-children {
+    position: relative;
+}
+
+.nav-link.has-children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.submenu a:hover {
+    background: var(--bg-tertiary);
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger-list .has-children .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .nav-hamburger-list .has-children:hover .submenu {
+        display: block;
+    }
+}
+</style>
 <main id="content">
 
 <div class="text-404">
@@ -207,7 +287,7 @@
     
 
     
-    <span>&copy; 2024 Hiure</span>
+    <span>&copy; 2025 Hiure</span>
     
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hiurequeiroz.github.io/</loc>
-    <lastmod>2024-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-BR"
@@ -13,6 +13,22 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://hiurequeiroz.github.io/"
+                />
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/doutorado/learningportfolio/</loc>
+    <lastmod>2024-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/doutorado/</loc>
+    <lastmod>2024-04-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="https://hiurequeiroz.github.io/pt/doutorado/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://hiurequeiroz.github.io/doutorado/"
                 />
   </url><url>
     <loc>https://hiurequeiroz.github.io/tags/libremesh/</loc>

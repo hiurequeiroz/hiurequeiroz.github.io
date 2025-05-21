@@ -50,6 +50,8 @@
     
     <script src="/js/bundle.min.8fc23566eb4c2080d022d7fb45da320f7853e9271a8433c0d50967ed0d3b7484.js" integrity="sha256-j8I1ZutMIIDQItf7RdoyD3hT6ScahDPA1Qln7Q07dIQ="></script>
 
+    <link rel="stylesheet" href="/css/seminario.css" type="text/css">
+
     
     
         <!-- KaTeX -->
@@ -100,25 +102,41 @@
 
         <div class="nav-links">
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> Sobre </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> Sobre </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projetos </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projetos </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/doutorado/"><span data-feather='book-open'></span> PhD </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                </div>
+                
             
 
             <span class="nav-icons-divider"></span>
@@ -139,25 +157,41 @@
             
             <ul class="nav-hamburger-list visibility-hidden">
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> About </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> About </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projects </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projects </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/doutorado/"><span data-feather='book-open'></span> Doutorado </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                    </li>
+                    
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
@@ -170,93 +204,59 @@
         </div>
     </nav>
 </header>
+
+<style>
+.nav-link.has-children {
+    position: relative;
+}
+
+.nav-link.has-children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.submenu a:hover {
+    background: var(--bg-tertiary);
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger-list .has-children .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .nav-hamburger-list .has-children:hover .submenu {
+        display: block;
+    }
+}
+</style>
 <main id="content">
-    <div class="banner">
-    
-    
-    
-        
-        
-            <img src="/images/terminal_huefada02c9f84618ce7e157d94a36d523_64464_300x700_crop_box_center_3.png" width="250" height="224">
-        
-    
-
-</div>
-<div class="banner-mobile">
-    
-    
-    
-        
-        
-            <img src="/images/terminal_huefada02c9f84618ce7e157d94a36d523_64464_150x250_crop_box_top_3.png" width="150" height="224">
-        
-    
-
-</div>
-<div class="related-posts">
-    
-    
-        <h3>Related Posts</h3>
-        <ul>
-            
-                
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/pt/posts/test-new-lime/">Testando Nova Versão do LibreMesh</a></li>
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/pt/posts/libremeshlokal/">Como criar uma rede Libremesh com Servidor Lokal</a></li>
-                    
-                
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/pt/posts/como-ascessar-roteador-por-ssh/">Acesso Remoto a Roteadores via SSH em redes libremesh</a></li>
-                    
-                
-            
-                
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/pt/posts/test-new-lime/">Testando Nova Versão do LibreMesh</a></li>
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/pt/posts/libremeshlokal/">Como criar uma rede Libremesh com Servidor Lokal</a></li>
-                    
-                
-                    
-                
-                    
-                        <li><a href="https://hiurequeiroz.github.io/pt/posts/como-ascessar-roteador-por-ssh/">Acesso Remoto a Roteadores via SSH em redes libremesh</a></li>
-                    
-                
-            
-        </ul>
-    
-</div>
-
-<div class="post container">
-    <div class="post-header-section">
-        <h1>Como Usar o Ubus no Libremesh</h1>
-        <small role="doc-subtitle">Com o pacote de ferramentas Ubus você pode mexer em tudo que é configuração no seu libremesh.</small>
-        <p class="post-date">fevereiro 14, 2021
-        
-        </p>
-
-        <ul class="post-tags">
-        
-            <li class="post-tag"><a href="https://hiurequeiroz.github.io/pt/tags/redescomunitarias">RedesComunitarias</a></li>
-        
-            <li class="post-tag"><a href="https://hiurequeiroz.github.io/pt/tags/libremesh">libremesh</a></li>
-        
-        </ul>
-    </div>
-
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Como Usar o Ubus no Libremesh</h1>
+    </header>
     <div class="post-content">
-        <p>
-            <h3 id="tutorial-introdução-ao-ubus-no-libremesh-para-iniciantes">Tutorial: Introdução ao Ubus no Libremesh para Iniciantes</h3>
+        <h3 id="tutorial-introdução-ao-ubus-no-libremesh-para-iniciantes">Tutorial: Introdução ao Ubus no Libremesh para Iniciantes</h3>
 <h4 id="passo-1-o-que-é-ubus-e-libremesh">Passo 1: O que é Ubus e Libremesh</h4>
 <p>O Ubus é uma ferramenta poderosa para gerenciar redes mesh baseadas em OpenWrt, como o Libremesh. Ele facilita a comunicação entre processos do sistema, fornecendo uma base completa de informações. Saiba mais sobre o <a href="https://openwrt.org/docs/techref/ubus">Ubus</a> e o <a href="https://libremesh.org">Libremesh</a>.
 Como o Ubus é um programa instalado dentro do roteador você precisa acessar o terminal do roteador <a href="/pt/posts/como-ascessar-roteador-por-ssh/">Veja como fazer isso aqui</a></p>
@@ -342,120 +342,15 @@ uci
 <p>Com esses passos, você estará mais preparado para utilizar o Ubus no Libremesh e aproveitar ao máximo suas funcionalidades para gerenciar sua rede mesh de forma eficiente.</p>
 <p>Uma das maneiras mais poderosas de encontrar informações na sua rede mesh baseada em openwrt é utilizando o <a href="https://openwrt.org/docs/techref/ubus">Ubus</a>. Ele fornece uma <a href="https://pt.wikipedia.org/wiki/Comunica%C3%A7%C3%A3o_entre_processos">comunicação entre processos</a> do sistema reunindo assim uma base bem completa de informação. Como ele você pode consultar sobre os processos e caracteristicas do seu sistema como também modificalos.</p>
 
-        </p>
-
-        <div class="post-comments">
-            <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hiurequeiroz-github-io" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-
     </div>
-
-    <div class="prev-next">
-        
-            
-                
-<div class="prev-post">
-    <p>
-        <a href="/pt/posts/como-ascessar-roteador-por-ssh/">
-            &#8592;
-            Anterior:
-            Acesso Remoto a Roteadores via SSH em redes libremesh
-        </a>
-    </p>
-    <p class="prev-post-date">
-        junho 14, 2020
-    </p>
-</div>
-
-
-
-<div class="next-post">
-    <p>
-        <a href="/pt/posts/libremeshlokal/">
-            Próximo:
-            Como criar uma rede Libremesh com Servidor Lokal
-            &#8594;
-        </a>
-    </p>
-        <p class="next-post-date">
-            junho 14, 2023
-        </p>
-</div>
-
-
-            
-        
-    </div>
-
-    
-    
-    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
-        
-        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
-    </svg>
-    <script>
-        let backToTopButton = document.getElementById("btt-button");
-
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            smoothScrollToTop();
-        }
-
-        function smoothScrollToTop() {
-            const scrollToTop = () => {
-                const c = document.documentElement.scrollTop || document.body.scrollTop;
-                if (c > 0) {
-                    window.requestAnimationFrame(scrollToTop);
-                    window.scrollTo(0, c - c / 8);
-                }
-            };
-            scrollToTop();
-        }
-    </script>
-    
-    
-</div>
-
-
-
-    
+</article>
 
         </main><footer class="footer">
     
     
 
     
-    <span>&copy; 2024 Hiure</span>
+    <span>&copy; 2025 Hiure</span>
     
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>

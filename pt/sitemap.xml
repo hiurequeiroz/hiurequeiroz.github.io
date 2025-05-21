@@ -2,8 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/acessibilidade-digital/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://hiurequeiroz.github.io/doutorado/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="https://hiurequeiroz.github.io/pt/doutorado/"
+                />
+  </url><url>
     <loc>https://hiurequeiroz.github.io/pt/</loc>
-    <lastmod>2024-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -14,6 +30,24 @@
                 hreflang="pt-BR"
                 href="https://hiurequeiroz.github.io/pt/"
                 />
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/neuromodulacao-transcraniana/</loc>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/algoritmos-racistas/</loc>
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/pos-desenvolvimento-decrescimento/</loc>
+    <lastmod>2025-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/desenvolvimento-edtech/</loc>
+    <lastmod>2025-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/inovacao-acessibilidade/</loc>
+    <lastmod>2025-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/seminarios/tecnologias-esportes-wellness/</loc>
+    <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hiurequeiroz.github.io/pt/tags/libremesh/</loc>
     <lastmod>2024-02-15T00:00:00+00:00</lastmod>
@@ -299,6 +333,8 @@
                 hreflang="pt-BR"
                 href="https://hiurequeiroz.github.io/pt/projects/parceriaeducacional/"
                 />
+  </url><url>
+    <loc>https://hiurequeiroz.github.io/pt/doutorado/portfolio-de-aprendizagem/</loc>
   </url><url>
     <loc>https://hiurequeiroz.github.io/pt/projects/</loc>
     <xhtml:link

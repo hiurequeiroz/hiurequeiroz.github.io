@@ -50,6 +50,8 @@
     
     <script src="/js/bundle.min.8fc23566eb4c2080d022d7fb45da320f7853e9271a8433c0d50967ed0d3b7484.js" integrity="sha256-j8I1ZutMIIDQItf7RdoyD3hT6ScahDPA1Qln7Q07dIQ="></script>
 
+    <link rel="stylesheet" href="/css/seminario.css" type="text/css">
+
     
     
         <!-- KaTeX -->
@@ -113,25 +115,41 @@
 
         <div class="nav-links">
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> Sobre </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> Sobre </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projetos </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projetos </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/doutorado/"><span data-feather='book-open'></span> PhD </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                </div>
+                
             
 
             <span class="nav-icons-divider"></span>
@@ -152,25 +170,41 @@
             
             <ul class="nav-hamburger-list visibility-hidden">
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> About </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/about/"><span data-feather='meh'></span> About </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/posts/"><span data-feather='book'></span> Blog </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projects </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/projects/"><span data-feather='code'></span> Projects </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/doutorado/"><span data-feather='book-open'></span> Doutorado </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/pt/tags/"><span data-feather='tag'></span> Tags </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                    </li>
+                    
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
@@ -183,40 +217,59 @@
         </div>
     </nav>
 </header>
+
+<style>
+.nav-link.has-children {
+    position: relative;
+}
+
+.nav-link.has-children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.submenu a:hover {
+    background: var(--bg-tertiary);
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger-list .has-children .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .nav-hamburger-list .has-children:hover .submenu {
+        display: block;
+    }
+}
+</style>
 <main id="content">
-    
-
-    <div class="banner">
-    
-    
-    
-        
-        
-            <img src="/images/psp_hua76e3f7b96ff2b5073c89453d4f907ba_77903_300x700_crop_q75_box_center.jpg" width="280" height="536">
-        
-    
-
-</div>
-<div class="banner-mobile">
-    
-    
-    
-        
-        
-            <img src="/images/psp_hua76e3f7b96ff2b5073c89453d4f907ba_77903_150x250_crop_q75_box_top.jpg" width="150" height="250">
-        
-    
-
-</div>
-<div class="post container">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Projeto de Pesquisa: Comunicação de Baixa Potência para Tecnologia Social</h1>
+    </header>
     <div class="post-content">
-        <div class="post-header-section">
-            <h1>Projeto de Pesquisa: Comunicação de Baixa Potência para Tecnologia Social</h1>
-        </div>
-
-        <div class="post-content">
-            <p>
-                <h2 id="esboço-da-pesquisa">Esboço da pesquisa</h2>
+        <h2 id="esboço-da-pesquisa">Esboço da pesquisa</h2>
 <p>Este projeto propõe o desenvolvimento de um framework inovador para a criação de tecnologia social direcionada a comunidades de baixa renda e/ou agricultores familiares de preferencia associados a redes comunitárias. O objetivo principal é conceber uma matriz tecnológica que inclua uma forma de comunicação analógica de baixo consumo energético entre sensores. Essa comunicação será viabilizada através da utilização de tecnologias de energia sustentável, como os geradores termoelétricos (TEG) e baterias de papel ativadas por água.</p>
 <p>A inclusão dessas comunidades em ecossistemas de redes comunitárias é fundamental, pois estas redes proporcionam um ambiente de colaboração e troca de conhecimentos, permitindo que as comunidades tenham acesso a grupos envolvidos no processo de conectividade em seus territórios. Essa integração fortalece a participação das comunidades no desenvolvimento e implementação das soluções tecnológicas propostas, garantindo que estas atendam verdadeiramente às suas necessidades e contextos locais.</p>
 <p>O framework proposto será desenvolvido de forma participativa, envolvendo as comunidades desde a fase inicial de concepção até a implementação e avaliação dos sistemas tecnológicos. Serão considerados aspectos como custo, facilidade de manutenção e impacto ambiental para garantir a viabilidade e sustentabilidade das soluções propostas.</p>
@@ -225,32 +278,17 @@
 <h2 id="referencias">Referencias</h2>
 <p>[1] - <a href="https://www.nature.com/articles/s41528-020-00098-1">https://www.nature.com/articles/s41528-020-00098-1</a></p>
 <p>[2] - <a href="https://www.nature.com/articles/s41598-022-15900-5">https://www.nature.com/articles/s41598-022-15900-5</a></p>
-<p>[3] - <a href="https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505">https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505</a></p>
+<p>[3] - <a href="https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505">https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505</a></p>
 
-            </p>
-            
-        </div>
-        
     </div>
-    
-</div>
-<div class="full">
-     
-     
-        <a href="/pt/projects/" class="back-icon">
-            <span data-feather="arrow-left"></span> Voltar
-        </a>
-    
-
-</div>
-
+</article>
 
         </main><footer class="footer">
     
     
 
     
-    <span>&copy; 2024 Hiure</span>
+    <span>&copy; 2025 Hiure</span>
     
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>

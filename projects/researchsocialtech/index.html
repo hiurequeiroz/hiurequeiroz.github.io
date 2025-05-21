@@ -50,6 +50,8 @@
     
     <script src="/js/bundle.min.8fc23566eb4c2080d022d7fb45da320f7853e9271a8433c0d50967ed0d3b7484.js" integrity="sha256-j8I1ZutMIIDQItf7RdoyD3hT6ScahDPA1Qln7Q07dIQ="></script>
 
+    <link rel="stylesheet" href="/css/seminario.css" type="text/css">
+
     
     
         <!-- KaTeX -->
@@ -113,25 +115,47 @@
 
         <div class="nav-links">
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/doutorado/"><span data-feather='book-open'></span> PhD </a>
+                </div>
+                
             
-            <div class="nav-link">
-                <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-            </div>
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/doutorado/">  </a>
+                </div>
+                
             
 
             <span class="nav-icons-divider"></span>
@@ -152,25 +176,47 @@
             
             <ul class="nav-hamburger-list visibility-hidden">
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/doutorado/"><span data-feather='book-open'></span> Doutorado </a>
+                    </li>
+                    
                 
-                <li class="nav-item">
-                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
-                </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/doutorado/"> PhD </a>
+                    </li>
+                    
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
@@ -183,40 +229,59 @@
         </div>
     </nav>
 </header>
+
+<style>
+.nav-link.has-children {
+    position: relative;
+}
+
+.nav-link.has-children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.submenu a:hover {
+    background: var(--bg-tertiary);
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger-list .has-children .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .nav-hamburger-list .has-children:hover .submenu {
+        display: block;
+    }
+}
+</style>
 <main id="content">
-    
-
-    <div class="banner">
-    
-    
-    
-        
-        
-            <img src="/images/psp_hua76e3f7b96ff2b5073c89453d4f907ba_77903_300x700_crop_q75_box_center.jpg" width="280" height="536">
-        
-    
-
-</div>
-<div class="banner-mobile">
-    
-    
-    
-        
-        
-            <img src="/images/psp_hua76e3f7b96ff2b5073c89453d4f907ba_77903_150x250_crop_q75_box_top.jpg" width="150" height="250">
-        
-    
-
-</div>
-<div class="post container">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">Research Project: Low Power Communication for Social Technology</h1>
+    </header>
     <div class="post-content">
-        <div class="post-header-section">
-            <h1>Research Project: Low Power Communication for Social Technology</h1>
-        </div>
-
-        <div class="post-content">
-            <p>
-                <h2 id="draft-project">Draft Project</h2>
+        <h2 id="draft-project">Draft Project</h2>
 <p>This project proposes the development of an innovative framework for creating social technology aimed at low-income communities and/or family farmers preferably associated with community networks. The main objective is to design a technological matrix that includes a form of low-power analog communication between sensors. This communication will be enabled through the use of sustainable energy technologies, such as thermoelectric generators (TEGs) and water-activated paper batteries.</p>
 <p>The inclusion of these communities in community network ecosystems is essential, as these networks provide a collaborative environment and knowledge exchange, allowing communities to access groups involved in the connectivity process in their territories. This integration strengthens community participation in the development and implementation of the proposed technological solutions, ensuring that they truly meet their needs and local contexts.</p>
 <p>The proposed framework will be developed in a participatory manner, involving communities from the initial conception phase to the implementation and evaluation of the technological systems. Aspects such as cost, ease of maintenance, and environmental impact will be considered to ensure the viability and sustainability of the proposed solutions.</p>
@@ -224,32 +289,17 @@
 <p>At the end of the project, it is expected to provide an open and accessible framework that can be adapted and implemented by non-governmental organizations, research institutions, and social enterprises interested in developing technological solutions for low-income communities. This initiative has the potential to promote digital and energy inclusion, contributing to the reduction of social inequalities and sustainable development at a local and global scale.</p>
 <p>[1] - <a href="https://www.nature.com/articles/s41528-020-00098-1">https://www.nature.com/articles/s41528-020-00098-1</a></p>
 <p>[2] - <a href="https://www.nature.com/articles/s41598-022-15900-5">https://www.nature.com/articles/s41598-022-15900-5</a></p>
-<p>[3] - <a href="https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505">https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505</a></p>
+<p>[3] - <a href="https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505">https://www.ti.com/lit/ds/symlink/bq25505.pdf?ts=1694768686217&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25505</a></p>
 
-            </p>
-            
-        </div>
-        
     </div>
-    
-</div>
-<div class="full">
-     
-     
-        <a href="/projects/" class="back-icon">
-            <span data-feather="arrow-left"></span> Voltar
-        </a>
-    
-
-</div>
-
+</article>
 
         </main><footer class="footer">
     
     
 
     
-    <span>&copy; 2024 Hiure</span>
+    <span>&copy; 2025 Hiure</span>
     
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
