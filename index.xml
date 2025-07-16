@@ -1,124 +1,93 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hiure Queiroz</title>
-    <link>https://hiurequeiroz.github.io/</link>
-    <description>Recent content on Hiure Queiroz</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hiurequeiroz.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Learning Portfolio</title>
-      <link>https://hiurequeiroz.github.io/doutorado/learningportfolio/</link>
-      <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/doutorado/learningportfolio/</guid>
-      <description>&lt;h1 id=&#34;learning-portfolio&#34;&gt;Learning Portfolio&lt;/h1&gt;&#xA;&lt;p&gt;This portfolio documents my learning journey during the PhD, including:&lt;/p&gt;&#xA;&lt;h2 id=&#34;critical-reflections&#34;&gt;Critical Reflections&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reflections on completed readings&lt;/li&gt;&#xA;&lt;li&gt;Critical analysis of articles and works&lt;/li&gt;&#xA;&lt;li&gt;Connections between different areas of knowledge&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;skill-development&#34;&gt;Skill Development&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technical skills developed&lt;/li&gt;&#xA;&lt;li&gt;Methodological competencies&lt;/li&gt;&#xA;&lt;li&gt;Scientific communication learning&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;research-process&#34;&gt;Research Process&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Work methodology&lt;/li&gt;&#xA;&lt;li&gt;Challenges encountered&lt;/li&gt;&#xA;&lt;li&gt;Solutions developed&lt;/li&gt;&#xA;&lt;li&gt;Course adjustments&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;academic-production&#34;&gt;Academic Production&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Articles in development&lt;/li&gt;&#xA;&lt;li&gt;Presentations delivered&lt;/li&gt;&#xA;&lt;li&gt;Event participation&lt;/li&gt;&#xA;&lt;li&gt;Established collaborations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Short-term objectives&lt;/li&gt;&#xA;&lt;li&gt;Medium-term goals&lt;/li&gt;&#xA;&lt;li&gt;Long-term vision&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;This page will be regularly updated with new content and reflections.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Testing New LibreMesh Release</title>
-      <link>https://hiurequeiroz.github.io/posts/test-new-lime/</link>
-      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/test-new-lime/</guid>
-      <description>&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;&#xA;&lt;p&gt;Testing routers with the latest version of LibreMesh is crucial for community networks that rely on mesh networks as their communication infrastructure. The significance lies in the fact that insufficient testing hinders the development of newer versions. Currently, the official version of LibreMesh is tied to the 2019 release of OpenWRT. This limitation impedes progress, as advancements and improvements are often left unexplored. By conducting thorough tests with the most recent version, we pave the way for enhanced features, increased stability, and better overall performance. It is through these tests that we identify and address potential issues, ensuring a robust and reliable platform for community networks. Moving beyond the 2019 OpenWRT version opens up opportunities for innovation and keeps LibreMesh at the forefront of mesh networking technology. Therefore, a concerted effort in testing is essential to drive the evolution of LibreMesh and contribute to the continued growth of community-driven, mesh-based communication networks.#&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to create a Libremesh network with Lokal Server</title>
-      <link>https://hiurequeiroz.github.io/posts/libremeshlokal/</link>
-      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/libremeshlokal/</guid>
-      <description>&lt;h2 id=&#34;lokal&#34;&gt;Lokal&lt;/h2&gt;&#xA;&lt;p&gt;As part of the &lt;a href=&#34;https://wakoma.co/lokal/&#34;&gt;lokal projetct&lt;/a&gt; the tests with two routers the Archer A7 V5.8 and Unifi Mesh UAP-AC-M are described below&lt;/p&gt;&#xA;&lt;p&gt;libremesh firmwares -&amp;gt; &lt;a href=&#34;https://next.coolab.org/s/Eiz7r9xJKiXi8MA&#34;&gt;https://next.coolab.org/s/Eiz7r9xJKiXi8MA&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;unifi-mesh-uap-ac-m&#34;&gt;Unifi Mesh UAP-AC-M&lt;/h3&gt;&#xA;&lt;p&gt;Unifi datasheet -&amp;gt; &lt;a href=&#34;http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&#34;&gt;http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Follow this steps -&amp;gt; &lt;a href=&#34;https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;amp;s[]=mesh#non-invasive_method_using_mtd&#34;&gt;https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;s[]=mesh#non-invasive_method_using_mtd&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Breif&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re going to downgrade to older ubiquiti firmware version (ubnt.bin), install OpenWRT firmware, then install Libremesh firmware.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download ubnt.bin from the folder&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;md5sum BZ*.bin should return: 5bb23b387defcbd1f6cda5819c7905e5&lt;/li&gt;&#xA;&lt;li&gt;mv BZ*.bin ubnt.bin&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;static IP (192.168.1.0/24, do not use IP 192.168.1.20 or 192.168.1.1 for the computer, if unsure use IP 192.168.1.10, netmask 255.255.255.0, default gateway 192.168.1.1 for your PC)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Use Ubus in Libremesh</title>
-      <link>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</link>
-      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</guid>
-      <description>&lt;h3 id=&#34;introduction-to-ubus-in-libremesh-for-beginners&#34;&gt;Introduction to Ubus in Libremesh for Beginners&lt;/h3&gt;&#xA;&lt;h4 id=&#34;step-1-what-is-ubus-and-libremesh&#34;&gt;Step 1: What is Ubus and Libremesh&lt;/h4&gt;&#xA;&lt;p&gt;Ubus is a powerful tool for managing mesh networks based on OpenWrt, such as Libremesh. It facilitates communication between system processes, providing a comprehensive information base. Learn more about &lt;a href=&#34;https://openwrt.org/docs/techref/ubus&#34;&gt;Ubus&lt;/a&gt; and &lt;a href=&#34;https://libremesh.org&#34;&gt;Libremesh&lt;/a&gt;.&#xA;Since Ubus is a program installed within the router, you need to access the router&amp;rsquo;s terminal &lt;a href=&#34;https://hiurequeiroz.github.io/posts/How-to-access-router-via-ssh&#34;&gt;See how to do it here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;step-2-basic-ubus-commands&#34;&gt;Step 2: Basic Ubus Commands&lt;/h4&gt;&#xA;&lt;p&gt;To get started, you can use the &lt;code&gt;ubus list&lt;/code&gt; command to list available objects and &lt;code&gt;ubus call&lt;/code&gt; to invoke a specific service. Here is the simple syntax for using Ubus:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Acesso Remoto a Roteadores via SSH em redes libremesh</title>
-      <link>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</guid>
-      <description>&lt;p&gt;Para acessar um roteador via SSH, siga os passos abaixo. Este guia assume que você está utilizando um sistema baseado em Linux, como Debian ou Ubuntu.&lt;/p&gt;&#xA;&lt;h3 id=&#34;pré-requisitos&#34;&gt;Pré-requisitos&lt;/h3&gt;&#xA;&lt;p&gt;Antes de começar, é necessário ter o pacote &lt;a href=&#34;#ZgotmplZ&#34;&gt;openssh-client&lt;/a&gt; instalado em seu sistema. Este pacote permite que você inicie conexões SSH a partir do seu terminal.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instalação do openssh-client&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Abra o terminal e execute o comando abaixo para atualizar os pacotes do seu sistema e instalar o &lt;a href=&#34;#ZgotmplZ&#34;&gt;openssh-client&lt;/a&gt;:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Como fazer o pão selvagem</title>
-      <link>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</guid>
-      <description>&lt;p&gt;Uma das coisas que mais me deixa feliz é fazer pão. Gosto muito de mergulhar nas profundezas das proteínas e imaginar cada ligação química que pode estar sendo feita ou desfeita durante o processo.&#xA;Para fazer pão eu entendi ao londo do tempo que é necessário paciência para chegar num resultado satisfatório. Paciência tanto para esperar o momento certo de fazer algo, de deixar que a química aconteça e também paciência para testar farinhas e achar o melhor fornecedor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Conhecendo o arduino</title>
-      <link>https://hiurequeiroz.github.io/posts/arduino/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/arduino/</guid>
-      <description>&lt;h2 id=&#34;arduíno&#34;&gt;Arduíno&lt;/h2&gt;&#xA;&lt;p&gt;Arduíno é uma plataforma de prototipagem, ou seja, ele foi idealizado para servir de base para diferentes projetos que necessitem de circuitos eletrônicos microcontrolados, baseados em linguagem de programação C/C++.&#xA;O microcontrolador é um pequeno computador que num único circuito integrado, já com núcleo de processador, memória e pinos de entrada e saída de informação.&#xA;O Arduíno foi desenvolvido na cidade de Ivrea na Itália, o time era composto por Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis, com o objetivo de interagir com projetos escolares de maneira mais fácil e resiliente do que os sistemas de prototipagem dá época (2005).&#xA;O sucesso do Arduíno foi tão grande que logo que foi projetado começou a ser comercializado e venderam mais de 50 mil unidades, e um &lt;a href=&#34;http://vimeo.com/18539129&#34;&gt;documentário&lt;/a&gt; foi feito para sobre a trajetória do desenvolvimento.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting to Know the Esp32</title>
-      <link>https://hiurequeiroz.github.io/posts/esp32/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/esp32/</guid>
-      <description>&lt;h2 id=&#34;esp32&#34;&gt;ESP32&lt;/h2&gt;&#xA;&lt;p&gt;The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href=&#34;https://hiurequeiroz.github.io/posts/arduino/&#34;&gt;Arduino&lt;/a&gt;, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p&gt;&#xA;&lt;p&gt;The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png&#34; alt=&#34;ESP32 Board&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://hiurequeiroz.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/about/</guid>
-      <description>&lt;p&gt;Passionate about learning new things, I graduated in Physics and pursued my academic career by doing a master&amp;rsquo;s degree in &lt;a href=&#34;http://bdtd.ibict.br/vufind/Record/ITA_69f67f8b7750867feb8cadadb08d454f&#34;&gt;Materials Science at the Aeronautics Institute of Technology (ITA)&lt;/a&gt; and later starting my PhD in Physics, I realized that my life was more related to communities than academia.&#xA;I followed my dream of working with technologies and founded the &lt;a href=&#34;https://hiurequeiroz.github.io/../projects/sitiodoastronauta&#34;&gt;Astronaut&amp;rsquo;s Site - Art and Technology LTDA&lt;/a&gt;, a collective for the study and development of science and technologies that drive learning experiences and artistic expression. Always aiming to reconcile artisanal techniques, simple materials, and electronics to enhance the construction of objects with accessible technologies, meeting the needs focused on self-development and collective work, a good example is the &lt;a href=&#34;https://sitiodoastronauta.com.br/vila-solar-casa-de-papelao-fotovoltaica/&#34;&gt;cardboard house with solar energy&lt;/a&gt;. The collective became popular through the promotion of seminars and workshops inspired by the do-it-yourself culture.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Bamboo Tower</title>
-      <link>https://hiurequeiroz.github.io/projects/torrebambu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/torrebambu/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The bamboo tower project was sponsored by APC to share with the Connect the Unconnected program.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/KRib7hyTWMw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;This project was selected for the Internet Forum Film Festival in Stockholm.&lt;/p&gt;&#xA;&lt;p&gt;Watch the movie&lt;/p&gt;&#xA;&lt;p&gt;During the Covid-19 pandemic, I proposed through the groups that permeate me like &lt;a href=&#34;https://coolab.org&#34;&gt;coolab&lt;/a&gt; and &lt;a href=&#34;https://portalsemporteiras.github.io&#34;&gt;PSP&lt;/a&gt;, prototyping a bamboo tower construction as a specific contribution to a more inclusive and locally developed Community Network infrastructure.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Libremesh</title>
-      <link>https://hiurequeiroz.github.io/projects/libremesh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/libremesh/</guid>
-      <description>&lt;h2 id=&#34;libremesh&#34;&gt;Libremesh&lt;/h2&gt;&#xA;&lt;p&gt;In the realm of open-source community networks, LibreMesh stands out as an essential tool for building autonomous and decentralized network infrastructures. Recently, the LibreMesh community made an exciting announcement, revealing the release of new versions aligned with the latest updates from OpenWrt. This development marks a crucial step in keeping pace with the rapid evolution of the network hardware market.&lt;/p&gt;&#xA;&lt;p&gt;The significance of this update cannot be underestimated, especially in an environment where new hardware versions are constantly being introduced. Older versions of OpenWrt, on which LibreMesh was previously based, may not provide support for the latest devices. Consequently, updating LibreMesh becomes essential to ensure compatibility with the most recent hardware, enabling communities to make the most of emerging technologies.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lokal</title>
-      <link>https://hiurequeiroz.github.io/projects/lokal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/lokal/</guid>
-      <description>&lt;h2 id=&#34;lokal&#34;&gt;Lokal&lt;/h2&gt;&#xA;&lt;p&gt;I played a crucial role in the Lokal project, focusing on the installation and configuration of Libremesh on the routers to establish a robust mesh network. This setup was essential for ensuring the seamless operation of Lokal within a mesh network environment. For detailed technical insights into this aspect of the project, please refer to &lt;a href=&#34;https://hiurequeiroz.github.io/posts/libremeshlokal/&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Parceria Educacional</title>
-      <link>https://hiurequeiroz.github.io/projects/parceriaeducacional/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/parceriaeducacional/</guid>
-      <description>&lt;p&gt;I have been dedicated to creating educational materials in collaborative learning initiatives, in partnership with Digital Democracy, Article 19, APC, and other institutions. Together, at Coolab, we create inspiring and impactful educational materials, promoting knowledge and awareness in various areas.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Rede Comunitária PSP</title>
-      <link>https://hiurequeiroz.github.io/projects/psp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/psp/</guid>
-      <description>&lt;p&gt;PSP is a civil society association that manages and maintains a community telecommunication infrastructure in the Souzas neighborhood, Monteiro Lobato - São Paulo, Brazil.&lt;/p&gt;&#xA;&lt;p&gt;This was the &lt;a href=&#34;https://coolab.org&#34;&gt;coolab collective&amp;rsquo;s&lt;/a&gt; most vital experience in funding and maintaining all the technical needs of a community network.&lt;/p&gt;&#xA;&lt;p&gt;See the movie&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/hUlhmBF6Bms?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Research Project: Low Power Communication for Social Technology</title>
-      <link>https://hiurequeiroz.github.io/projects/researchsocialtech/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/researchsocialtech/</guid>
-      <description>&lt;h2 id=&#34;draft-project&#34;&gt;Draft Project&lt;/h2&gt;&#xA;&lt;p&gt;This project proposes the development of an innovative framework for creating social technology aimed at low-income communities and/or family farmers preferably associated with community networks. The main objective is to design a technological matrix that includes a form of low-power analog communication between sensors. This communication will be enabled through the use of sustainable energy technologies, such as thermoelectric generators (TEGs) and water-activated paper batteries.&lt;/p&gt;&#xA;&lt;p&gt;The inclusion of these communities in community network ecosystems is essential, as these networks provide a collaborative environment and knowledge exchange, allowing communities to access groups involved in the connectivity process in their territories. This integration strengthens community participation in the development and implementation of the proposed technological solutions, ensuring that they truly meet their needs and local contexts.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sitio Do Astronauta</title>
-      <link>https://hiurequeiroz.github.io/projects/sitiodoastronauta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/projects/sitiodoastronauta/</guid>
-      <description>&lt;p&gt;As the creator of &lt;a href=&#34;http://sitiodoastronauta.com.br&#34;&gt;Sítio do Astronauta&lt;/a&gt;, a collective of artists, activists, and researchers working with free and community technologies, I bring my academic experience in science and my learning in reverse engineering as a hacktivist. Realizing the gap between academia and society, I decided to create this collective to communicate and bring science and technology to communities in a different way.&#xA;Sítio do Astronauta was conceived not only from my vision of exploring the frontiers of technology and art but also with the essential collaboration of &lt;a href=&#34;http://guerradimarcela.net.br&#34;&gt;Marcela Guerra&lt;/a&gt;. Together, we created a space where innovation and creativity come together to generate unique experiences. With a strong foundation in free and community technologies, the collective is dedicated to developing playful electronic activities that not only entertain but also educate.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hiure Queiroz</title><link>https://hiurequeiroz.github.io/</link><description>Recent content on Hiure Queiroz</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hiurequeiroz.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Portfolio</title><link>https://hiurequeiroz.github.io/doutorado/learningportfolio/</link><pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/doutorado/learningportfolio/</guid><description>&lt;h1 id="learning-portfolio">Learning Portfolio&lt;/h1>
+&lt;p>This portfolio documents my learning journey during the PhD, including:&lt;/p>
+&lt;h2 id="critical-reflections">Critical Reflections&lt;/h2>
+&lt;ul>
+&lt;li>Reflections on completed readings&lt;/li>
+&lt;li>Critical analysis of articles and works&lt;/li>
+&lt;li>Connections between different areas of knowledge&lt;/li>
+&lt;/ul>
+&lt;h2 id="skill-development">Skill Development&lt;/h2>
+&lt;ul>
+&lt;li>Technical skills developed&lt;/li>
+&lt;li>Methodological competencies&lt;/li>
+&lt;li>Scientific communication learning&lt;/li>
+&lt;/ul>
+&lt;h2 id="research-process">Research Process&lt;/h2>
+&lt;ul>
+&lt;li>Work methodology&lt;/li>
+&lt;li>Challenges encountered&lt;/li>
+&lt;li>Solutions developed&lt;/li>
+&lt;li>Course adjustments&lt;/li>
+&lt;/ul>
+&lt;h2 id="academic-production">Academic Production&lt;/h2>
+&lt;ul>
+&lt;li>Articles in development&lt;/li>
+&lt;li>Presentations delivered&lt;/li>
+&lt;li>Event participation&lt;/li>
+&lt;li>Established collaborations&lt;/li>
+&lt;/ul>
+&lt;h2 id="next-steps">Next Steps&lt;/h2>
+&lt;ul>
+&lt;li>Short-term objectives&lt;/li>
+&lt;li>Medium-term goals&lt;/li>
+&lt;li>Long-term vision&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>This page will be regularly updated with new content and reflections.&lt;/em>&lt;/p></description></item><item><title>Testing New LibreMesh Release</title><link>https://hiurequeiroz.github.io/posts/test-new-lime/</link><pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/test-new-lime/</guid><description>&lt;h3 id="motivation">Motivation&lt;/h3>
+&lt;p>Testing routers with the latest version of LibreMesh is crucial for community networks that rely on mesh networks as their communication infrastructure. The significance lies in the fact that insufficient testing hinders the development of newer versions. Currently, the official version of LibreMesh is tied to the 2019 release of OpenWRT. This limitation impedes progress, as advancements and improvements are often left unexplored. By conducting thorough tests with the most recent version, we pave the way for enhanced features, increased stability, and better overall performance. It is through these tests that we identify and address potential issues, ensuring a robust and reliable platform for community networks. Moving beyond the 2019 OpenWRT version opens up opportunities for innovation and keeps LibreMesh at the forefront of mesh networking technology. Therefore, a concerted effort in testing is essential to drive the evolution of LibreMesh and contribute to the continued growth of community-driven, mesh-based communication networks.#&lt;/p></description></item><item><title>How to create a Libremesh network with Lokal Server</title><link>https://hiurequeiroz.github.io/posts/libremeshlokal/</link><pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/libremeshlokal/</guid><description>&lt;h2 id="lokal">Lokal&lt;/h2>
+&lt;p>As part of the &lt;a href="https://wakoma.co/lokal/">lokal projetct&lt;/a> the tests with two routers the Archer A7 V5.8 and Unifi Mesh UAP-AC-M are described below&lt;/p>
+&lt;p>libremesh firmwares -&amp;gt; &lt;a href="https://next.coolab.org/s/Eiz7r9xJKiXi8MA">https://next.coolab.org/s/Eiz7r9xJKiXi8MA&lt;/a>&lt;/p>
+&lt;h3 id="unifi-mesh-uap-ac-m">Unifi Mesh UAP-AC-M&lt;/h3>
+&lt;p>Unifi datasheet -&amp;gt; &lt;a href="http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf">http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&lt;/a>&lt;/p>
+&lt;p>Follow this steps -&amp;gt; &lt;a href="https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;amp;s[]=mesh#non-invasive_method_using_mtd">https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;s[]=mesh#non-invasive_method_using_mtd&lt;/a>&lt;/p>
+&lt;p>Breif&lt;/p>
+&lt;p>We&amp;rsquo;re going to downgrade to older ubiquiti firmware version (ubnt.bin), install OpenWRT firmware, then install Libremesh firmware.&lt;/p>
+&lt;ol>
+&lt;li>Download ubnt.bin from the folder&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>md5sum BZ*.bin should return: 5bb23b387defcbd1f6cda5819c7905e5&lt;/li>
+&lt;li>mv BZ*.bin ubnt.bin&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>
+&lt;p>static IP (192.168.1.0/24, do not use IP 192.168.1.20 or 192.168.1.1 for the computer, if unsure use IP 192.168.1.10, netmask 255.255.255.0, default gateway 192.168.1.1 for your PC)&lt;/p></description></item><item><title>How to Use Ubus in Libremesh</title><link>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</link><pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</guid><description>&lt;h3 id="introduction-to-ubus-in-libremesh-for-beginners">Introduction to Ubus in Libremesh for Beginners&lt;/h3>
+&lt;h4 id="step-1-what-is-ubus-and-libremesh">Step 1: What is Ubus and Libremesh&lt;/h4>
+&lt;p>Ubus is a powerful tool for managing mesh networks based on OpenWrt, such as Libremesh. It facilitates communication between system processes, providing a comprehensive information base. Learn more about &lt;a href="https://openwrt.org/docs/techref/ubus">Ubus&lt;/a> and &lt;a href="https://libremesh.org">Libremesh&lt;/a>.
+Since Ubus is a program installed within the router, you need to access the router&amp;rsquo;s terminal &lt;a href="https://hiurequeiroz.github.io/posts/How-to-access-router-via-ssh">See how to do it here&lt;/a>&lt;/p>
+&lt;h4 id="step-2-basic-ubus-commands">Step 2: Basic Ubus Commands&lt;/h4>
+&lt;p>To get started, you can use the &lt;code>ubus list&lt;/code> command to list available objects and &lt;code>ubus call&lt;/code> to invoke a specific service. Here is the simple syntax for using Ubus:&lt;/p></description></item><item><title>Acesso Remoto a Roteadores via SSH em redes libremesh</title><link>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</link><pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</guid><description>&lt;p>Para acessar um roteador via SSH, siga os passos abaixo. Este guia assume que você está utilizando um sistema baseado em Linux, como Debian ou Ubuntu.&lt;/p>
+&lt;h3 id="pré-requisitos">Pré-requisitos&lt;/h3>
+&lt;p>Antes de começar, é necessário ter o pacote &lt;a href="#ZgotmplZ">openssh-client&lt;/a> instalado em seu sistema. Este pacote permite que você inicie conexões SSH a partir do seu terminal.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Instalação do openssh-client&lt;/strong>&lt;/p>
+&lt;p>Abra o terminal e execute o comando abaixo para atualizar os pacotes do seu sistema e instalar o &lt;a href="#ZgotmplZ">openssh-client&lt;/a>:&lt;/p></description></item><item><title>Como fazer o pão selvagem</title><link>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</link><pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</guid><description>&lt;p>Uma das coisas que mais me deixa feliz é fazer pão. Gosto muito de mergulhar nas profundezas das proteínas e imaginar cada ligação química que pode estar sendo feita ou desfeita durante o processo.
+Para fazer pão eu entendi ao londo do tempo que é necessário paciência para chegar num resultado satisfatório. Paciência tanto para esperar o momento certo de fazer algo, de deixar que a química aconteça e também paciência para testar farinhas e achar o melhor fornecedor.&lt;/p></description></item><item><title>Conhecendo o arduino</title><link>https://hiurequeiroz.github.io/posts/arduino/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/arduino/</guid><description>&lt;h2 id="arduíno">Arduíno&lt;/h2>
+&lt;p>Arduíno é uma plataforma de prototipagem, ou seja, ele foi idealizado para servir de base para diferentes projetos que necessitem de circuitos eletrônicos microcontrolados, baseados em linguagem de programação C/C++.
+O microcontrolador é um pequeno computador que num único circuito integrado, já com núcleo de processador, memória e pinos de entrada e saída de informação.
+O Arduíno foi desenvolvido na cidade de Ivrea na Itália, o time era composto por Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis, com o objetivo de interagir com projetos escolares de maneira mais fácil e resiliente do que os sistemas de prototipagem dá época (2005).
+O sucesso do Arduíno foi tão grande que logo que foi projetado começou a ser comercializado e venderam mais de 50 mil unidades, e um &lt;a href="http://vimeo.com/18539129">documentário&lt;/a> foi feito para sobre a trajetória do desenvolvimento.&lt;/p></description></item><item><title>Getting to Know the Esp32</title><link>https://hiurequeiroz.github.io/posts/esp32/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/esp32/</guid><description>&lt;h2 id="esp32">ESP32&lt;/h2>
+&lt;p>The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href="https://hiurequeiroz.github.io/posts/arduino/">Arduino&lt;/a>, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p>
+&lt;p>The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p>
+&lt;p>&lt;img src="https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png" alt="ESP32 Board">&lt;/p>
+&lt;p>The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p></description></item><item><title>About</title><link>https://hiurequeiroz.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/about/</guid><description>&lt;p>Passionate about learning new things, I graduated in Physics and pursued my academic career by doing a master&amp;rsquo;s degree in &lt;a href="http://bdtd.ibict.br/vufind/Record/ITA_69f67f8b7750867feb8cadadb08d454f">Materials Science at the Aeronautics Institute of Technology (ITA)&lt;/a> and later starting my PhD in Physics, I realized that my life was more related to communities than academia.
+I followed my dream of working with technologies and founded the &lt;a href="https://hiurequeiroz.github.io/../projects/sitiodoastronauta">Astronaut&amp;rsquo;s Site - Art and Technology LTDA&lt;/a>, a collective for the study and development of science and technologies that drive learning experiences and artistic expression. Always aiming to reconcile artisanal techniques, simple materials, and electronics to enhance the construction of objects with accessible technologies, meeting the needs focused on self-development and collective work, a good example is the &lt;a href="https://sitiodoastronauta.com.br/vila-solar-casa-de-papelao-fotovoltaica/">cardboard house with solar energy&lt;/a>. The collective became popular through the promotion of seminars and workshops inspired by the do-it-yourself culture.&lt;/p></description></item><item><title>Bamboo Tower</title><link>https://hiurequeiroz.github.io/projects/torrebambu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/torrebambu/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The bamboo tower project was sponsored by APC to share with the Connect the Unconnected program.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KRib7hyTWMw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;p>This project was selected for the Internet Forum Film Festival in Stockholm.&lt;/p>
+&lt;p>Watch the movie&lt;/p>
+&lt;p>During the Covid-19 pandemic, I proposed through the groups that permeate me like &lt;a href="https://coolab.org">coolab&lt;/a> and &lt;a href="https://portalsemporteiras.github.io">PSP&lt;/a>, prototyping a bamboo tower construction as a specific contribution to a more inclusive and locally developed Community Network infrastructure.&lt;/p></description></item><item><title>Libremesh</title><link>https://hiurequeiroz.github.io/projects/libremesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/libremesh/</guid><description>&lt;h2 id="libremesh">Libremesh&lt;/h2>
+&lt;p>In the realm of open-source community networks, LibreMesh stands out as an essential tool for building autonomous and decentralized network infrastructures. Recently, the LibreMesh community made an exciting announcement, revealing the release of new versions aligned with the latest updates from OpenWrt. This development marks a crucial step in keeping pace with the rapid evolution of the network hardware market.&lt;/p>
+&lt;p>The significance of this update cannot be underestimated, especially in an environment where new hardware versions are constantly being introduced. Older versions of OpenWrt, on which LibreMesh was previously based, may not provide support for the latest devices. Consequently, updating LibreMesh becomes essential to ensure compatibility with the most recent hardware, enabling communities to make the most of emerging technologies.&lt;/p></description></item><item><title>Lokal</title><link>https://hiurequeiroz.github.io/projects/lokal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/lokal/</guid><description>&lt;h2 id="lokal">Lokal&lt;/h2>
+&lt;p>I played a crucial role in the Lokal project, focusing on the installation and configuration of Libremesh on the routers to establish a robust mesh network. This setup was essential for ensuring the seamless operation of Lokal within a mesh network environment. For detailed technical insights into this aspect of the project, please refer to &lt;a href="https://hiurequeiroz.github.io/posts/libremeshlokal/">this link&lt;/a>.&lt;/p></description></item><item><title>Parceria Educacional</title><link>https://hiurequeiroz.github.io/projects/parceriaeducacional/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/parceriaeducacional/</guid><description>&lt;p>I have been dedicated to creating educational materials in collaborative learning initiatives, in partnership with Digital Democracy, Article 19, APC, and other institutions. Together, at Coolab, we create inspiring and impactful educational materials, promoting knowledge and awareness in various areas.&lt;/p></description></item><item><title>Rede Comunitária PSP</title><link>https://hiurequeiroz.github.io/projects/psp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/psp/</guid><description>&lt;p>PSP is a civil society association that manages and maintains a community telecommunication infrastructure in the Souzas neighborhood, Monteiro Lobato - São Paulo, Brazil.&lt;/p>
+&lt;p>This was the &lt;a href="https://coolab.org">coolab collective&amp;rsquo;s&lt;/a> most vital experience in funding and maintaining all the technical needs of a community network.&lt;/p>
+&lt;p>See the movie&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hUlhmBF6Bms?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div></description></item><item><title>Research Project: Low Power Communication for Social Technology</title><link>https://hiurequeiroz.github.io/projects/researchsocialtech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/researchsocialtech/</guid><description>&lt;h2 id="draft-project">Draft Project&lt;/h2>
+&lt;p>This project proposes the development of an innovative framework for creating social technology aimed at low-income communities and/or family farmers preferably associated with community networks. The main objective is to design a technological matrix that includes a form of low-power analog communication between sensors. This communication will be enabled through the use of sustainable energy technologies, such as thermoelectric generators (TEGs) and water-activated paper batteries.&lt;/p>
+&lt;p>The inclusion of these communities in community network ecosystems is essential, as these networks provide a collaborative environment and knowledge exchange, allowing communities to access groups involved in the connectivity process in their territories. This integration strengthens community participation in the development and implementation of the proposed technological solutions, ensuring that they truly meet their needs and local contexts.&lt;/p></description></item><item><title>Sitio Do Astronauta</title><link>https://hiurequeiroz.github.io/projects/sitiodoastronauta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/projects/sitiodoastronauta/</guid><description>&lt;p>As the creator of &lt;a href="http://sitiodoastronauta.com.br">Sítio do Astronauta&lt;/a>, a collective of artists, activists, and researchers working with free and community technologies, I bring my academic experience in science and my learning in reverse engineering as a hacktivist. Realizing the gap between academia and society, I decided to create this collective to communicate and bring science and technology to communities in a different way.
+Sítio do Astronauta was conceived not only from my vision of exploring the frontiers of technology and art but also with the essential collaboration of &lt;a href="http://guerradimarcela.net.br">Marcela Guerra&lt;/a>. Together, we created a space where innovation and creativity come together to generate unique experiences. With a strong foundation in free and community technologies, the collective is dedicated to developing playful electronic activities that not only entertain but also educate.&lt;/p></description></item></channel></rss>

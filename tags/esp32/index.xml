@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ESP32 on Hiure Queiroz</title>
-    <link>https://hiurequeiroz.github.io/tags/esp32/</link>
-    <description>Recent content in ESP32 on Hiure Queiroz</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hiurequeiroz.github.io/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Getting to Know the Esp32</title>
-      <link>https://hiurequeiroz.github.io/posts/esp32/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/esp32/</guid>
-      <description>&lt;h2 id=&#34;esp32&#34;&gt;ESP32&lt;/h2&gt;&#xA;&lt;p&gt;The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href=&#34;https://hiurequeiroz.github.io/posts/arduino/&#34;&gt;Arduino&lt;/a&gt;, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p&gt;&#xA;&lt;p&gt;The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png&#34; alt=&#34;ESP32 Board&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP32 on Hiure Queiroz</title><link>https://hiurequeiroz.github.io/tags/esp32/</link><description>Recent content in ESP32 on Hiure Queiroz</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hiurequeiroz.github.io/tags/esp32/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting to Know the Esp32</title><link>https://hiurequeiroz.github.io/posts/esp32/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/esp32/</guid><description>&lt;h2 id="esp32">ESP32&lt;/h2>
+&lt;p>The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href="https://hiurequeiroz.github.io/posts/arduino/">Arduino&lt;/a>, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p>
+&lt;p>The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p>
+&lt;p>&lt;img src="https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png" alt="ESP32 Board">&lt;/p>
+&lt;p>The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p></description></item></channel></rss>

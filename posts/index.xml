@@ -1,61 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Hiure Queiroz</title>
-    <link>https://hiurequeiroz.github.io/posts/</link>
-    <description>Recent content in Posts on Hiure Queiroz</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hiurequeiroz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Testing New LibreMesh Release</title>
-      <link>https://hiurequeiroz.github.io/posts/test-new-lime/</link>
-      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/test-new-lime/</guid>
-      <description>&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;&#xA;&lt;p&gt;Testing routers with the latest version of LibreMesh is crucial for community networks that rely on mesh networks as their communication infrastructure. The significance lies in the fact that insufficient testing hinders the development of newer versions. Currently, the official version of LibreMesh is tied to the 2019 release of OpenWRT. This limitation impedes progress, as advancements and improvements are often left unexplored. By conducting thorough tests with the most recent version, we pave the way for enhanced features, increased stability, and better overall performance. It is through these tests that we identify and address potential issues, ensuring a robust and reliable platform for community networks. Moving beyond the 2019 OpenWRT version opens up opportunities for innovation and keeps LibreMesh at the forefront of mesh networking technology. Therefore, a concerted effort in testing is essential to drive the evolution of LibreMesh and contribute to the continued growth of community-driven, mesh-based communication networks.#&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to create a Libremesh network with Lokal Server</title>
-      <link>https://hiurequeiroz.github.io/posts/libremeshlokal/</link>
-      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/libremeshlokal/</guid>
-      <description>&lt;h2 id=&#34;lokal&#34;&gt;Lokal&lt;/h2&gt;&#xA;&lt;p&gt;As part of the &lt;a href=&#34;https://wakoma.co/lokal/&#34;&gt;lokal projetct&lt;/a&gt; the tests with two routers the Archer A7 V5.8 and Unifi Mesh UAP-AC-M are described below&lt;/p&gt;&#xA;&lt;p&gt;libremesh firmwares -&amp;gt; &lt;a href=&#34;https://next.coolab.org/s/Eiz7r9xJKiXi8MA&#34;&gt;https://next.coolab.org/s/Eiz7r9xJKiXi8MA&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;unifi-mesh-uap-ac-m&#34;&gt;Unifi Mesh UAP-AC-M&lt;/h3&gt;&#xA;&lt;p&gt;Unifi datasheet -&amp;gt; &lt;a href=&#34;http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&#34;&gt;http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Follow this steps -&amp;gt; &lt;a href=&#34;https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;amp;s[]=mesh#non-invasive_method_using_mtd&#34;&gt;https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;s[]=mesh#non-invasive_method_using_mtd&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Breif&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re going to downgrade to older ubiquiti firmware version (ubnt.bin), install OpenWRT firmware, then install Libremesh firmware.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download ubnt.bin from the folder&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;md5sum BZ*.bin should return: 5bb23b387defcbd1f6cda5819c7905e5&lt;/li&gt;&#xA;&lt;li&gt;mv BZ*.bin ubnt.bin&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;static IP (192.168.1.0/24, do not use IP 192.168.1.20 or 192.168.1.1 for the computer, if unsure use IP 192.168.1.10, netmask 255.255.255.0, default gateway 192.168.1.1 for your PC)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Use Ubus in Libremesh</title>
-      <link>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</link>
-      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</guid>
-      <description>&lt;h3 id=&#34;introduction-to-ubus-in-libremesh-for-beginners&#34;&gt;Introduction to Ubus in Libremesh for Beginners&lt;/h3&gt;&#xA;&lt;h4 id=&#34;step-1-what-is-ubus-and-libremesh&#34;&gt;Step 1: What is Ubus and Libremesh&lt;/h4&gt;&#xA;&lt;p&gt;Ubus is a powerful tool for managing mesh networks based on OpenWrt, such as Libremesh. It facilitates communication between system processes, providing a comprehensive information base. Learn more about &lt;a href=&#34;https://openwrt.org/docs/techref/ubus&#34;&gt;Ubus&lt;/a&gt; and &lt;a href=&#34;https://libremesh.org&#34;&gt;Libremesh&lt;/a&gt;.&#xA;Since Ubus is a program installed within the router, you need to access the router&amp;rsquo;s terminal &lt;a href=&#34;https://hiurequeiroz.github.io/posts/How-to-access-router-via-ssh&#34;&gt;See how to do it here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;step-2-basic-ubus-commands&#34;&gt;Step 2: Basic Ubus Commands&lt;/h4&gt;&#xA;&lt;p&gt;To get started, you can use the &lt;code&gt;ubus list&lt;/code&gt; command to list available objects and &lt;code&gt;ubus call&lt;/code&gt; to invoke a specific service. Here is the simple syntax for using Ubus:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Acesso Remoto a Roteadores via SSH em redes libremesh</title>
-      <link>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</guid>
-      <description>&lt;p&gt;Para acessar um roteador via SSH, siga os passos abaixo. Este guia assume que você está utilizando um sistema baseado em Linux, como Debian ou Ubuntu.&lt;/p&gt;&#xA;&lt;h3 id=&#34;pré-requisitos&#34;&gt;Pré-requisitos&lt;/h3&gt;&#xA;&lt;p&gt;Antes de começar, é necessário ter o pacote &lt;a href=&#34;#ZgotmplZ&#34;&gt;openssh-client&lt;/a&gt; instalado em seu sistema. Este pacote permite que você inicie conexões SSH a partir do seu terminal.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Instalação do openssh-client&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Abra o terminal e execute o comando abaixo para atualizar os pacotes do seu sistema e instalar o &lt;a href=&#34;#ZgotmplZ&#34;&gt;openssh-client&lt;/a&gt;:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Como fazer o pão selvagem</title>
-      <link>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</guid>
-      <description>&lt;p&gt;Uma das coisas que mais me deixa feliz é fazer pão. Gosto muito de mergulhar nas profundezas das proteínas e imaginar cada ligação química que pode estar sendo feita ou desfeita durante o processo.&#xA;Para fazer pão eu entendi ao londo do tempo que é necessário paciência para chegar num resultado satisfatório. Paciência tanto para esperar o momento certo de fazer algo, de deixar que a química aconteça e também paciência para testar farinhas e achar o melhor fornecedor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Conhecendo o arduino</title>
-      <link>https://hiurequeiroz.github.io/posts/arduino/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/arduino/</guid>
-      <description>&lt;h2 id=&#34;arduíno&#34;&gt;Arduíno&lt;/h2&gt;&#xA;&lt;p&gt;Arduíno é uma plataforma de prototipagem, ou seja, ele foi idealizado para servir de base para diferentes projetos que necessitem de circuitos eletrônicos microcontrolados, baseados em linguagem de programação C/C++.&#xA;O microcontrolador é um pequeno computador que num único circuito integrado, já com núcleo de processador, memória e pinos de entrada e saída de informação.&#xA;O Arduíno foi desenvolvido na cidade de Ivrea na Itália, o time era composto por Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis, com o objetivo de interagir com projetos escolares de maneira mais fácil e resiliente do que os sistemas de prototipagem dá época (2005).&#xA;O sucesso do Arduíno foi tão grande que logo que foi projetado começou a ser comercializado e venderam mais de 50 mil unidades, e um &lt;a href=&#34;http://vimeo.com/18539129&#34;&gt;documentário&lt;/a&gt; foi feito para sobre a trajetória do desenvolvimento.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting to Know the Esp32</title>
-      <link>https://hiurequeiroz.github.io/posts/esp32/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/esp32/</guid>
-      <description>&lt;h2 id=&#34;esp32&#34;&gt;ESP32&lt;/h2&gt;&#xA;&lt;p&gt;The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href=&#34;https://hiurequeiroz.github.io/posts/arduino/&#34;&gt;Arduino&lt;/a&gt;, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p&gt;&#xA;&lt;p&gt;The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png&#34; alt=&#34;ESP32 Board&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Hiure Queiroz</title><link>https://hiurequeiroz.github.io/posts/</link><description>Recent content in Posts on Hiure Queiroz</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hiurequeiroz.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing New LibreMesh Release</title><link>https://hiurequeiroz.github.io/posts/test-new-lime/</link><pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/test-new-lime/</guid><description>&lt;h3 id="motivation">Motivation&lt;/h3>
+&lt;p>Testing routers with the latest version of LibreMesh is crucial for community networks that rely on mesh networks as their communication infrastructure. The significance lies in the fact that insufficient testing hinders the development of newer versions. Currently, the official version of LibreMesh is tied to the 2019 release of OpenWRT. This limitation impedes progress, as advancements and improvements are often left unexplored. By conducting thorough tests with the most recent version, we pave the way for enhanced features, increased stability, and better overall performance. It is through these tests that we identify and address potential issues, ensuring a robust and reliable platform for community networks. Moving beyond the 2019 OpenWRT version opens up opportunities for innovation and keeps LibreMesh at the forefront of mesh networking technology. Therefore, a concerted effort in testing is essential to drive the evolution of LibreMesh and contribute to the continued growth of community-driven, mesh-based communication networks.#&lt;/p></description></item><item><title>How to create a Libremesh network with Lokal Server</title><link>https://hiurequeiroz.github.io/posts/libremeshlokal/</link><pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/libremeshlokal/</guid><description>&lt;h2 id="lokal">Lokal&lt;/h2>
+&lt;p>As part of the &lt;a href="https://wakoma.co/lokal/">lokal projetct&lt;/a> the tests with two routers the Archer A7 V5.8 and Unifi Mesh UAP-AC-M are described below&lt;/p>
+&lt;p>libremesh firmwares -&amp;gt; &lt;a href="https://next.coolab.org/s/Eiz7r9xJKiXi8MA">https://next.coolab.org/s/Eiz7r9xJKiXi8MA&lt;/a>&lt;/p>
+&lt;h3 id="unifi-mesh-uap-ac-m">Unifi Mesh UAP-AC-M&lt;/h3>
+&lt;p>Unifi datasheet -&amp;gt; &lt;a href="http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf">http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&lt;/a>&lt;/p>
+&lt;p>Follow this steps -&amp;gt; &lt;a href="https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;amp;s[]=mesh#non-invasive_method_using_mtd">https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;s[]=mesh#non-invasive_method_using_mtd&lt;/a>&lt;/p>
+&lt;p>Breif&lt;/p>
+&lt;p>We&amp;rsquo;re going to downgrade to older ubiquiti firmware version (ubnt.bin), install OpenWRT firmware, then install Libremesh firmware.&lt;/p>
+&lt;ol>
+&lt;li>Download ubnt.bin from the folder&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>md5sum BZ*.bin should return: 5bb23b387defcbd1f6cda5819c7905e5&lt;/li>
+&lt;li>mv BZ*.bin ubnt.bin&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>
+&lt;p>static IP (192.168.1.0/24, do not use IP 192.168.1.20 or 192.168.1.1 for the computer, if unsure use IP 192.168.1.10, netmask 255.255.255.0, default gateway 192.168.1.1 for your PC)&lt;/p></description></item><item><title>How to Use Ubus in Libremesh</title><link>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</link><pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/how-to-use-ubus-in-libremesh/</guid><description>&lt;h3 id="introduction-to-ubus-in-libremesh-for-beginners">Introduction to Ubus in Libremesh for Beginners&lt;/h3>
+&lt;h4 id="step-1-what-is-ubus-and-libremesh">Step 1: What is Ubus and Libremesh&lt;/h4>
+&lt;p>Ubus is a powerful tool for managing mesh networks based on OpenWrt, such as Libremesh. It facilitates communication between system processes, providing a comprehensive information base. Learn more about &lt;a href="https://openwrt.org/docs/techref/ubus">Ubus&lt;/a> and &lt;a href="https://libremesh.org">Libremesh&lt;/a>.
+Since Ubus is a program installed within the router, you need to access the router&amp;rsquo;s terminal &lt;a href="https://hiurequeiroz.github.io/posts/How-to-access-router-via-ssh">See how to do it here&lt;/a>&lt;/p>
+&lt;h4 id="step-2-basic-ubus-commands">Step 2: Basic Ubus Commands&lt;/h4>
+&lt;p>To get started, you can use the &lt;code>ubus list&lt;/code> command to list available objects and &lt;code>ubus call&lt;/code> to invoke a specific service. Here is the simple syntax for using Ubus:&lt;/p></description></item><item><title>Acesso Remoto a Roteadores via SSH em redes libremesh</title><link>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</link><pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/como-ascessar-roteador-por-ssh/</guid><description>&lt;p>Para acessar um roteador via SSH, siga os passos abaixo. Este guia assume que você está utilizando um sistema baseado em Linux, como Debian ou Ubuntu.&lt;/p>
+&lt;h3 id="pré-requisitos">Pré-requisitos&lt;/h3>
+&lt;p>Antes de começar, é necessário ter o pacote &lt;a href="#ZgotmplZ">openssh-client&lt;/a> instalado em seu sistema. Este pacote permite que você inicie conexões SSH a partir do seu terminal.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Instalação do openssh-client&lt;/strong>&lt;/p>
+&lt;p>Abra o terminal e execute o comando abaixo para atualizar os pacotes do seu sistema e instalar o &lt;a href="#ZgotmplZ">openssh-client&lt;/a>:&lt;/p></description></item><item><title>Como fazer o pão selvagem</title><link>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</link><pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/como-fazer-pao-selvagem/</guid><description>&lt;p>Uma das coisas que mais me deixa feliz é fazer pão. Gosto muito de mergulhar nas profundezas das proteínas e imaginar cada ligação química que pode estar sendo feita ou desfeita durante o processo.
+Para fazer pão eu entendi ao londo do tempo que é necessário paciência para chegar num resultado satisfatório. Paciência tanto para esperar o momento certo de fazer algo, de deixar que a química aconteça e também paciência para testar farinhas e achar o melhor fornecedor.&lt;/p></description></item><item><title>Conhecendo o arduino</title><link>https://hiurequeiroz.github.io/posts/arduino/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/arduino/</guid><description>&lt;h2 id="arduíno">Arduíno&lt;/h2>
+&lt;p>Arduíno é uma plataforma de prototipagem, ou seja, ele foi idealizado para servir de base para diferentes projetos que necessitem de circuitos eletrônicos microcontrolados, baseados em linguagem de programação C/C++.
+O microcontrolador é um pequeno computador que num único circuito integrado, já com núcleo de processador, memória e pinos de entrada e saída de informação.
+O Arduíno foi desenvolvido na cidade de Ivrea na Itália, o time era composto por Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis, com o objetivo de interagir com projetos escolares de maneira mais fácil e resiliente do que os sistemas de prototipagem dá época (2005).
+O sucesso do Arduíno foi tão grande que logo que foi projetado começou a ser comercializado e venderam mais de 50 mil unidades, e um &lt;a href="http://vimeo.com/18539129">documentário&lt;/a> foi feito para sobre a trajetória do desenvolvimento.&lt;/p></description></item><item><title>Getting to Know the Esp32</title><link>https://hiurequeiroz.github.io/posts/esp32/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/esp32/</guid><description>&lt;h2 id="esp32">ESP32&lt;/h2>
+&lt;p>The ESP32 is a prototyping platform with a microcontroller, similar to &lt;a href="https://hiurequeiroz.github.io/posts/arduino/">Arduino&lt;/a>, but with higher performance in applications involving wifi and low power consumption. It represents an evolution of the well-known ESP8266, offering greater processing capacity.&lt;/p>
+&lt;p>The ESP32 is a System on a Chip (SOC) that integrates a microcontroller, wifi, and bluetooth BLE. Developed by Espressif Systems, the ESP32 has interesting features, such as:&lt;/p>
+&lt;p>&lt;img src="https://hiurequeiroz.github.io/images/Modulo-ESP32-DEV-Module.png" alt="ESP32 Board">&lt;/p>
+&lt;p>The board contains the ESP32 chip with a built-in antenna, a usb-serial interface, and a 3.3V voltage regulator. Programming can be done in LUA or using the Arduino IDE with a micro-usb cable. With 4 MB of flash memory, the ESP32 enables the creation of various applications for IoT projects, remote access, web servers, and data loggers, among others.&lt;/p></description></item></channel></rss>

@@ -1,19 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>PhD on Hiure Queiroz</title>
-    <link>https://hiurequeiroz.github.io/doutorado/</link>
-    <description>Recent content in PhD on Hiure Queiroz</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hiurequeiroz.github.io/doutorado/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Learning Portfolio</title>
-      <link>https://hiurequeiroz.github.io/doutorado/learningportfolio/</link>
-      <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/doutorado/learningportfolio/</guid>
-      <description>&lt;h1 id=&#34;learning-portfolio&#34;&gt;Learning Portfolio&lt;/h1&gt;&#xA;&lt;p&gt;This portfolio documents my learning journey during the PhD, including:&lt;/p&gt;&#xA;&lt;h2 id=&#34;critical-reflections&#34;&gt;Critical Reflections&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reflections on completed readings&lt;/li&gt;&#xA;&lt;li&gt;Critical analysis of articles and works&lt;/li&gt;&#xA;&lt;li&gt;Connections between different areas of knowledge&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;skill-development&#34;&gt;Skill Development&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technical skills developed&lt;/li&gt;&#xA;&lt;li&gt;Methodological competencies&lt;/li&gt;&#xA;&lt;li&gt;Scientific communication learning&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;research-process&#34;&gt;Research Process&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Work methodology&lt;/li&gt;&#xA;&lt;li&gt;Challenges encountered&lt;/li&gt;&#xA;&lt;li&gt;Solutions developed&lt;/li&gt;&#xA;&lt;li&gt;Course adjustments&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;academic-production&#34;&gt;Academic Production&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Articles in development&lt;/li&gt;&#xA;&lt;li&gt;Presentations delivered&lt;/li&gt;&#xA;&lt;li&gt;Event participation&lt;/li&gt;&#xA;&lt;li&gt;Established collaborations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Short-term objectives&lt;/li&gt;&#xA;&lt;li&gt;Medium-term goals&lt;/li&gt;&#xA;&lt;li&gt;Long-term vision&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;This page will be regularly updated with new content and reflections.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PhD on Hiure Queiroz</title><link>https://hiurequeiroz.github.io/doutorado/</link><description>Recent content in PhD on Hiure Queiroz</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hiurequeiroz.github.io/doutorado/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Portfolio</title><link>https://hiurequeiroz.github.io/doutorado/learningportfolio/</link><pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/doutorado/learningportfolio/</guid><description>&lt;h1 id="learning-portfolio">Learning Portfolio&lt;/h1>
+&lt;p>This portfolio documents my learning journey during the PhD, including:&lt;/p>
+&lt;h2 id="critical-reflections">Critical Reflections&lt;/h2>
+&lt;ul>
+&lt;li>Reflections on completed readings&lt;/li>
+&lt;li>Critical analysis of articles and works&lt;/li>
+&lt;li>Connections between different areas of knowledge&lt;/li>
+&lt;/ul>
+&lt;h2 id="skill-development">Skill Development&lt;/h2>
+&lt;ul>
+&lt;li>Technical skills developed&lt;/li>
+&lt;li>Methodological competencies&lt;/li>
+&lt;li>Scientific communication learning&lt;/li>
+&lt;/ul>
+&lt;h2 id="research-process">Research Process&lt;/h2>
+&lt;ul>
+&lt;li>Work methodology&lt;/li>
+&lt;li>Challenges encountered&lt;/li>
+&lt;li>Solutions developed&lt;/li>
+&lt;li>Course adjustments&lt;/li>
+&lt;/ul>
+&lt;h2 id="academic-production">Academic Production&lt;/h2>
+&lt;ul>
+&lt;li>Articles in development&lt;/li>
+&lt;li>Presentations delivered&lt;/li>
+&lt;li>Event participation&lt;/li>
+&lt;li>Established collaborations&lt;/li>
+&lt;/ul>
+&lt;h2 id="next-steps">Next Steps&lt;/h2>
+&lt;ul>
+&lt;li>Short-term objectives&lt;/li>
+&lt;li>Medium-term goals&lt;/li>
+&lt;li>Long-term vision&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>This page will be regularly updated with new content and reflections.&lt;/em>&lt;/p></description></item></channel></rss>

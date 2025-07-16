@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Lokal on Hiure Queiroz</title>
-    <link>https://hiurequeiroz.github.io/tags/lokal/</link>
-    <description>Recent content in Lokal on Hiure Queiroz</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hiurequeiroz.github.io/tags/lokal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to create a Libremesh network with Lokal Server</title>
-      <link>https://hiurequeiroz.github.io/posts/libremeshlokal/</link>
-      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://hiurequeiroz.github.io/posts/libremeshlokal/</guid>
-      <description>&lt;h2 id=&#34;lokal&#34;&gt;Lokal&lt;/h2&gt;&#xA;&lt;p&gt;As part of the &lt;a href=&#34;https://wakoma.co/lokal/&#34;&gt;lokal projetct&lt;/a&gt; the tests with two routers the Archer A7 V5.8 and Unifi Mesh UAP-AC-M are described below&lt;/p&gt;&#xA;&lt;p&gt;libremesh firmwares -&amp;gt; &lt;a href=&#34;https://next.coolab.org/s/Eiz7r9xJKiXi8MA&#34;&gt;https://next.coolab.org/s/Eiz7r9xJKiXi8MA&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;unifi-mesh-uap-ac-m&#34;&gt;Unifi Mesh UAP-AC-M&lt;/h3&gt;&#xA;&lt;p&gt;Unifi datasheet -&amp;gt; &lt;a href=&#34;http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&#34;&gt;http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Follow this steps -&amp;gt; &lt;a href=&#34;https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;amp;s[]=mesh#non-invasive_method_using_mtd&#34;&gt;https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;s[]=mesh#non-invasive_method_using_mtd&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Breif&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;re going to downgrade to older ubiquiti firmware version (ubnt.bin), install OpenWRT firmware, then install Libremesh firmware.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download ubnt.bin from the folder&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;md5sum BZ*.bin should return: 5bb23b387defcbd1f6cda5819c7905e5&lt;/li&gt;&#xA;&lt;li&gt;mv BZ*.bin ubnt.bin&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;static IP (192.168.1.0/24, do not use IP 192.168.1.20 or 192.168.1.1 for the computer, if unsure use IP 192.168.1.10, netmask 255.255.255.0, default gateway 192.168.1.1 for your PC)&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lokal on Hiure Queiroz</title><link>https://hiurequeiroz.github.io/tags/lokal/</link><description>Recent content in Lokal on Hiure Queiroz</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hiurequeiroz.github.io/tags/lokal/index.xml" rel="self" type="application/rss+xml"/><item><title>How to create a Libremesh network with Lokal Server</title><link>https://hiurequeiroz.github.io/posts/libremeshlokal/</link><pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate><guid>https://hiurequeiroz.github.io/posts/libremeshlokal/</guid><description>&lt;h2 id="lokal">Lokal&lt;/h2>
+&lt;p>As part of the &lt;a href="https://wakoma.co/lokal/">lokal projetct&lt;/a> the tests with two routers the Archer A7 V5.8 and Unifi Mesh UAP-AC-M are described below&lt;/p>
+&lt;p>libremesh firmwares -&amp;gt; &lt;a href="https://next.coolab.org/s/Eiz7r9xJKiXi8MA">https://next.coolab.org/s/Eiz7r9xJKiXi8MA&lt;/a>&lt;/p>
+&lt;h3 id="unifi-mesh-uap-ac-m">Unifi Mesh UAP-AC-M&lt;/h3>
+&lt;p>Unifi datasheet -&amp;gt; &lt;a href="http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf">http://dl.ubnt.com/datasheets/unifi/UniFi_AC_Mesh_DS.pdf&lt;/a>&lt;/p>
+&lt;p>Follow this steps -&amp;gt; &lt;a href="https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;amp;s[]=mesh#non-invasive_method_using_mtd">https://openwrt.org/toh/ubiquiti/unifiac?s[]=unifi&amp;s[]=mesh#non-invasive_method_using_mtd&lt;/a>&lt;/p>
+&lt;p>Breif&lt;/p>
+&lt;p>We&amp;rsquo;re going to downgrade to older ubiquiti firmware version (ubnt.bin), install OpenWRT firmware, then install Libremesh firmware.&lt;/p>
+&lt;ol>
+&lt;li>Download ubnt.bin from the folder&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>md5sum BZ*.bin should return: 5bb23b387defcbd1f6cda5819c7905e5&lt;/li>
+&lt;li>mv BZ*.bin ubnt.bin&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>
+&lt;p>static IP (192.168.1.0/24, do not use IP 192.168.1.20 or 192.168.1.1 for the computer, if unsure use IP 192.168.1.10, netmask 255.255.255.0, default gateway 192.168.1.1 for your PC)&lt;/p></description></item></channel></rss>
