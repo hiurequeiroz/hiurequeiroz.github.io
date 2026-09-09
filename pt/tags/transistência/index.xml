@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Transistência on Hiure Queiroz</title>
+		<link>https://hiurequeiroz.github.io/pt/tags/transist%C3%AAncia/</link>
+		<description>Recent content in Transistência on Hiure Queiroz</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://hiurequeiroz.github.io/pt/tags/transist%C3%AAncia/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Um convite à Transistência</title>
+				<link>https://hiurequeiroz.github.io/pt/posts/um-convite-a-transistencia/</link>
+				<pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://hiurequeiroz.github.io/pt/posts/um-convite-a-transistencia/</guid>
+				<description>&lt;p&gt;Pensando que palavras não são só signos, mas também ferramentas de moldar o mundo, elas nos permitem nomear o que sentimos, articular o que vemos, imaginar o que ainda não existe. No universo técnico, muitas palavras também nomeiam processos da vida cotidiana — e é nesse encontro entre a linguagem técnica e a política que nasce este convite.&lt;/p&gt;&#xA;&lt;p&gt;Tomemos a velha conhecida palavra &lt;em&gt;resistência&lt;/em&gt;. Resistir ao capital, à colonização, ao apagamento, à extração: resistir é um verbo de sobrevivência. Mas, na eletrônica, a resistência está entre correntes e tensões. Enquanto é verdade que resistir salva vidas, o resistor — o componente que resiste — se vê deteriorado diante de tamanho esforço para transformar corrente em calor. O efeito Joule não perdoa: quanto mais intensa a passagem de energia, mais o resistor se desgasta até se romper.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

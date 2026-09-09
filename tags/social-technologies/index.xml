@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Social Technologies on Hiure Queiroz</title>
+		<link>https://hiurequeiroz.github.io/tags/social-technologies/</link>
+		<description>Recent content in Social Technologies on Hiure Queiroz</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://hiurequeiroz.github.io/tags/social-technologies/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>An Invitation to Transistence</title>
+				<link>https://hiurequeiroz.github.io/posts/an-invitation-to-transistence/</link>
+				<pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://hiurequeiroz.github.io/posts/an-invitation-to-transistence/</guid>
+				<description>&lt;p&gt;Words are not only signs but tools for shaping the world: they let us name what we feel, articulate what we see, imagine what does not yet exist. In the technical universe, many words also name processes of everyday life — and it is in this encounter between technical and political language that this invitation is born.&lt;/p&gt;&#xA;&lt;p&gt;Take the old familiar word &lt;em&gt;resistance&lt;/em&gt;. To resist capital, colonization, erasure, extraction: to resist is a verb of survival. But in electronics, resistance sits between currents and voltages. While it is true that resisting saves lives, the resistor — the component that resists — deteriorates under the sheer effort of turning current into heat. The Joule effect does not forgive: the more intense the passage of energy, the more the resistor wears down until it breaks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>SEMEA-TEC: co-creating technologies with family farmers</title>
+				<link>https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/</link>
+				<pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://hiurequeiroz.github.io/projects/semeatec/&#34;&gt;SEMEA-TEC&lt;/a&gt; (Sowing Technological Solutions in Family Agriculture) is a university extension project at UNIFESP — São José dos Campos campus (ICT) — working at the intersection of computing, electronics, rural extension and participatory methodologies. Our purpose is to develop low-cost, low-energy social technologies for family agriculture, tackling the digital exclusion that deepens historical inequalities in the countryside.&lt;/p&gt;&#xA;&lt;p&gt;The project is organically linked to my doctoral research at PPGIT/UNIFESP: while the extension operates as a living laboratory of listening and co-creation with communities, the PhD investigates the technical-scientific foundations for these systems to reach maximum energy autonomy — with batteries that harvest energy from the environment, based on non-toxic, low-impact materials — and economic viability at scale.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

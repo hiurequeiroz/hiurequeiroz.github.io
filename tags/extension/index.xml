@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Extension on Hiure Queiroz</title>
+		<link>https://hiurequeiroz.github.io/tags/extension/</link>
+		<description>Recent content in Extension on Hiure Queiroz</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://hiurequeiroz.github.io/tags/extension/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>SEMEA-TEC: co-creating technologies with family farmers</title>
+				<link>https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/</link>
+				<pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://hiurequeiroz.github.io/projects/semeatec/&#34;&gt;SEMEA-TEC&lt;/a&gt; (Sowing Technological Solutions in Family Agriculture) is a university extension project at UNIFESP — São José dos Campos campus (ICT) — working at the intersection of computing, electronics, rural extension and participatory methodologies. Our purpose is to develop low-cost, low-energy social technologies for family agriculture, tackling the digital exclusion that deepens historical inequalities in the countryside.&lt;/p&gt;&#xA;&lt;p&gt;The project is organically linked to my doctoral research at PPGIT/UNIFESP: while the extension operates as a living laboratory of listening and co-creation with communities, the PhD investigates the technical-scientific foundations for these systems to reach maximum energy autonomy — with batteries that harvest energy from the environment, based on non-toxic, low-impact materials — and economic viability at scale.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>SEMEA-TEC: co-creating technologies with family farmers</title>
+    <meta name="description" content="The UNIFESP extension project co-creating low-cost, low-power social technologies with family farmers: JavAlarm and Shitakiometer.">
+    <meta name="keywords" content='SEMEA-TEC, LoRa, social technologies, extension'>
+
+    <meta property="og:url" content="https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SEMEA-TEC: co-creating technologies with family farmers">
+    <meta property="og:description" content="The UNIFESP extension project co-creating low-cost, low-power social technologies with family farmers: JavAlarm and Shitakiometer.">
+    <meta property="og:image" content="https://hiurequeiroz.github.io/images/shitakiometer.jpg">
+    <meta property="og:image:secure_url" content="https://hiurequeiroz.github.io/images/shitakiometer.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SEMEA-TEC: co-creating technologies with family farmers">
+    <meta name="twitter:description" content="The UNIFESP extension project co-creating low-cost, low-power social technologies with family farmers: JavAlarm and Shitakiometer.">
+    <meta property="twitter:domain" content="https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/">
+    <meta property="twitter:url" content="https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/">
+    <meta name="twitter:image" content="https://hiurequeiroz.github.io/images/shitakiometer.jpg">
+
+    
+    <link rel="canonical" href="https://hiurequeiroz.github.io/posts/semea-tec-co-creating-technologies-with-family-farmers/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+
+    <link rel="stylesheet" href="/css/seminario.css" type="text/css">
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://hiurequeiroz.github.io/">
+                <img src='/images/perfil.png' alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://hiurequeiroz.github.io/">Hiure Queiroz</a>
+        </div>
+
+        <div class="i18n">
+                
+
+
+        </div>
+
+        <div class="nav-links">
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/doutorado/"><span data-feather="book-open"></span>  </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </div>
+                
+            
+                
+                <div class="nav-link">
+                    <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                </div>
+                
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/about/"><span data-feather='meh'></span> About </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/posts/"><span data-feather='book'></span> Blog </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/doutorado/"><span data-feather="book-open"></span> PhD </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://hiurequeiroz.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                    </li>
+                    
+                
+                    
+                    <li class="nav-item">
+                        <a href="https://github.com/hiurequeiroz"><span data-feather='github'></span>  </a>
+                    </li>
+                    
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<style>
+.nav-link.has-children {
+    position: relative;
+}
+
+.nav-link.has-children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.submenu a:hover {
+    background: var(--bg-tertiary);
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger-list .has-children .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .nav-hamburger-list .has-children:hover .submenu {
+        display: block;
+    }
+}
+</style>
+<main id="content">
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">SEMEA-TEC: co-creating technologies with family farmers</h1>
+    </header>
+    <div class="post-content">
+        <p><a href="/projects/semeatec/">SEMEA-TEC</a> (Sowing Technological Solutions in Family Agriculture) is a university extension project at UNIFESP — São José dos Campos campus (ICT) — working at the intersection of computing, electronics, rural extension and participatory methodologies. Our purpose is to develop low-cost, low-energy social technologies for family agriculture, tackling the digital exclusion that deepens historical inequalities in the countryside.</p>
+<p>The project is organically linked to my doctoral research at PPGIT/UNIFESP: while the extension operates as a living laboratory of listening and co-creation with communities, the PhD investigates the technical-scientific foundations for these systems to reach maximum energy autonomy — with batteries that harvest energy from the environment, based on non-toxic, low-impact materials — and economic viability at scale.</p>
+<h2 id="how-we-work">How we work</h2>
+<p>We adopt <em>Action Design Research</em> (ADR) as our central methodology: before any line of code or solder, we go to the field with partner organizations for active listening and participatory diagnosis of real needs. Only then do we move to co-creating prototypes, testing on the properties and iterative improvement cycles. Farmers sit at the center of the debate — not as passive beneficiaries, but as co-producers of the innovation.</p>
+<p>Our theoretical foundation rests on the Epistemologies of the South (Boaventura de Sousa Santos), Social Technology (Dagnino, Thomas) and a commitment to a just ecological transition, aligning the work with SDGs 1, 4, 7, 9 and 13.</p>
+<h2 id="two-rounds-already-completed">Two rounds already completed</h2>
+<h3 id="javalarm--electric-fence-monitoring-over-lora">JavAlarm — electric fence monitoring over LoRa</h3>
+<p>The first cycle emerged from observing an established practice in the territory: family farmers in the Paraíba Valley use electric fences against invaders, especially wild boars (<em>Sus scrofa</em>), and often only discover a fence failure days later, when the damage is done.</p>
+<p>JavAlarm is a low-cost, low-power system for detecting electric fence failures: a transmitter connected to the fence captures the high-voltage pulses (in the kV range) with an analog circuit inspired by the farmers&rsquo; own fence voltmeters, and a microcontroller with a LoRa transceiver (915 MHz) sends the alert with its own acknowledgment protocol — if the receiver is offline, the transmitter retransmits until acknowledged, ensuring no voltage drop goes unnoticed. Consumption was optimized to 114 mA while transmitting and 32 mA idle, enabling weeks of autonomy on standard batteries.</p>
+<h3 id="shitakiometer--autonomous-greenhouse-sensing">Shitakiometer — autonomous greenhouse sensing</h3>
+<p>The second cycle served mushroom producers, who must track temperature, relative humidity and CO₂ concentration in their greenhouses. Shitakiometer integrates DHT22 and MH-Z19B/SCD40 (NDIR CO₂) sensors with an ESP32 platform featuring LoRa radio, deep-sleep firmware and a 5V/1.25W solar panel with an 18650 battery — targeting continuous operation with a positive energy balance.</p>
+<p>On the backend: LoRa gateway → MQTT broker (Mosquitto) → Node-RED → InfluxDB → real-time Grafana dashboards, with alerts in the farmer&rsquo;s own language (Telegram/WhatsApp).</p>
+<h2 id="partnerships-and-next-steps">Partnerships and next steps</h2>
+<p>The work is developed with UNIFESP undergraduate students and organizations in the daily grind of the field: the Portal Sem Porteiras Association (Monteiro Lobato-SP), Akarui (São Luiz do Paraitinga-SP) and the Apoena Association.</p>
+<p>On the horizon: full JavAlarm integration, a weatherproof case, a bootloader with remote firmware updates, and an ecosystem of decentralized innovation combining low-power radios, lightweight protocols and harvest energy — building not only technology, but technical autonomy and digital sovereignty for rural communities.</p>
+<p>Results — prototypes, manuals and booklets — will be released on open-access platforms and shared with the communities in person, at extension fairs and social technology forums. A first version of these stories was presented at <a href="https://talx.dod.ngo/dwebcamp-2026/speaker/YUVETQ/">DWeb Camp 2026</a>, in the session <em>Semea-tec: seeding tech, growing autonomy</em>.</p>
+
+    </div>
+</article>
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 Hiure</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

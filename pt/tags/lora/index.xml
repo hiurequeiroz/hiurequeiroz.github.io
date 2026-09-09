@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>LoRa on Hiure Queiroz</title>
+		<link>https://hiurequeiroz.github.io/pt/tags/lora/</link>
+		<description>Recent content in LoRa on Hiure Queiroz</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://hiurequeiroz.github.io/pt/tags/lora/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>SEMEA-TEC: semeando tecnologias com agricultores familiares</title>
+				<link>https://hiurequeiroz.github.io/pt/posts/semea-tec-cocriando-tecnologias-com-agricultores-familiares/</link>
+				<pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://hiurequeiroz.github.io/pt/posts/semea-tec-cocriando-tecnologias-com-agricultores-familiares/</guid>
+				<description>&lt;p&gt;O &lt;a href=&#34;https://hiurequeiroz.github.io/pt/projects/semeatec/&#34;&gt;SEMEA-TEC&lt;/a&gt; (Semeando Soluções Tecnológicas na Agricultura Familiar) é um projeto de extensão da Unifesp — campus São José dos Campos (ICT) — que atua na interseção entre computação, eletrônica, extensão rural e metodologias participativas. Nosso propósito é desenvolver tecnologias sociais de baixo custo e baixo consumo energético voltadas à agricultura familiar, enfrentando a exclusão digital que aprofunda desigualdades históricas no campo.&lt;/p&gt;&#xA;&lt;p&gt;O projeto está organicamente vinculado à minha pesquisa de doutorado no PPGIT/Unifesp: enquanto a extensão opera como laboratório vivo de escuta e cocriação com as comunidades, o doutorado investiga os fundamentos técnico-científicos para que esses sistemas alcancem máxima autonomia energética — com baterias que captam energia do ambiente (harvest energy), baseadas em materiais não tóxicos e de baixo impacto — e viabilidade econômica para escala.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,154 @@
+[2026-09-09 10:52:56] ls /home/hiure/gits/hiurequeiroz.github.io && echo "---NEXTCLOUD---" && ls /home/hiure/Nextcloud 2>/dev/null | head -30 && echo "---TRANSISTIR---" && ls /home/hiure/Nextcloud/transistir 2>/dev/null | head -50
+[2026-09-09 10:55:33] ls -la /home/hiure/gits/hiurequeiroz.github.io && find /home/hiure/gits/hiurequeiroz.github.io -type f -not -path '*/.git/*' | head -100
+[2026-09-09 10:55:35] git remote -v && echo "---BRANCHES---" && git branch -a && echo "---LOG---" && git log --oneline -20 && echo "---STATUS---" && git status
+[2026-09-09 10:57:12] grep -i "generator" /home/hiure/gits/hiurequeiroz.github.io/index.html; echo "---"; head -60 /home/hiure/gits/hiurequeiroz.github.io/index.html; echo "---CONFIG FILES---"; find /home/hiure/gits/hiurequeiroz.github.io -maxdepth 2 -name "*.toml" -o -maxdepth 2 -name "*.yml" -o -maxdepth 2 -name "*.yaml" -o -maxdepth 2 -name "package.json" -o -maxdepth 2 -name "*.json" -not -path '*/.git/*' | grep -v node_modules
+[2026-09-09 10:57:15] find /home/hiure/gits/hiurequeiroz.github.io/posts /home/hiure/gits/hiurequeiroz.github.io/projects /home/hiure/gits/hiurequeiroz.github.io/doutorado -type f -name "*.html" | sort; echo "---EN/PT---"; find /home/hiure/gits/hiurequeiroz.github.io/en /home/hiure/gits/hiurequeiroz.github.io/pt /home/hiure/gits/hiurequeiroz.github.io/pt-br -type f | sort
+[2026-09-09 10:57:28] git log --format="%h %ad %s" --date=short -10; echo "---WORKFLOWS---"; find /home/hiure/gits/hiurequeiroz.github.io/.github -type f 2>/dev/null; echo "---OTHER REPOS IN ~/gits---"; ls /home/hiure/gits/; echo "---SEARCH FOR HUGO SOURCE REPOS---"; find /home/hiure/gits -maxdepth 3 \( -name "hugo.toml" -o -name "config.toml" -o -name "config.yaml" -o -name "hugo.yaml" -o -name "_config.yml" \) -not -path '*/.git/*' 2>/dev/null
+[2026-09-09 10:57:30] grep -oE '<title>[^<]*</title>|<pubDate>[^<]*</pubDate>' /home/hiure/gits/hiurequeiroz.github.io/posts/index.xml | head -40; echo "===PT POSTS==="; grep -oE '<title>[^<]*</title>|<pubDate>[^<]*</pubDate>' /home/hiure/gits/hiurequeiroz.github.io/pt/posts/index.xml | head -60
+[2026-09-09 10:57:52] find /home/hiure/Nextcloud/transistir -maxdepth 2 -type d | head -40 && echo "===FILES===" && find /home/hiure/Nextcloud/transistir -maxdepth 2 -type f \( -name "*.md" -o -name "*.txt" -o -name "*.odt" \) | head -40
+[2026-09-09 10:57:55] ls /home/hiure/Nextcloud/doutorado 2>/dev/null | head -40 && echo "===" && find /home/hiure/Nextcloud/doutorado -maxdepth 2 -type f \( -iname "*cv*" -o -iname "*lattes*" -o -iname "*bio*" -o -iname "*.md" -o -iname "*projeto*" -o -iname "*resumo*" \) 2>/dev/null | head -30
+[2026-09-09 10:58:01] ls -la /home/hiure/gits/hugokarna/ && echo "---HUGO.TOML---" && head -80 /home/hiure/gits/hugokarna/hugo.toml && echo "---GIT---" && git -C /home/hiure/gits/hugokarna remote -v && git -C /home/hiure/gits/hugokarna log --format="%h %ad %s" --date=short -10 && git -C /home/hiure/gits/hugokarna status -s | head -20
+[2026-09-09 10:58:30] echo "===ABOUT (EN)==="; python3 -c "
+import re,html
+t=open('/home/hiure/gits/hiurequeiroz.github.io/about/index.html').read()
+t=re.sub(r'<script.*?</script>','',t,flags=re.S); t=re.sub(r'<style.*?</style>','',t,flags=re.S)
+m=re.search(r'<main.*?</main>',t,flags=re.S)
+body=m.group(0) if m else t
+body=re.sub(r'<[^>]+>',' ',body); body=html.unescape(re.sub(r'\s+',' ',body))
+print(body[:3000])
+"; echo; echo "===DOUTORADO (EN)==="; python3 -c "
+import re,html
+t=open('/home/hiure/gits/hiurequeiroz.github.io/doutorado/index.html').read()
+t=re.sub(r'<script.*?</script>','',t,flags=re.S); t=re.sub(r'<style.*?</style>','',t,flags=re.S)
+m=re.search(r'<main.*?</main>',t,flags=re.S)
+body=m.group(0) if m else t
+body=re.sub(r'<[^>]+>',' ',body); body=html.unescape(re.sub(r'\s+',' ',body))
+print(body[:3000])
+"
+[2026-09-09 10:58:56] ls -la /home/hiure/Nextcloud/transistir/marca/ && echo "===PUBS===" && ls /home/hiure/Nextcloud/doutorado/"minhas publicações"/ 2>/dev/null && echo "===QUALIF===" && ls /home/hiure/Nextcloud/doutorado/qualificação/ 2>/dev/null && echo "===PALESTRAS===" && ls /home/hiure/Nextcloud/doutorado/palestras/ 2>/dev/null && echo "===CONGRESSOS===" && ls /home/hiure/Nextcloud/doutorado/"congressos e eventos"/ 2>/dev/null | head -20
+[2026-09-09 10:59:39] ls /home/hiure/Nextcloud/transistir/marca/manifesto/ /home/hiure/Nextcloud/transistir/marca/logo/ && echo "===MINIBIO===" && cd /tmp && unzip -p "/home/hiure/Nextcloud/doutorado/minibio/MiniBioHiure-GEIT.odt" content.xml 2>/dev/null | sed -e 's/<[^>]*>//g' | head -60
+[2026-09-09 10:59:40] python3 -c "
+import re,html
+for f in ['/home/hiure/gits/hiurequeiroz.github.io/about/index.html','/home/hiure/gits/hiurequeiroz.github.io/doutorado/index.html','/home/hiure/gits/hiurequeiroz.github.io/doutorado/learningportfolio/index.html']:
+    t=open(f).read()
+    t=re.sub(r'<script.*?</script>','',t,flags=re.S); t=re.sub(r'<style.*?</style>','',t,flags=re.S)
+    m=re.search(r'<main.*?</main>',t,flags=re.S)
+    body=m.group(0) if m else t
+    body=re.sub(r'<[^>]+>',' ',body); body=html.unescape(re.sub(r'\s+',' ',body))
+    print('=====',f)
+    print(body[:2500])
+    print()
+"
+[2026-09-09 11:00:10] cat /home/hiure/gits/hugokarna/updategithubpages.sh; echo "---README---"; cat /home/hiure/gits/hugokarna/README.md; echo "---THEMES---"; ls /home/hiure/gits/hugokarna/themes/; echo "---CONTENT TREE---"; find /home/hiure/gits/hugokarna/content -type f | sort | head -80; echo "---MENU SECTION---"; sed -n '/\[menu\]/,$p' /home/hiure/gits/hugokarna/hugo.toml; echo "---CONFIG.TOML (old?)---"; head -20 /home/hiure/gits/hugokarna/config.toml
+[2026-09-09 11:00:16] python3 -c "
+import re,html
+for f in ['/home/hiure/gits/hiurequeiroz.github.io/projects/index.html','/home/hiure/gits/hiurequeiroz.github.io/en/index.html','/home/hiure/gits/hiurequeiroz.github.io/pt-br/index.html']:
+    t=open(f).read()
+    t=re.sub(r'<script.*?</script>','',t,flags=re.S); t=re.sub(r'<style.*?</style>','',t,flags=re.S)
+    m=re.search(r'<main.*?</main>',t,flags=re.S)
+    body=m.group(0) if m else t
+    body=re.sub(r'<[^>]+>',' ',body); body=html.unescape(re.sub(r'\s+',' ',body))
+    print('=====',f)
+    print(body[:2200]); print()
+"; echo "===PT DOUTORADO SEMINARS LIST==="; grep -oE '<title>[^<]*</title>|<pubDate>[^<]*</pubDate>' /home/hiure/gits/hiurequeiroz.github.io/pt/doutorado/index.xml | head -60
+[2026-09-09 11:00:53] diff -rq /home/hiure/gits/hugokarna/public /home/hiure/gits/hiurequeiroz.github.io 2>/dev/null | grep -v "^Only in /home/hiure/gits/hiurequeiroz.github.io: .git" | grep -v ".claude" | head -30; echo "---DIFF COUNT---"; diff -rq /home/hiure/gits/hugokarna/public /home/hiure/gits/hiurequeiroz.github.io 2>/dev/null | wc -l; echo "---PROJECTS PAGE RAW---"; grep -oE '<li[^>]*>.*?</li>|<h3>[^<]*</h3>|href=[^ >]*projects[^ >]*' /home/hiure/gits/hiurequeiroz.github.io/projects/index.html | head -40
+[2026-09-09 11:01:06] head -12 "/home/hiure/gits/hugokarna/content/pt/doutorado/seminarios/um-panorama-das-desigualdades-de-genero-no-mercado-de-trabalho-brasileiro.md"; echo "---EN DOUTORADO---"; head -15 /home/hiure/gits/hugokarna/content/en/doutorado/_index.md; echo "---PT DOUTORADO INDEX---"; head -15 /home/hiure/gits/hugokarna/content/pt/doutorado/_index.md; echo "---HUGOKARNA UNCOMMITTED DIFF STAT---"; git -C /home/hiure/gits/hugokarna diff --stat | tail -5; echo "---LAYOUTS---"; find /home/hiure/gits/hugokarna/layouts -type f | head -20
+[2026-09-09 11:01:46] cd /tmp && unzip -p "/home/hiure/Nextcloud/transistir/marca/manifesto/ManifestoTransistencia_v3.odt" content.xml 2>/dev/null | sed -e 's/<text:p [^>]*>/\n/g; s/<text:h [^>]*>/\n## /g; s/<[^>]*>//g' | grep -v '^\s*$' | head -80
+[2026-09-09 11:02:04] python3 -c "
+import re,html
+t=open('/home/hiure/gits/hiurequeiroz.github.io/projects/index.html').read()
+m=re.search(r'<main.*?</main>',t,flags=re.S); body=m.group(0)
+# keep links
+for a in re.findall(r'<a[^>]*href=([^ >]+)[^>]*>(.*?)</a>',body):
+    txt=re.sub(r'<[^>]+>',' ',a[1]); txt=html.unescape(re.sub(r'\s+',' ',txt)).strip()
+    print(a[0],'|',txt)
+"; echo "---SITEMAP---"; cat /home/hiure/gits/hiurequeiroz.github.io/sitemap.xml; echo; echo "---ORPHAN CHECK (pt posts not in feed)---"; grep -o "<loc>[^<]*</loc>" /home/hiure/gits/hiurequeiroz.github.io/pt/sitemap.xml | head; echo "---PT HOME RECENT---"; python3 -c "
+import re,html
+t=open('/home/hiure/gits/hiurequeiroz.github.io/pt/index.html').read()
+m=re.search(r'Recentes.*?</div></main>',t,flags=re.S) or re.search(r'<main.*?</main>',t,flags=re.S)
+body=re.sub(r'<[^>]+>',' ',m.group(0)); print(html.unescape(re.sub(r'\s+',' ',body))[:1200])
+"
+[2026-09-09 11:02:31] head -50 "/home/hiure/Nextcloud/doutorado/extensão/semea-tec-presentation-short-en.md" 2>/dev/null; echo "===ANOTA==="; ls /home/hiure/Nextcloud/doutorado/anota/ 2>/dev/null | head; echo "===DOCS==="; ls /home/hiure/Nextcloud/doutorado/docs/ 2>/dev/null | head -20
+[2026-09-09 11:02:33] python3 -c "
+import re,html
+t=open('/home/hiure/gits/hiurequeiroz.github.io/projects/index.html').read()
+m=re.search(r'<main.*?</main>',t,flags=re.S)
+print(m.group(0)[:4000] if m else 'NO MAIN')
+"
+[2026-09-09 11:02:59] for f in /home/hiure/gits/hugokarna/content/pt/projects/*.md; do echo "== $f"; sed -n '1,8p' "$f"; done 2>/dev/null | head -80; echo "---_index EN projects---"; cat /home/hiure/gits/hugokarna/content/en/projects/_index.md
+[2026-09-09 11:03:35] head -60 "/home/hiure/Nextcloud/transistir/guardian connector/tasks.md" 2>/dev/null; echo "===CAPACITY==="; find /home/hiure/Nextcloud/transistir/capacity -maxdepth 2 | head -20
+[2026-09-09 11:23:15] cd /home/hiure/gits/hugokarna && git status --short | head -30 && echo "---COUNT---" && git status --short | wc -l && git log --oneline -3
+[2026-09-09 11:23:43] cd /home/hiure/gits/hugokarna && git add -A && git commit -m "$(cat <<'EOF'
+Baseline: estado atual do fonte que gerou o site publicado (jul/2025)
+
+Inclui seção de doutorado/portfólio de aprendizagem, ajustes do tema e
+build public/ correspondente ao deploy em hiurequeiroz.github.io.
+
+Co-Authored-By: Claude Code <noreply@anthropic.com>
+EOF
+)" && git log --oneline -2
+[2026-09-09 11:25:06] cd /home/hiure/gits/hugokarna && grep -rl "communityProjects\|CommunityProjects" layouts themes/gokarna/layouts 2>/dev/null; echo "===CONTENT TREE==="; find content -maxdepth 2 -type d | sort; echo "===EN PROJECTS==="; ls content/en/projects/ content/pt/projects/ 2>/dev/null
+[2026-09-09 11:25:43] cd /home/hiure/gits/hugokarna && echo "===EN projects/_index===" && cat content/en/projects/_index.md && echo "===PT projects/_index===" && cat content/pt/projects/_index.md && echo "===EN doutorado===" && ls content/en/doutorado/ && head -30 content/en/doutorado/_index.md && echo "===PT doutorado===" && ls content/pt/doutorado/ && head -30 content/pt/doutorado/_index.md 2>/dev/null
+[2026-09-09 11:26:16] cd /home/hiure/gits/hugokarna && ls themes/gokarna/i18n/ && echo "===EN.TOML===" && cat themes/gokarna/i18n/en.toml && echo "===PT.TOML===" && cat themes/gokarna/i18n/pt.toml 2>/dev/null && echo "===LAYOUTS===" && ls themes/gokarna/layouts/_default/ themes/gokarna/layouts/partials/ && echo "===PROJECT PAGE EXAMPLE===" && cat content/en/projects/Libremesh.md
+[2026-09-09 11:27:16] cd /home/hiure/gits/hugokarna && echo "===SEMINARIOS CONTENT===" && ls content/pt/doutorado/seminarios/ && echo "===DATA 2024-04-02===" && grep -rl "2024-04-02" content/ && echo "===LIST.HTML===" && cat themes/gokarna/layouts/_default/list.html && echo "===PAGE.HTML===" && cat themes/gokarna/layouts/_default/page.html && echo "===I18NLIST===" && cat layouts/partials/i18nlist.html 2>/dev/null
+[2026-09-09 11:28:00] cd /home/hiure/gits/hugokarna && cat themes/gokarna/layouts/partials/list.html && echo "===SEMINARIO COM DATA ERRADA===" && head -25 content/pt/doutorado/seminarios/tecnologias-esportes-wellness.md && echo "===OUTRO SEMINARIO (referência de formato)===" && head -15 content/pt/doutorado/seminarios/neuromodulacao-transcraniana.md
+[2026-09-09 11:30:19] cd /home/hiure/gits/hugokarna && cat themes/gokarna/layouts/partials/list-posts.html
+[2026-09-09 11:41:50] cd /home/hiure/gits/hugokarna && echo "===EN ABOUT===" && ls content/en/about/ && cat content/en/about/*.md && echo "===PT ABOUT===" && ls content/pt/about/ && cat content/pt/about/*.md
+[2026-09-09 11:41:52] cd /home/hiure/gits/hugokarna && echo "===EN PORTFOLIO===" && cat content/en/doutorado/LearningPortfolio.md && echo "===PT PORTFOLIO===" && head -60 content/pt/doutorado/portfolio-de-aprendizagem.md && echo "===FOOTER===" && cat themes/gokarna/layouts/partials/footer.html
+[2026-09-09 11:49:16] cd /home/hiure/gits/hugokarna && grep -A5 "^+++" content/pt/doutorado/seminarios/*.md | grep -E "title|date|palestrante|\.md" | head -50 && echo "===POST EXAMPLE===" && head -12 content/en/posts/test-new-lime.md && echo "===STATIC IMAGES===" && ls static/images/ && echo "===ICONS===" && ls themes/gokarna/static/svg/icons/ 2>/dev/null | head -30
+[2026-09-09 11:49:16] ls /home/hiure/Nextcloud/doutorado/prototipos/ 2>/dev/null | head -20; echo "===EXTENSAO==="; ls /home/hiure/Nextcloud/doutorado/extensão/ 2>/dev/null | head -20; echo "===COIAB ASSETS==="; ls /home/hiure/Nextcloud/transistir/COIAB/01-kutary/assets/ 2>/dev/null | head; ls /home/hiure/Nextcloud/transistir/COIAB/00-geral/ 2>/dev/null | head
+[2026-09-09 11:51:03] cd /home/hiure/gits/hugokarna && ls content/en/posts/ content/pt/posts/ && echo "===POST FRONTMATTER===" && head -12 content/en/posts/*.md | head -40 && echo "===STATIC===" && ls static/images/ && echo "===ICONS===" && ls themes/gokarna/static/svg/icons/ | head -40 && which hugo && hugo version
+[2026-09-09 11:51:53] cd /home/hiure/gits/hugokarna && ls assets/images/ && echo "===JAVALERTA===" && find /home/hiure/Nextcloud/doutorado/extensão/javalerta /home/hiure/Nextcloud/doutorado/extensão/shitakiometer "/home/hiure/Nextcloud/doutorado/extensão/cerca javali" "/home/hiure/Nextcloud/doutorado/extensão/sensoriamento cogumelo" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) 2>/dev/null | head -15 && echo "===LOGOS COIAB/KUTARY===" && find /home/hiure/Nextcloud/transistir/COIAB -type f \( -iname "*logo*" -o -iname "*.png" \) 2>/dev/null | grep -vi screenshot | head -10
+[2026-09-09 11:52:10] pdftotext /home/hiure/Nextcloud/doutorado/docs/cv_lattes.pdf - 2>/dev/null | grep -io "lattes.cnpq.br/[0-9]*" | head -3 || grep -ao "lattes.cnpq.br/[0-9]*" /home/hiure/Nextcloud/doutorado/docs/cv_lattes.pdf | head -3
+[2026-09-09 11:52:51] find /home/hiure/Nextcloud/transistir/IEB -type f \( -iname "*dashboard*" -o -iname "*logo*" \) \( -iname "*.png" -o -iname "*.jpg" \) 2>/dev/null | head -5; echo "===GUARDIAN==="; ls "/home/hiure/Nextcloud/transistir/guardian connector/screenshots/" "/home/hiure/Nextcloud/transistir/guardian connector/logos/" 2>/dev/null | head -15; echo "===MPI ASSETS==="; ls "/home/hiure/Nextcloud/transistir/Min Povos Indigenas/assets/" 2>/dev/null | head
+[2026-09-09 11:53:03] cd /home/hiure/gits/hugokarna && hugo --quiet 2>&1 | head -30; echo "EXIT: $?"; ls public/projects/index.html && grep -c "post-link" public/projects/index.html && grep -o "Projects\|PhD\|Doutorado" public/index.html | sort | uniq -c
+[2026-09-09 11:53:45] find /home/hiure/Nextcloud/transistir/IEB/produtos -type f \( -iname "*.png" -o -iname "*.jpg" \) 2>/dev/null | grep -iE "dash|tela|screen|print" | head -5; echo "===MPI LOGO==="; file "/home/hiure/Nextcloud/transistir/Min Povos Indigenas/assets/logo.png"; echo "===PT BUILD CHECK==="; cd /home/hiure/gits/hugokarna && grep -c "post-link" public/pt/projects/index.html && grep -o "Doutorado\|Projetos" public/pt/index.html | sort | uniq -c && grep -o "<strong>[^<]*:</strong>" public/index.html | sort | uniq -c
+[2026-09-09 11:54:34] ls /home/hiure/Nextcloud/transistir/IEB/produtos/4-dashboard-visualizacao/ 2>/dev/null | head; find /home/hiure/Nextcloud/transistir/IEB/produtos/4-dashboard-visualizacao -type f \( -iname "*.png" -o -iname "*.jpg" \) 2>/dev/null | head -5
+[2026-09-09 11:54:49] cd /home/hiure/gits/hugokarna/assets/images && cp /home/hiure/Nextcloud/transistir/marca/logo/logo.png transistir.png && cp /home/hiure/Nextcloud/transistir/COIAB/01-mondo/assets/logo.png kutary-coiab.png && cp "/home/hiure/Nextcloud/transistir/guardian connector/logos/gcexplorer.png" gcexplorer.png && cp "/home/hiure/Nextcloud/transistir/Min Povos Indigenas/assets/logo.png" cadeiadominial.png && cp /home/hiure/Nextcloud/doutorado/extensão/javalerta/docs/images/architecture_diagram.png javalarm.png && cp "/home/hiure/Nextcloud/doutorado/extensão/sensoriamento cogumelo/wP6fDWOBtNOwtKc5aNwNfnEP7jr11auRwm1SXJmL.jpg" shitakiometer.jpg && ls -la transistir.png kutary-coiab.png gcexplorer.png cadeiadominial.png javalarm.png shitakiometer.jpg && file transistir.png kutary-coiab.png gcexplorer.png
+[2026-09-09 11:55:17] cd /home/hiure/Nextcloud/transistir/marca/logo && md5sum logo.png logo_2.png transistir.png transistor.png "/home/hiure/Nextcloud/transistir/Min Povos Indigenas/assets/logo.png" && file transistir.png logo_2.png; echo "===CADEIADOMINIAL GITS==="; ls -d /home/hiure/gits/CadeiaDominial* 2>/dev/null && find /home/hiure/gits/CadeiaDominial* -maxdepth 2 -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.md" \) 2>/dev/null | grep -viE "node_modules|static/admin" | head -10
+[2026-09-09 11:56:07] cp /home/hiure/Nextcloud/transistir/marca/logo/transistir.png /home/hiure/gits/hugokarna/assets/images/transistir.png && cp /home/hiure/gits/CadeiaDominial/printpage.png /home/hiure/gits/hugokarna/assets/images/cadeiadominial.png && file /home/hiure/gits/hugokarna/assets/images/cadeiadominial.png
+[2026-09-09 11:57:19] cp /home/hiure/Nextcloud/transistir/marca/logo/logo_smal.png /home/hiure/gits/hugokarna/assets/images/transistir.png && file /home/hiure/gits/hugokarna/assets/images/transistir.png
+[2026-09-09 11:58:16] cd /home/hiure/gits/hugokarna && grep -rn "project-image\|portfolio" themes/gokarna/assets/css/*.css themes/gokarna/static/css/*.css assets/css/*.css 2>/dev/null | head -20
+[2026-09-09 11:58:41] cd /home/hiure/gits/hugokarna && find . -name "*.css" -not -path "./public/*" | head && grep -rn "project-image" themes/gokarna/ --include="*.css" | head -5 && grep -rn -A6 "\.project-image" $(find themes/gokarna -name "*.css" -not -path "*min*" | head -3) 2>/dev/null | head -25
+[2026-09-09 12:00:30] cd /home/hiure/gits/hugokarna/assets/images && cp /home/hiure/Nextcloud/transistir/marca/logo/logo_smal.png transistir-light.png && cp /home/hiure/Nextcloud/transistir/marca/logo/transistir.png transistir.png && ls -la transistir*.png
+[2026-09-09 12:01:14] cd /home/hiure/gits/hugokarna/assets/images && (command -v magick || command -v convert) && (magick transistir.png -resize 600x transistir.png 2>/dev/null || convert transistir.png -resize 600x transistir.png) && ls -la transistir.png
+[2026-09-09 12:01:56] cd /home/hiure/gits/hugokarna/assets/images && convert transistir.png -quality 82 transistir.jpg && ls -la transistir.jpg && rm transistir.png && ls transistir*
+[2026-09-09 12:21:50] cd /home/hiure/gits/hugokarna/content/pt/doutorado/seminarios && for f in inovacao-acessibilidade avaliacao-do-ciclo-de-vida um-panorama-das-desigualdades-de-genero-no-mercado-de-trabalho-brasileiro pos-desenvolvimento-decrescimento; do grep -E "^title|^date|^palestrante" $f.md; echo "---"; done
+[2026-09-09 12:37:23] cd /home/hiure/gits/hugokarna && hugo --cleanDestinationDir 2>&1 | tail -20; echo "EXIT=$?"; echo "===WARNINGS==="; hugo --cleanDestinationDir 2>&1 | grep -iE "warn|error" | head -20
+[2026-09-09 12:38:14] cd /home/hiure/gits/hugokarna/public && echo "===EN HOME tagline+cards===" && grep -o "Social Tech Developer[^<]*" index.html | head -2 && grep -c "project-image" index.html && grep -o '<a href="[^"]*">More Info</a>' index.html && echo "===PT HOME===" && grep -o "Desenvolvedor de Tecnologias Sociais[^<]*" pt/index.html | head -1 && grep -o '<a href="[^"]*">Mais Informações</a>' pt/index.html && echo "===RECENT POSTS EN===" && grep -A2 "home-posts" index.html | head -5; grep -o "semea-tec-co-creating[^/\"]*" index.html | head -2; grep -o "an-invitation-to-transistence" index.html | head -2 && echo "===PT-BR GONE===" && ls pt-br 2>&1 | head -2 && ls pt/doutorado/seminarios/ | head -12 && echo "===PROJECTS LIST===" && grep -o 'class="post-link"' projects/index.html | wc -l && grep -o 'class="post-link"' pt/projects/index.html | wc -l
+[2026-09-09 12:39:05] cd /home/hiure/gits/hugokarna/public && ls images/ | grep -E "transistir|kutary|shitakiometer|cadeiadominial|gcexplorer|javalarm" && echo "===PT RECENT===" && grep -o "um-convite-a-transistencia\|semea-tec-cocriando[^/\"]*" pt/index.html | sort -u && echo "===NAV EN===" && grep -o 'href="[^"]*doutorado[^"]*"' index.html | head -3 && echo "===NAV PT===" && grep -o 'href="[^"]*doutorado[^"]*"' pt/index.html | head -3 && echo "===DOUTORADO EN CONTENT===" && grep -o "Sociotechnical Co-creation[^<]*" doutorado/index.html | head -1 && grep -o "Cocriação Sociotécnica[^<]*" pt/doutorado/index.html | head -1
+[2026-09-09 12:39:46] cd /home/hiure/gits/hugokarna && ./updategithubpages.sh 2>&1 | tail -5 && echo "===DEPLOY REPO STATUS===" && git status --short | head -15 && git status --short | wc -l
+[2026-09-09 12:42:14] cd /home/hiure/gits/hugokarna && git add -A && git commit -q -m "$(cat <<'EOF'
+Atualiza site com identidade, projetos e produção recentes (2026)
+
+- Home: nova tagline e cards por idioma (Transistir, Kutary/COIAB,
+  SEMEA-TEC, Coolab); corrige typos e i18n EN faltante nos cards
+- About reescrito (PT/EN) com trajetória atual
+- Projects: listagem funcionando (template próprio) + 7 projetos novos
+  por idioma (Transistir, Kutary, CadeiaDominial, IEB TerraLab,
+  Guardian Connector, SEMEA-TEC, Earth Defenders Toolkit)
+- Doutorado: pesquisa PPGIT/Unifesp, produção, links acadêmicos;
+  portfólios com seminários reais de 2025 e links corrigidos
+- Posts novos (PT/EN): Um Convite à Transistência e SEMEA-TEC
+- Correções: menu PhD duplicado, data de seminário, rsync --delete
+
+Co-Authored-By: Claude Code <noreply@anthropic.com>
+EOF
+)" && git log --oneline -2 && git add -A && git commit -q -m "$(cat <<'EOF'
+Atualiza site publicado: identidade 2026, projetos, doutorado e posts
+
+Build novo do hugokarna com limpeza de arquivos órfãos (/pt-br/,
+duplicatas -copy) via rsync --delete.
+
+Co-Authored-By: Claude Code <noreply@anthropic.com>
+EOF
+)" && git log --oneline -2
+[2026-09-09 12:43:01] git add -A && git commit -q -m "$(cat <<'EOF'
+Atualiza site publicado: identidade 2026, projetos, doutorado e posts
+
+Build novo do hugokarna com limpeza de arquivos órfãos (/pt-br/,
+duplicatas -copy) via rsync --delete.
+
+Co-Authored-By: Claude Code <noreply@anthropic.com>
+EOF
+)" && git log --oneline -2 && git status --short | wc -l
