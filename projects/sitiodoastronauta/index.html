@@ -5,7 +5,7 @@
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Skip to content</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -101,9 +102,8 @@
   <li>
     <a href="/pt/projects/sitiodoastronauta/">
         <div class="lang">
-            pt  (311 words)
+            pt
         </div>
-        
     </a>
   </li>
   
@@ -155,14 +155,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle theme">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Toggle theme">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -223,7 +223,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -232,9 +233,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -243,13 +245,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -264,19 +267,55 @@
 }
 </style>
 <main id="content">
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">Sitio Do Astronauta</h1>
-    </header>
+    <div class="banner">
+    
+    
+    
+        
+        
+            <img src="/images/sitiodoastronauta_hu_dbe849fe38bc1b80.png" width="300" height="700" alt="">
+        
+    
+
+</div>
+<div class="banner-mobile">
+    
+    
+    
+        
+        
+            <img src="/images/sitiodoastronauta_hu_5126acd2293fb14f.png" width="150" height="250" alt="">
+        
+    
+
+</div>
+<div class="post container">
     <div class="post-content">
-        <p>As the creator of <a href="http://sitiodoastronauta.com.br">Sítio do Astronauta</a>, a collective of artists, activists, and researchers working with free and community technologies, I bring my academic experience in science and my learning in reverse engineering as a hacktivist. Realizing the gap between academia and society, I decided to create this collective to communicate and bring science and technology to communities in a different way.
+        <div class="post-header-section">
+            <h1>Sitio Do Astronauta</h1>
+        </div>
+
+        <div class="post-content">
+            <p>As the creator of <a href="http://sitiodoastronauta.com.br">Sítio do Astronauta</a>, a collective of artists, activists, and researchers working with free and community technologies, I bring my academic experience in science and my learning in reverse engineering as a hacktivist. Realizing the gap between academia and society, I decided to create this collective to communicate and bring science and technology to communities in a different way.
 Sítio do Astronauta was conceived not only from my vision of exploring the frontiers of technology and art but also with the essential collaboration of <a href="http://guerradimarcela.net.br">Marcela Guerra</a>. Together, we created a space where innovation and creativity come together to generate unique experiences. With a strong foundation in free and community technologies, the collective is dedicated to developing playful electronic activities that not only entertain but also educate.</p>
 <p>Through the activities of Sítio do Astronauta, I seek to awaken curiosity and interest in science and technology, encouraging experimentation and self-taught learning. The playful electronic activities we propose are carefully designed to introduce concepts of electronics, programming, and robotics in an accessible and engaging way.</p>
 <p>In addition to promoting technological education, one of the goals of Sítio do Astronauta is to foster collaboration and knowledge sharing. I believe that by working together and sharing experiences, it is possible to create innovative solutions to society&rsquo;s challenges. Therefore, I make sure that Sítio do Astronauta is an inclusive space where people of all ages and backgrounds can come together to learn, create, and innovate.</p>
 <p>In summary, Sítio do Astronauta, more than a collective, is a vibrant community that seeks, through playful and learning-filled electronic activities, to inspire a new generation of creators, thinkers, and innovators, all under my leadership and vision of bringing science and technology closer to society in a more accessible and engaging way.</p>
 
+        </div>
+        
     </div>
-</article>
+    
+</div>
+<div class="full">
+     
+     
+        <a href="/projects/" class="back-icon">
+            <span data-feather="arrow-left"></span> Back
+        </a>
+    
+
+</div>
 
         </main><footer class="footer">
     

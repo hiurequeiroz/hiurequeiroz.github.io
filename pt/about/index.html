@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="pt"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Pular para o conteúdo</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -101,9 +102,8 @@
   <li>
     <a href="/about/">
         <div class="lang">
-            en  (368 words)
+            en
         </div>
-        
     </a>
   </li>
   
@@ -155,14 +155,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Alternar tema">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Alternar menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Alternar tema">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -223,7 +223,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -232,9 +233,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -243,13 +245,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -264,20 +267,56 @@
 }
 </style>
 <main id="content">
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">Sobre</h1>
-    </header>
+    <div class="banner">
+    
+    
+    
+        
+        
+            <img src="/images/monoblaster_hu_20fcaf7981ad5b6e.jpg" width="300" height="640" alt="">
+        
+    
+
+</div>
+<div class="banner-mobile">
+    
+    
+    
+        
+        
+            <img src="/images/monoblaster_hu_64163af0fe300f8b.jpg" width="150" height="250" alt="">
+        
+    
+
+</div>
+<div class="post container">
     <div class="post-content">
-        <p>Sou doutorando em Inovação e Tecnologia pela Universidade Federal de São Paulo (Unifesp, PPGIT), onde pesquiso tecnologias sociais para o bem viver. Minha pesquisa atual, <em>&ldquo;Cocriação Sociotécnica com Agricultores Familiares: Desenvolvimento Participativo de Tecnologias para o Meio Rural&rdquo;</em>, investiga como metodologias participativas moldam a construção de sistemas autônomos de comunicação e sensoriamento no campo — trabalho organicamente vinculado ao projeto de extensão <a href="/pt/projects/semeatec/">SEMEA-TEC</a>.</p>
+        <div class="post-header-section">
+            <h1>Sobre</h1>
+        </div>
+
+        <div class="post-content">
+            <p>Sou doutorando em Inovação e Tecnologia pela Universidade Federal de São Paulo (Unifesp, PPGIT), onde pesquiso tecnologias sociais para o bem viver. Minha pesquisa atual, <em>&ldquo;Cocriação Sociotécnica com Agricultores Familiares: Desenvolvimento Participativo de Tecnologias para o Meio Rural&rdquo;</em>, investiga como metodologias participativas moldam a construção de sistemas autônomos de comunicação e sensoriamento no campo — trabalho organicamente vinculado ao projeto de extensão <a href="/pt/projects/semeatec/">SEMEA-TEC</a>.</p>
 <p>Sou graduado em Física e mestre em Ciência dos Materiais pelo <a href="http://bdtd.ibict.br/vufind/Record/ITA_69f67f8b7750867feb8cadadb08d454f">Instituto Tecnológico de Aeronáutica (ITA)</a>. Atuo na promoção da apropriação crítica da ciência e da tecnologia por meio da cultura hacker.</p>
 <p>Sou sócio-fundador da <a href="https://transistir.com">Transistir Social Tech</a>, iniciativa dedicada ao desenvolvimento de hardware e software com foco em tecnologias descentralizadas, em parceria com organizações indígenas (como a COIAB), institutos de pesquisa (IEB, UFPA/FADESP) e movimentos sociais. Integro também o coletivo <a href="/pt/projects/sitiodoastronauta/">Sítio do Astronauta</a>, voltado à experimentação em ecotecnologias e modos de vida sustentáveis, e a <a href="https://coolab.org">Coolab – Laboratório Cooperativo de Redes Livres</a>.</p>
 <p>Minha trajetória começou apaixonado por aprender coisas novas: depois do mestrado, percebi que minha vida estava mais relacionada às comunidades do que à academia, e transformei o sonho de trabalhar com tecnologias em coletivos e projetos de campo. Na Nuvem Estação de Arte e Tecnologia (2015), participei do projeto <a href="https://wiki.nuvem.tk/index.php/Fuma%C3%A7a_Data_Springs">Fumaça Data Springs</a> — a primeira rede wifi mesh e uma rede experimental na banda GSM de Vila da Fumaça, Resende-RJ. Na sequência, com a coolab, fundamos a <a href="/pt/projects/psp/">Associação Portal sem Porteiras</a>, associação sem fins lucrativos que promove inclusão digital e autonomia tecnológica de comunidades rurais e urbanas por meio de tecnologias livres e abertas, sediada no Bairro dos Souzas, Monteiro Lobato-SP.</p>
 <p>Do Sítio do Astronauta veio um dos projetos que mais gosto: o Tecnomisticismo, feito em parceria com o <a href="https://www.youtube.com/watch?v=82tkY-XSw-0">circuito de artes do Sesc 2017</a>, que aproxima a tecnologia da linguagem dos símbolos e do místico, criando ambientes de imersão e reflexão sobre o que a tecnologia é e o que ela pode ser. É o mesmo espírito que orienta meu trabalho hoje: tecnologia feita <em>com</em>, e não <em>para</em>.</p>
 <p>Também escrevo sobre tudo isso: o ensaio <a href="https://tocaia.info/edicao/um-convite-a-transistencia/"><em>Um Convite à Transistência</em></a> saiu na edição nº 1 da revista TOCAIA, e reflexões sobre pesquisa e extensão aparecem na <a href="/pt/doutorado/">seção de doutorado</a> deste site.</p>
 
+        </div>
+        
     </div>
-</article>
+    
+</div>
+<div class="full">
+     
+     
+        <a href="/pt/" class="back-icon">
+            <span data-feather="arrow-left"></span> Voltar
+        </a>
+    
+
+</div>
 
         </main><footer class="footer">
     

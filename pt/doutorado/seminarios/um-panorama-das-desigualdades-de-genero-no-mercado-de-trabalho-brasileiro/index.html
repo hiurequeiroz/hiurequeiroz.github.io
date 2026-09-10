@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Um panorama das desigualdades de gênero no mercado de trabalho brasileiro - Seminário</title>
     <style>
+        :root {
+            --s-bg: #ffffff;
+            --s-bg-alt: #f0f7f4;
+            --s-bg-code: #e9efec;
+            --s-text: #1c1c1c;
+            --s-text-soft: #3d4a44;
+            --s-muted: #5c6b64;
+            --s-border: #d9e2de;
+            --s-accent: #2e7d5b;
+            --s-accent-strong: #245f46;
+            --s-code-text: #9d2c2c;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --s-bg: #22272e;
+                --s-bg-alt: #2d333b;
+                --s-bg-code: #363c44;
+                --s-text: #e6edf3;
+                --s-text-soft: #cdd6cf;
+                --s-muted: #9aa7a0;
+                --s-border: #3d444d;
+                --s-accent: #7fc9a2;
+                --s-accent-strong: #a5dcbe;
+                --s-code-text: #f0a6a6;
+            }
+        }
+
         * {
             box-sizing: border-box;
         }
-        
+
         html, body {
             margin: 0;
             padding: 0;
@@ -16,53 +44,54 @@
             overflow-x: hidden;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #ffffff;
+            color: var(--s-text);
+            background: var(--s-bg);
         }
-        
+
         .seminario-article {
             width: 100%;
             max-width: 100%;
             padding: 2rem;
-            background: #ffffff;
+            background: var(--s-bg);
             border-radius: 0;
             overflow-wrap: break-word;
             word-wrap: break-word;
             hyphens: auto;
         }
-        
+
         .seminario-header {
             margin-bottom: 2rem;
             padding-bottom: 1rem;
-            border-bottom: 2px solid #e5e7eb;
+            border-bottom: 2px solid var(--s-border);
         }
-        
+
         .seminario-header h1 {
             margin: 0 0 1rem 0;
-            color: #2563eb;
+            color: var(--s-accent);
             font-size: 2rem;
             font-weight: 700;
             line-height: 1.3;
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .seminario-meta {
             display: flex;
             gap: 1rem;
-            color: #6b7280;
+            color: var(--s-muted);
             margin-top: 0.5rem;
             flex-wrap: wrap;
             font-size: 0.95rem;
         }
-        
+
         .seminario-date, .seminario-author {
-            background: #f3f4f6;
+            background: var(--s-bg-alt);
+            border: 1px solid var(--s-border);
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
             font-weight: 500;
         }
-        
+
         .seminario-body {
             line-height: 1.7;
             width: 100%;
@@ -72,9 +101,9 @@
             hyphens: auto;
             font-size: 1rem;
         }
-        
+
         .seminario-body h2 {
-            color: #2563eb;
+            color: var(--s-accent);
             margin-top: 2.5rem;
             margin-bottom: 1rem;
             font-size: 1.5rem;
@@ -82,115 +111,119 @@
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .seminario-body h3 {
             margin-top: 2rem;
             margin-bottom: 0.75rem;
             font-size: 1.25rem;
             font-weight: 600;
-            color: #374151;
+            color: var(--s-text-soft);
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .seminario-body p {
             margin: 1.25rem 0;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            text-align: justify;
         }
-        
+
         .seminario-body ul, .seminario-body ol {
             margin: 1.25rem 0;
             padding-left: 1.5rem;
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .seminario-body li {
             margin: 0.75rem 0;
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .seminario-body a {
-            color: #2563eb;
+            color: var(--s-accent);
             text-decoration: none;
             transition: color 0.2s;
             word-wrap: break-word;
             overflow-wrap: break-word;
             border-bottom: 1px solid transparent;
         }
-        
+
         .seminario-body a:hover {
-            color: #1d4ed8;
-            border-bottom-color: #1d4ed8;
+            color: var(--s-accent-strong);
+            border-bottom-color: var(--s-accent-strong);
         }
-        
+
+        .seminario-body a:focus-visible {
+            outline: 2px solid var(--s-accent);
+            outline-offset: 2px;
+        }
+
         .seminario-body pre {
             overflow-x: auto;
             white-space: pre-wrap;
             word-wrap: break-word;
-            background: #f8f9fa;
+            background: var(--s-bg-alt);
             padding: 1.5rem;
             border-radius: 8px;
             margin: 1.5rem 0;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid var(--s-accent);
             font-size: 0.9rem;
         }
-        
+
         .seminario-body code {
-            background: #f1f5f9;
+            background: var(--s-bg-code);
             padding: 0.2rem 0.4rem;
             border-radius: 4px;
             font-size: 0.9em;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            color: #dc2626;
+            color: var(--s-code-text);
         }
-        
+
         .seminario-body blockquote {
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid var(--s-accent);
             padding: 1rem 1.5rem;
             margin: 1.5rem 0;
             font-style: italic;
-            background: #f8f9fa;
+            background: var(--s-bg-alt);
             border-radius: 0 8px 8px 0;
-            color: #4b5563;
+            color: var(--s-muted);
         }
-        
+
         .seminario-body strong {
             font-weight: 600;
-            color: #1f2937;
+            color: var(--s-text);
         }
-        
+
         .seminario-body em {
             font-style: italic;
-            color: #4b5563;
+            color: var(--s-text-soft);
         }
-        
+
         @media (max-width: 768px) {
             .seminario-article {
                 padding: 1rem;
             }
-            
+
             .seminario-header h1 {
                 font-size: 1.75rem;
             }
-            
+
             .seminario-meta {
                 flex-direction: column;
                 gap: 0.5rem;
             }
-            
+
             .seminario-body {
                 font-size: 0.95rem;
             }
-            
+
             .seminario-body h2 {
                 font-size: 1.35rem;
             }
-            
+
             .seminario-body h3 {
                 font-size: 1.15rem;
             }
@@ -229,4 +262,4 @@
 </article>
 
 </body>
-</html> 
+</html>

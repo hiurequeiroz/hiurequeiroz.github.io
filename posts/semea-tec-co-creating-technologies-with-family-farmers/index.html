@@ -5,7 +5,7 @@
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Skip to content</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -142,14 +143,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle theme">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -195,7 +196,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Toggle theme">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -210,7 +211,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -219,9 +221,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -230,13 +233,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -251,10 +255,83 @@
 }
 </style>
 <main id="content">
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">SEMEA-TEC: co-creating technologies with family farmers</h1>
-    </header>
+    <div class="banner">
+    
+    
+    
+        
+        
+            <img src="/images/shitakiometer_hu_532bbe06889984e3.jpg" width="300" height="700" alt="">
+        
+    
+
+</div>
+<div class="banner-mobile">
+    
+    
+    
+        
+        
+            <img src="/images/shitakiometer_hu_d65a8332c696a391.jpg" width="150" height="250" alt="">
+        
+    
+
+</div>
+
+
+<div class="related-posts">
+    <h3>Related Posts</h3>
+    <ul>
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    <li><a href="https://hiurequeiroz.github.io/posts/an-invitation-to-transistence/">An Invitation to Transistence</a></li>
+                
+            
+                
+            
+        
+            
+            
+                
+            
+        
+    </ul>
+</div>
+
+
+<div class="post container">
+    <div class="post-header-section">
+        <h1>SEMEA-TEC: co-creating technologies with family farmers</h1>
+        <small role="doc-subtitle">The UNIFESP extension project co-creating low-cost, low-power social technologies with family farmers: JavAlarm and Shitakiometer.</small>
+        <p class="post-date">September 9, 2026
+        
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/tags/semea-tec">SEMEA-TEC</a></li>
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/tags/lora">LoRa</a></li>
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/tags/social-technologies">social technologies</a></li>
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/tags/extension">extension</a></li>
+        
+        </ul>
+    </div>
+
     <div class="post-content">
         <p><a href="/projects/semeatec/">SEMEA-TEC</a> (Sowing Technological Solutions in Family Agriculture) is a university extension project at UNIFESP — São José dos Campos campus (ICT) — working at the intersection of computing, electronics, rural extension and participatory methodologies. Our purpose is to develop low-cost, low-energy social technologies for family agriculture, tackling the digital exclusion that deepens historical inequalities in the countryside.</p>
 <p>The project is organically linked to my doctoral research at PPGIT/UNIFESP: while the extension operates as a living laboratory of listening and co-creation with communities, the PhD investigates the technical-scientific foundations for these systems to reach maximum energy autonomy — with batteries that harvest energy from the environment, based on non-toxic, low-impact materials — and economic viability at scale.</p>
@@ -273,8 +350,105 @@
 <p>On the horizon: full JavAlarm integration, a weatherproof case, a bootloader with remote firmware updates, and an ecosystem of decentralized innovation combining low-power radios, lightweight protocols and harvest energy — building not only technology, but technical autonomy and digital sovereignty for rural communities.</p>
 <p>Results — prototypes, manuals and booklets — will be released on open-access platforms and shared with the communities in person, at extension fairs and social technology forums. A first version of these stories was presented at <a href="https://talx.dod.ngo/dwebcamp-2026/speaker/YUVETQ/">DWeb Camp 2026</a>, in the session <em>Semea-tec: seeding tech, growing autonomy</em>.</p>
 
+
+        <div class="post-comments">
+            
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = "https:\/\/hiurequeiroz.github.io\/posts\/semea-tec-co-creating-technologies-with-family-farmers\/";
+        this.page.identifier = "\/posts\/semea-tec-co-creating-technologies-with-family-farmers\/";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + "hiurequeiroz-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Por favor, habilite JavaScript para ver os <a href="https://disqus.com/?ref_noscript">comentários do Disqus.</a></noscript>
+ 
+        </div>
+
     </div>
-</article>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/test-new-lime/">
+            &#8592;
+            Previous:
+            Testing New LibreMesh Release
+        </a>
+    </p>
+    <p class="prev-post-date">
+        February 15, 2024
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/an-invitation-to-transistence/">
+            Next:
+            An Invitation to Transistence
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            September 9, 2026
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+    
+</div>
+
 
         </main><footer class="footer">
     

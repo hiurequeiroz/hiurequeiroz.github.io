@@ -5,7 +5,7 @@
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Skip to content</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -101,9 +102,8 @@
   <li>
     <a href="/pt/tags/iot/">
         <div class="lang">
-            pt 
+            pt
         </div>
-        
     </a>
   </li>
   
@@ -155,14 +155,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle theme">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Toggle theme">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -223,7 +223,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -232,9 +233,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -243,13 +245,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -269,7 +272,7 @@
     
         
         
-            <img src="/images/posts_hu_94a0acd68e4499fe.jpg" width="300" height="683">
+            <img src="/images/posts_hu_94a0acd68e4499fe.jpg" width="300" height="683" alt="">
         
 
 </div>
@@ -278,7 +281,7 @@
     
         
         
-            <img src="/images/posts_hu_e6c0b17b83a8da01.jpg" width="150" height="250">
+            <img src="/images/posts_hu_e6c0b17b83a8da01.jpg" width="150" height="250" alt="">
         
 
 </div>

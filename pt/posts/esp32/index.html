@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="pt"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Pular para o conteúdo</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -101,9 +102,8 @@
   <li>
     <a href="/posts/esp32/">
         <div class="lang">
-            en  (140 words)
+            en
         </div>
-        
     </a>
   </li>
   
@@ -155,14 +155,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Alternar tema">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Alternar menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Alternar tema">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -223,7 +223,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -232,9 +233,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -243,13 +245,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -264,10 +267,83 @@
 }
 </style>
 <main id="content">
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">Conhecendo o Esp32</h1>
-    </header>
+    <div class="banner">
+    
+    
+    
+        
+        
+            <img src="/images/esp32_hu_19544c2a3e5c3f26.jpg" width="300" height="640" alt="">
+        
+    
+
+</div>
+<div class="banner-mobile">
+    
+    
+    
+        
+        
+            <img src="/images/esp32_hu_5bb41243690b44.jpg" width="150" height="250" alt="">
+        
+    
+
+</div>
+
+
+<div class="related-posts">
+    <h3>Posts relacionados</h3>
+    <ul>
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    <li><a href="https://hiurequeiroz.github.io/pt/posts/arduino/">Conhecendo o arduino</a></li>
+                
+            
+                
+            
+        
+            
+            
+                
+            
+        
+    </ul>
+</div>
+
+
+<div class="post container">
+    <div class="post-header-section">
+        <h1>Conhecendo o Esp32</h1>
+        <small role="doc-subtitle">Como iniciar com o ESP32</small>
+        <p class="post-date">fevereiro 7, 2019
+        
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/pt/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/pt/tags/esp32">ESP32</a></li>
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/pt/tags/sitiodoastronauta">SitioDoAstronauta</a></li>
+        
+            <li class="post-tag"><a href="https://hiurequeiroz.github.io/pt/tags/iot">IoT</a></li>
+        
+        </ul>
+    </div>
+
     <div class="post-content">
         <h2 id="esp32">ESP32</h2>
 <p>O ESP32 é uma plataforma de prototipagem com microcontrolador, semelhante ao <a href="/pt/posts/arduino/">Arduino</a>, porém com maior desempenho em aplicações que envolvem wifi e baixo consumo de energia. Ele representa uma evolução do conhecido ESP8266, oferecendo maior capacidade de processamento.</p>
@@ -281,8 +357,92 @@
 <li><a href="http://espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf">Datasheet ESP32</a></li>
 </ul>
 
+
+        <div class="post-comments">
+            
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = "https:\/\/hiurequeiroz.github.io\/pt\/posts\/esp32\/";
+        this.page.identifier = "\/pt\/posts\/esp32\/";
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + "hiurequeiroz-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Por favor, habilite JavaScript para ver os <a href="https://disqus.com/?ref_noscript">comentários do Disqus.</a></noscript>
+ 
+        </div>
+
     </div>
-</article>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+<div class="next-post">
+    <p>
+        <a href="/pt/posts/arduino/">
+            Próximo:
+            Conhecendo o arduino
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            fevereiro 7, 2019
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+    
+</div>
+
 
         </main><footer class="footer">
     

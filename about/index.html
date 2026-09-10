@@ -5,7 +5,7 @@
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Skip to content</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -101,9 +102,8 @@
   <li>
     <a href="/pt/about/">
         <div class="lang">
-            pt  (367 words)
+            pt
         </div>
-        
     </a>
   </li>
   
@@ -155,14 +155,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle theme">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Toggle menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Toggle theme">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -223,7 +223,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -232,9 +233,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -243,13 +245,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -264,20 +267,56 @@
 }
 </style>
 <main id="content">
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">About</h1>
-    </header>
+    <div class="banner">
+    
+    
+    
+        
+        
+            <img src="/images/monoblaster_hu_20fcaf7981ad5b6e.jpg" width="300" height="640" alt="">
+        
+    
+
+</div>
+<div class="banner-mobile">
+    
+    
+    
+        
+        
+            <img src="/images/monoblaster_hu_64163af0fe300f8b.jpg" width="150" height="250" alt="">
+        
+    
+
+</div>
+<div class="post container">
     <div class="post-content">
-        <p>I am a PhD candidate in Innovation and Technology at the Federal University of São Paulo (Unifesp, PPGIT), researching social technologies for community well-being. My current research, <em>&ldquo;Sociotechnical Co-creation with Family Farmers: Participatory Development of Technologies for Rural Areas&rdquo;</em>, investigates how participatory methodologies shape the construction of autonomous communication and sensing systems in rural contexts — work organically linked to the <a href="/projects/semeatec/">SEMEA-TEC</a> university extension project.</p>
+        <div class="post-header-section">
+            <h1>About</h1>
+        </div>
+
+        <div class="post-content">
+            <p>I am a PhD candidate in Innovation and Technology at the Federal University of São Paulo (Unifesp, PPGIT), researching social technologies for community well-being. My current research, <em>&ldquo;Sociotechnical Co-creation with Family Farmers: Participatory Development of Technologies for Rural Areas&rdquo;</em>, investigates how participatory methodologies shape the construction of autonomous communication and sensing systems in rural contexts — work organically linked to the <a href="/projects/semeatec/">SEMEA-TEC</a> university extension project.</p>
 <p>I hold a degree in Physics and a master&rsquo;s in Materials Science from the <a href="http://bdtd.ibict.br/vufind/Record/ITA_69f67f8b7750867feb8cadadb08d454f">Aeronautics Institute of Technology (ITA)</a>. I work to promote the critical appropriation of science and technology through hacker culture.</p>
 <p>I am a founding partner of <a href="https://transistir.com">Transistir Social Tech</a>, an initiative dedicated to developing hardware and software with a focus on decentralized technologies, working alongside indigenous organizations (such as COIAB), research institutes (IEB, UFPA/FADESP) and social movements. I am also a member of the <a href="/projects/sitiodoastronauta/">Sítio do Astronauta</a> collective, devoted to experimenting with ecotechnologies and sustainable ways of living, and of <a href="https://coolab.org">Coolab – Cooperative Laboratory of Free Networks</a>.</p>
 <p>My path began with a passion for learning new things: after my master&rsquo;s, I realized my life was more related to communities than to academia, and turned my dream of working with technologies into collectives and field projects. At the Nuvem Art and Technology Station (2015), I took part in the <a href="https://wiki.nuvem.tk/index.php/Fuma%C3%A7a_Data_Springs">Fumaça Data Springs</a> project — the first mesh wifi network and an experimental GSM-band network in Vila da Fumaça, Resende-RJ. Later, with coolab, we founded the <a href="/projects/psp/">Portal sem Porteiras Association</a>, a non-profit that promotes digital inclusion and technological autonomy for rural and urban communities through free and open technologies, based in Bairro dos Souzas, Monteiro Lobato-SP.</p>
 <p>From Sítio do Astronauta came one of the projects I like the most: Tecnomisticismo, made in partnership with the <a href="https://www.youtube.com/watch?v=82tkY-XSw-0">Sesc 2017 arts circuit</a>, which approaches technology through the language of symbols and mystical ideas, creating immersive environments for reflection on what technology is and what it can be. It is the same spirit that guides my work today: technology made <em>with</em>, not <em>for</em>.</p>
 <p>I also write about all of this: the essay <a href="https://tocaia.info/edicao/um-convite-a-transistencia/"><em>An Invitation to Transistence</em></a> was published in TOCAIA magazine (#1), and reflections on research and extension live in the <a href="/doutorado/">PhD section</a> of this site.</p>
 
+        </div>
+        
     </div>
-</article>
+    
+</div>
+<div class="full">
+     
+     
+        <a href="/" class="back-icon">
+            <span data-feather="arrow-left"></span> Back
+        </a>
+    
+
+</div>
 
         </main><footer class="footer">
     

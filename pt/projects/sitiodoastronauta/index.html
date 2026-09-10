@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="pt"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #2e7d5b;
         }
     </style>
 
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.482deee0f9187eff755668a615fb6831936e43b439a8092690b17c7fff4b409d.js" integrity="sha256-SC3u4PkYfv91VmimFftoMZNuQ7Q5qAkmkLF8f/9LQJ0="></script>
+    <script src="/js/bundle.min.8b2cf7af3eca382314fcd04444999c94af885146a6ade8039f45c014de98c3b7.js" integrity="sha256-iyz3rz7KOCMU/NBERJmclK&#43;IUUamregDn0XAFN6Yw7c="></script>
 
     <link rel="stylesheet" href="/css/seminario.css" type="text/css">
 
@@ -79,7 +79,8 @@
         <script type="text/javascript">
             
             setThemeByUserPref();
-        </script><header class="header">
+        </script><a class="skip-link" href="#content">Pular para o conteúdo</a>
+<header class="header">
     <nav class="header-nav">
 
         
@@ -101,9 +102,8 @@
   <li>
     <a href="/projects/sitiodoastronauta/">
         <div class="lang">
-            en  (294 words)
+            en
         </div>
-        
     </a>
   </li>
   
@@ -155,14 +155,14 @@
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Alternar tema">
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
+                <a tabindex="0" role="button" aria-label="Alternar menu">
                     <span data-feather="menu"></span>
                 </a>
             </div>
@@ -208,7 +208,7 @@
                 
                 <li class="nav-item dark-theme-toggle">
                     <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
-                    <a>
+                    <a tabindex="0" role="button" aria-label="Alternar tema">
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
@@ -223,7 +223,8 @@
     position: relative;
 }
 
-.nav-link.has-children:hover .submenu {
+.nav-link.has-children:hover .submenu,
+.nav-link.has-children:focus-within .submenu {
     display: block;
 }
 
@@ -232,9 +233,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
     padding: 0.5rem 0;
     min-width: 200px;
     z-index: 1000;
@@ -243,13 +245,14 @@
 .submenu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: background-color 0.2s;
 }
 
 .submenu a:hover {
-    background: var(--bg-tertiary);
+    background: var(--bg-inline-code);
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -264,19 +267,55 @@
 }
 </style>
 <main id="content">
-<article class="post">
-    <header class="post-header">
-        <h1 class="post-title">Sitio Do Astronauta</h1>
-    </header>
+    <div class="banner">
+    
+    
+    
+        
+        
+            <img src="/images/sitiodoastronauta_hu_dbe849fe38bc1b80.png" width="300" height="700" alt="">
+        
+    
+
+</div>
+<div class="banner-mobile">
+    
+    
+    
+        
+        
+            <img src="/images/sitiodoastronauta_hu_5126acd2293fb14f.png" width="150" height="250" alt="">
+        
+    
+
+</div>
+<div class="post container">
     <div class="post-content">
-        <p>Como idealizador do <a href="http://sitiodoastronauta.com.br">Sítio do Astronauta</a>, um coletivo de artistas, ativistas e pesquisadores que trabalham com tecnologias livres e comunitárias, trago minha experiência acadêmica com ciencia e minha aprendizado em egenharia reversa com hackerativista. Percebendo a distância entre a academia e a sociedade, decidi criar este coletivo para comunicar e levar a ciência e a tecnologia de outra maneira para as comunidades.
+        <div class="post-header-section">
+            <h1>Sitio Do Astronauta</h1>
+        </div>
+
+        <div class="post-content">
+            <p>Como idealizador do <a href="http://sitiodoastronauta.com.br">Sítio do Astronauta</a>, um coletivo de artistas, ativistas e pesquisadores que trabalham com tecnologias livres e comunitárias, trago minha experiência acadêmica com ciencia e minha aprendizado em egenharia reversa com hackerativista. Percebendo a distância entre a academia e a sociedade, decidi criar este coletivo para comunicar e levar a ciência e a tecnologia de outra maneira para as comunidades.
 O Sitio do Astronauta foi concebido não apenas a partir da minha visão de explorar as fronteiras da tecnologia e da arte, mas também contou com a colaboração essencial de <a href="http://guerradimarcela.net.br">Marcela Guerra</a>. Juntos, criamos um espaço onde a inovação e a criatividade se encontram para gerar experiências únicas. Com uma forte base em tecnologias livres e comunitárias, o coletivo se dedica a desenvolver atividades eletrônicas lúdicas que não só divertem, mas também ensinam.</p>
 <p>Através das atividades do Sitio do Astronauta, busco despertar a curiosidade e o interesse pela ciência e tecnologia, incentivando a experimentação e a aprendizagem autodidata. As atividades eletrônicas lúdicas que propomos são cuidadosamente desenhadas para introduzir conceitos de eletrônica, programação e robótica de maneira acessível e envolvente.</p>
 <p>Além de promover a educação tecnológica, um dos objetivos do Sitio do Astronauta é fomentar a colaboração e o compartilhamento de conhecimento. Acredito que, ao trabalhar juntos e compartilhar experiências, é possível criar soluções inovadoras para os desafios da sociedade. Por isso, faço questão de que o Sitio do Astronauta seja um espaço inclusivo, onde pessoas de todas as idades e backgrounds possam se reunir para aprender, criar e inovar.</p>
 <p>Em resumo, o Sitio do Astronauta, mais do que um coletivo, é uma comunidade vibrante que busca, através de atividades eletrônicas lúdicas e cheias de aprendizagem, inspirar uma nova geração de criadores, pensadores e inovadores, tudo isso sob a minha liderança e visão de aproximar a ciência e a tecnologia da sociedade de uma forma mais acessível e engajadora.</p>
 
+        </div>
+        
     </div>
-</article>
+    
+</div>
+<div class="full">
+     
+     
+        <a href="/pt/projects/" class="back-icon">
+            <span data-feather="arrow-left"></span> Voltar
+        </a>
+    
+
+</div>
 
         </main><footer class="footer">
     
